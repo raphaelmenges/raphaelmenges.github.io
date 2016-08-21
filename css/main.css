@@ -31,8 +31,8 @@ body {
 	background-color: #111;
 }
 
-.navbar .active {
-    background-color: #4CAF50;
+.navbar .active li {
+	background-color: #4CAF50;
 }
 
 /* Links in navbar elements */
