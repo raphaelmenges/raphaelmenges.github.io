@@ -3,6 +3,7 @@ body {
 	margin:0px;
 }
 
+/* Navbar */
 .navbar {
 	position: fixed;
 	font-family: Tahoma, Geneva, sans-serif;
@@ -15,28 +16,35 @@ body {
 	background-color: #333;
 }
 
+/* Elements in navbar */
 .navbar li {
 	float: left;
+	-moz-transition: background-color .2s ease-in;
+	-o-transition: background-color .2s ease-in;
+	-webkit-transition: background-color .2s ease-in;
+	transition: background-color .2s ease-in;
 }
 
 .navbar li:hover {
 	background-color: #111;
 }
 
+/* Links in navbar elements */
 .navbar a {
-	padding: 10pt 13pt;
+	padding: 8pt 13pt;
 	display:block;
 	color: white;
 	text-align: center;
 	text-decoration: none;
 }
 
+/* Content of page */
 .content {
 	padding-top: 14pt;
 }
 
 /* Stack navbar content on small screens and unfix navigation */
-@media screen and (max-width: 600px){
+@media screen and (max-width: 400px){
 		.navbar { position: static ; }
     .navbar li {float: none;}
 		.content { padding-top: 0pt;
