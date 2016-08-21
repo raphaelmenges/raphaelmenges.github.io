@@ -31,11 +31,7 @@ body {
 	background-color: #111;
 }
 
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
+.navbar.active {
     background-color: #4CAF50;
 }
 
