@@ -7,23 +7,9 @@
 	</head>
 	<body>
 		<nav class="navbar">
-			{% if page.label == "projects" %}
 			<li><a class="active" href="/projects">Projects</a></li>
 			<li><a href="/papers">Papers</a></li>
 			<li><a href="/about">About</a></li>
-			{% elseif page.label == "papers" %}
-			<li><a href="/projects">Projects</a></li>
-			<li><a class="active" href="/papers">Papers</a></li>
-			<li><a href="/about">About</a></li>
-			{% elseif page.label == "about" %}
-			<li><a href="/projects">Projects</a></li>
-			<li><a href="/papers">Papers</a></li>
-			<li><a class="active" href="/about">About</a></li>
-			{% else %}
-			<li><a href="/projects">Projects</a></li>
-			<li><a href="/papers">Papers</a></li>
-			<li><a href="/about">About</a></li>
-			{% endif %}
 		</nav>
 		<div class="content">
 		
