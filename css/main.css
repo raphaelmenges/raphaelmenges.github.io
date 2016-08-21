@@ -17,7 +17,6 @@ body {
 
 .navbar li {
 	float: left;
-	display: block;
 }
 
 .navbar li:hover {
@@ -26,6 +25,7 @@ body {
 
 .navbar a {
 	padding: 10pt 13pt;
+	display:block
 	color: white;
 	text-align: center;
 	text-decoration: none;
