@@ -1,4 +1,4 @@
 ---
 title: GazeTheWeb - Browse
 ---
-There here is _Browse_
+There here is __Browse__
