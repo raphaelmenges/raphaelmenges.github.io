@@ -16,7 +16,7 @@ body {
 }
 
 .navbar li {
-	padding: 11pt 12pt;
+	padding: 11pt 8pt;
 	float: left;
 	display: block;
 	border-right: 1px solid #bbb;
@@ -33,5 +33,5 @@ body {
 }
 
 .content {
-	padding-top: 12pt;
+	margin-top: 14pt;
 }
