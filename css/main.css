@@ -16,7 +16,7 @@ body {
 }
 
 .navbar li {
-	padding: 11pt 8pt;
+	padding: 6pt 10pt;
 	float: left;
 	display: block;
 	border-right: 1px solid #bbb;
@@ -33,5 +33,12 @@ body {
 }
 
 .content {
-	margin-top: 14pt;
+	padding-top: 14pt;
+}
+
+/* Stack navbar content on small screens and unfix navigation */
+@media screen and (max-width: 600px){
+		.navbar { position: static ; }
+    .navbar li {float: none;}
+		.content { padding-top: 0pt;
 }
