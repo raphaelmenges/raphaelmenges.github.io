@@ -7,9 +7,16 @@
 	</head>
 	<body>
 		<nav class="navbar">
-			<li><a href="/projects">Projects</a></li>
-			<li><a class="active" href="/papers">Papers</a></li>
+			{% if page.navigation == "projects" %}
+			<li><a class="active" href="/projects">Projects</a></li>
+			<li><a href="/papers">Papers</a></li>
 			<li><a href="/about">About</a></li>
+			{% else %}
+			<li><a href="/projects">Projects</a></li>
+			<li><a href="/papers">Papers</a></li>
+			<li><a href="/about">About</a></li>
+			{% endif %}
+{% endif %}
 		</nav>
 		<div class="content">
 		
