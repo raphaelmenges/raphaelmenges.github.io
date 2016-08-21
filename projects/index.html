@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Raphael Menges
+project_labels:
+  - eyegui
+  - gtw-browse
 ---
-{% for project in site.projects %}
-  <h3>{{ project.title }}</h3>
+{% for label in site.data.project_labels %}
+	{% assign project =  site.projects | where:"label", label  | first %}
+	<h3>{{ project.title }}</h3>
   {{ project.content }}
 {% endfor %}
