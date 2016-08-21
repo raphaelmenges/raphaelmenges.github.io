@@ -1,5 +1,5 @@
 ---
 title: eyeGUI
-label: eyegui
+id: eyegui
 ---
 Hi here is *eyeGUI*.

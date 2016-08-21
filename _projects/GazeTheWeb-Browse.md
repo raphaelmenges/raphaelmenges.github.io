@@ -1,5 +1,5 @@
 ---
 title: GazeTheWeb - Browse
-label: gtw-browse
+id: gtw-browse
 ---
 There here is __Browse__
