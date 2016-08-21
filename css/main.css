@@ -27,8 +27,16 @@ body {
 	transition: background-color .2s ease-in;
 }
 
-.navbar li:hover {
+.navbar li:hover:not(.active)  {
 	background-color: #111;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
 }
 
 /* Links in navbar elements */
