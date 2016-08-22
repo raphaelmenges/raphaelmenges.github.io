@@ -8,27 +8,20 @@
 	</head>
 	<body>
 		<nav class="navbar">
-			{% if page.navigation == "projects" %}
-				<li><a href="/"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a></li>
-				<li><a class="active" href="/projects">Projects</a></li>
-				<li><a href="/papers">Papers</a></li>
-				<li><a href="/about">About</a></li>
-			{% elsif page.navigation == "papers" %}
-				<li><a href="/">Home</a></li>
-				<li><a href="/projects">Projects</a></li>
-				<li><a class="active" href="/papers">Papers</a></li>
-				<li><a href="/about">About</a></li>
-			{% elsif page.navigation == "about" %}
-				<li><a href="/">Home</a></li>
-				<li><a href="/projects">Projects</a></li>
-				<li><a href="/papers">Papers</a></li>
-				<li><a class="active" href="/about">About</a></li>
-			{% else %}
-				<li><a class="active" href="/">Home</a></li>
-				<li><a href="/projects">Projects</a></li>
-				<li><a href="/papers">Papers</a></li>
-				<li><a href="/about">About</a></li>
-			{% endif %}		
+			<li>
+				<a {% if page.navigation == "home" %} class="active" {% endif %} href="/">
+					<i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home
+				</a>
+			</li>
+			<li>
+				<a {% if page.navigation == "projects" %} class="active" {% endif %} href="/projects">Projects</a>
+			</li>
+			<li>
+				<a {% if page.navigation == "papers" %} class="active" {% endif %} href="/papers">Papers</a>
+			</li>
+			<li>
+				<a {% if page.navigation == "about" %} class="active" {% endif %} href="/about">About</a>
+			</li>
 		</nav>
 		<div class="content">
 		
