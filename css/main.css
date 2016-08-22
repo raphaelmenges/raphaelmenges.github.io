@@ -3,8 +3,9 @@
 /**************/
 body {
 	font-family: Tahoma, Geneva, sans-serif;
-	padding:0pt;
-	margin: 0 auto;
+	margin: 0;
+  padding: 0 auto;
+  margin-left: -40px;
 	overflow-y: scroll;
 	width: 900px;
 }
@@ -107,6 +108,7 @@ body {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
+	background-color: #333;
 }
 
 .project-links ul {
@@ -118,7 +120,7 @@ body {
 }
 
 .project-links a {
-	color: black;
+	color: white;
 	padding: 8pt 13pt;
 	display: block;
 	text-align: center;
