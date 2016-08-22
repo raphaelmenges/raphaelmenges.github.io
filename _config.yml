@@ -2,3 +2,5 @@ name: Raphael Menges
 markdown: kramdown
 collections:
   - projects
+gems:
+ - jekyll-press
