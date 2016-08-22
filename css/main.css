@@ -28,7 +28,7 @@ body {
 	transition: background-color .2s ease-in;
 }
 
-.navbar .about li {
+.navbar .about {
 	float: right;
 }
 
