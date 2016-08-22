@@ -60,7 +60,10 @@ body {
 
 /* Content of page */
 .content {
-	padding-top: 40pt;
+	padding-top: 20pt;
+	display: block;
+  position: relative;
+  visibility: hidden;
 }
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
