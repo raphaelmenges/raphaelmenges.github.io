@@ -1,8 +1,9 @@
 /* Body */
 body {
 	font-family: Tahoma, Geneva, sans-serif;
-	padding:0px;
-	margin:0px;
+	padding:0pt;
+	margin: 0 auto;
+	width: 800pt;
 }
 
 /* Navbar */
@@ -10,7 +11,7 @@ body {
 	position: fixed;
 	list-style-type: none;
 	top: -1px;
-	width: 100%;
+	width: 800pt;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
