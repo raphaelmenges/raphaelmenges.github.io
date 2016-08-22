@@ -8,4 +8,5 @@ project_labels: ["eyegui", "gtw-browse"]
 	{% assign project =  site.projects | where:"label", label  | first %}
 	<h3 class="anchor" id="{{ project.label }}">{{ project.title }}</h3>
   {{ project.content }}
+	<img src="/images/projects/{{ project.thumbnail }}) alt="Project Thumbnail"/>
 {% endfor %}
