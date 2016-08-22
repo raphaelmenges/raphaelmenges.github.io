@@ -9,9 +9,9 @@ body {
 	width: 900px;
 }
 
-/* Anchor class to be beneath fixed navigation */
+/* Anchor class to be beneath fixed navigation and text centering */
 .anchor {
-	text-align: center;
+	text-align: center; /* extra class for anchors on project page? */
 	/* padding-top: 30pt; */ /* TODO: find better solution */
 }
 
@@ -80,11 +80,11 @@ body {
 }
 
 .project-main {
-	float: left;
 }
 
 
 .project-info {
+	float: left;
 }
 
 
