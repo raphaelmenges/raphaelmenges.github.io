@@ -4,7 +4,7 @@ body {
 	padding:0pt;
 	margin: 0 auto;
 	overflow-y: scroll;
-	width: 800pt;
+	width: 600pt;
 }
 
 /* Navbar */
@@ -14,7 +14,7 @@ body {
 	margin: 0;
 	padding: 0;
 	top: -1px;
-	width: 800pt;
+	width: 600pt;
 	overflow: hidden;
 	background-color: #333;
 }
@@ -28,11 +28,15 @@ body {
 	transition: background-color .2s ease-in;
 }
 
+.navbar .about li {
+	float: right;
+}
+
 .navbar li:hover:not(.active)  {
 	background-color: #111;
 }
 
-.active {
+.navbar .active {
 	background-color: #4CAF50;
 }
 
@@ -53,7 +57,7 @@ body {
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
 @media only screen and (max-width: 480px) {
 		body { width: auto; }
-		.navbar { position: static ; width: 800p; }
+		.navbar { position: static ; width: 100%; }
     .navbar li {float: none;}
 		.content { padding-top: 0pt; }
 }
