@@ -53,7 +53,7 @@ body {
 	text-decoration: none;
 }
 
-/* Anchor class */
+/* Anchor class to be beneath fixed navigation */
 .anchor {
 	padding-top: 20pt;
 	margin-top: -20pt;
@@ -69,7 +69,7 @@ body {
 	.navbar { position: static; }
 	.navbar li {float: none;}
 	.navbar .about { float: none; }
-	.content { padding-top: 0pt; margin-top: 0pt; }
+	.anchor { padding-top: 0pt; margin-top: 0pt; }
 	.content { padding-top: 0pt; }
 }
 
