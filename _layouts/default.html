@@ -7,24 +7,27 @@
 	</head>
 	<body>
 		<nav class="navbar">
-			{% case page.navigation %}
-			{% when 'projects' %}
+			{% if page.navigation == "projects" %}
+				<li><a href="/">Home</a></li>
 				<li><a class="active" href="/projects">Projects</a></li>
 				<li><a href="/papers">Papers</a></li>
 				<li><a href="/about">About</a></li>
-			{% when 'papers' %}
+			{% elsif page.navigation == "papers" %}
+				<li><a href="/">Home</a></li>
 				<li><a href="/projects">Projects</a></li>
 				<li><a class="active" href="/papers">Papers</a></li>
 				<li><a href="/about">About</a></li>
-			% when 'about' %}
+			{% elsif page.navigation == "about" %}
+				<li><a href="/">Home</a></li>
 				<li><a href="/projects">Projects</a></li>
 				<li><a href="/papers">Papers</a></li>
 				<li><a class="active" href="/about">About</a></li>
 			{% else %}
+				<li><a class="active" href="/">Home</a></li>
 				<li><a href="/projects">Projects</a></li>
 				<li><a href="/papers">Papers</a></li>
 				<li><a href="/about">About</a></li>
-			{% endcase %}		
+			{% endif %}		
 		</nav>
 		<div class="content">
 		
