@@ -73,7 +73,7 @@ body {
 /*** Projecs ***/
 /***************/
 .project {
-	border: 1pt solid black;
+  box-shadow: 0pt 0pt 5pt #888888;
   margin-top: 12pt;
   overflow: auto;
   display: block;
@@ -99,10 +99,25 @@ body {
 }
 
 .project-content {
+	padding: 10pt;
 }
 
 .project-links {
 	clear: left;
+	list-style-type: none;
+	overflow: hidden;
+}
+
+.project-links li {
+	float: left;
+}
+
+.project-links a {
+	color: black;
+	padding: 8pt 13pt;
+	display: block;
+	text-align: center;
+	text-decoration: none;
 }
 
 
