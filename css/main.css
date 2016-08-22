@@ -57,7 +57,7 @@ body {
 }
 
 /* Show whitespace around page on desktop browsers */
-@media screen and (min-width: 1300px) {
+@media (min-width:1025px) {
     body { width: 800pt; }
 		.navbar { width: 800pt; }
 }
