@@ -56,14 +56,14 @@ body {
 /* Class for anchors */
 .anchor {
 	padding-top: 20pt;
+	display: block;
+  position: relative;
+  visibility: hidden;
 }
 
 /* Content of page */
 .content {
 	padding-top: 20pt;
-	display: block;
-  position: relative;
-  visibility: hidden;
 }
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
