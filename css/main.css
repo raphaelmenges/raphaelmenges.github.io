@@ -10,17 +10,12 @@ body {
 	position: fixed;
 	font-family: Tahoma, Geneva, sans-serif;
 	list-style-type: none;
-	top: 0;
+	top: -1px;
 	width: 100%;
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
-}
-
-/* Fixing one pixel displacement in Chromium */
-.navbar nav {
-	top: -1px;
 }
 
 /* Elements in navbar */
