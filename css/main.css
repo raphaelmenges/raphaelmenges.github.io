@@ -7,9 +7,7 @@ body {
 
 /* Navbar */
 .navbar {
-	color: white;
 	position: fixed;
-	font-family: Tahoma, Geneva, sans-serif;
 	list-style-type: none;
 	top: -1px;
 	width: 100%;
@@ -38,8 +36,9 @@ body {
 
 /* Links in navbar elements */
 .navbar a {
+	color: white;
 	padding: 8pt 13pt;
-	display:block;
+	display: block;
 	text-align: center;
 	text-decoration: none;
 }
