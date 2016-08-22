@@ -4,7 +4,7 @@ body {
 	padding:0pt;
 	margin: 0 auto;
 	overflow-y: scroll;
-	width: 600pt;
+	width: 900px;
 }
 
 /* Navbar */
@@ -14,7 +14,7 @@ body {
 	margin: 0;
 	padding: 0;
 	top: -1px;
-	width: 600pt;
+	width: 900px;
 	overflow: hidden;
 	background-color: #333;
 }
@@ -60,9 +60,14 @@ body {
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
 @media only screen and (max-width: 480px) {
-	body { width: auto; }
-	.navbar { position: static ; width: 100%; }
+	.navbar { position: static; }
 	.navbar li {float: none;}
 	.navbar .about { float: none; }
 	.content { padding-top: 0pt; }
+}
+
+/* Width on small screens */
+@media only screen and (max-width: 900px) {
+	body { width: auto; }
+	.navbar { width: 100%; }
 }
