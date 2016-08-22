@@ -28,16 +28,20 @@ body {
 	transition: background-color .2s ease-in;
 }
 
-.navbar .about {
-	float: right;
-}
-
+/* Elements which are hovered */
 .navbar li:hover:not(.active)  {
 	background-color: #111;
 }
 
+/* Active element */
 .navbar .active {
 	background-color: #4CAF50;
+}
+
+/* About element */
+.navbar .about {
+	float: right;
+	background-color: #444;
 }
 
 /* Links in navbar elements */
@@ -56,9 +60,9 @@ body {
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
 @media only screen and (max-width: 480px) {
-		body { width: auto; }
-		.navbar { position: static ; width: 100%; }
-    .navbar li {float: none;}
-		.navbar .about { float: none; }
-		.content { padding-top: 0pt; }
+	body { width: auto; }
+	.navbar { position: static ; width: 100%; }
+	.navbar li {float: none;}
+	.navbar .about { float: none; }
+	.content { padding-top: 0pt; }
 }
