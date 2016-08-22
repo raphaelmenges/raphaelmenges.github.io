@@ -50,14 +50,14 @@ body {
 }
 
 /* Stack navbar content on small screens and unfix navigation */
-@media screen and (max-width: 400px){
+@media only screen and (max-width: 480px) {
 		.navbar { position: static ; }
     .navbar li {float: none;}
 		.content { padding-top: 0pt;
 }
 
 /* Show whitespace around page on desktop browsers */
-@media (min-width:1025px) {
+@media only screen and (min-width: 1025px) {{
     body { width: 800pt; }
 		.navbar { width: 800pt; }
 }
