@@ -1,4 +1,6 @@
-/* Body */
+/**************/
+/**** Body ****/
+/**************/
 body {
 	font-family: Tahoma, Geneva, sans-serif;
 	padding:0pt;
@@ -7,7 +9,19 @@ body {
 	width: 900px;
 }
 
-/* Navbar */
+/* Anchor class to be beneath fixed navigation */
+.anchor {
+	padding-top: 30pt;
+}
+
+/* Content of page */
+.content {
+	padding-top: 20pt;
+}
+
+/**************/
+/*** Navbar ***/
+/**************/
 .navbar {
 	position: fixed;
 	list-style-type: none;
@@ -54,15 +68,29 @@ body {
 	text-decoration: none;
 }
 
-/* Anchor class to be beneath fixed navigation */
-.anchor {
-	padding-top: 30pt;
+/***************/
+/*** Projecs ***/
+/***************/
+.project {
+	border: 3px solid blue;
 }
 
-/* Content of page */
-.content {
-	padding-top: 20pt;
+.project-title {
 }
+
+.project-thumbnail {
+}
+
+.project-content {
+}
+
+.project-links {
+}
+
+
+/*********************/
+/*** Responsivenes ***/
+/*********************/
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
 @media only screen and (max-width: 480px) {
