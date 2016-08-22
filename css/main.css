@@ -17,6 +17,7 @@ body {
 	width: 900px;
 	overflow: hidden;
 	background-color: #333;
+	box-shadow: 0pt 2pt 5pt #888888;
 }
 
 /* Elements in navbar */
