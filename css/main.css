@@ -59,6 +59,6 @@ body {
 		body { width: auto; }
 		.navbar { position: static ; width: 100%; }
     .navbar li {float: none;}
-		.navbar .about { float: left;}
+		.navbar .about { float: none; }
 		.content { padding-top: 0pt; }
 }
