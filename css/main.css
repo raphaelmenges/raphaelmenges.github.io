@@ -11,6 +11,7 @@ body {
 
 /* Anchor class to be beneath fixed navigation */
 .anchor {
+	text-align: center;
 	/* padding-top: 30pt; */ /* TODO: find better solution */
 }
 
@@ -78,6 +79,10 @@ body {
   display: block;
 }
 
+.project-info {
+}
+
+
 .project-title {
 	
 }
@@ -85,7 +90,7 @@ body {
 .project-thumbnail {
 	width: 100%;
   height: 100%;
- object-fit: cover;
+	object-fit: cover;
 }
 
 .project-content {
