@@ -104,9 +104,13 @@ body {
 
 .project-links {
 	clear: left;
-	list-style-type: none;
 	overflow: hidden;
 }
+
+.project-links ul {
+	list-style-type: none;
+}
+
 
 .project-links li {
 	float: left;
@@ -132,6 +136,7 @@ body {
 	.navbar .about { float: none; }
 	.anchor { padding-top: 0pt; }
 	.content { padding-top: 0pt; }
+	.project-links li {	float: none; }
 }
 
 /* Width on small screens */
