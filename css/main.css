@@ -18,6 +18,11 @@ body {
 	background-color: #333;
 }
 
+/* Fixing one pixel displacement in Chromium */
+.navbar nav {
+	top: -1px;
+}
+
 /* Elements in navbar */
 .navbar li {
 	float: left;
