@@ -3,7 +3,7 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	padding:0pt;
 	margin: 0 auto;
-	width: 800pt;
+	/* width: 800pt; */
 	overflow-y: scroll;
 }
 
@@ -11,10 +11,10 @@ body {
 .navbar {
 	position: fixed;
 	list-style-type: none;
-	top: -1px;
-	width: 800pt;
 	margin: 0;
 	padding: 0;
+	top: -1px;
+	/* width: 800pt; */
 	overflow: hidden;
 	background-color: #333;
 }
