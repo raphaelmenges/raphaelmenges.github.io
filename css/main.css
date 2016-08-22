@@ -53,13 +53,6 @@ body {
 	text-decoration: none;
 }
 
-/* Class for anchors */
-.anchor {
-	padding-top: 20pt;
-	display: block;
-  position: relative;
-}
-
 /* Content of page */
 .content {
 	padding-top: 20pt;
@@ -70,7 +63,6 @@ body {
 	.navbar { position: static; }
 	.navbar li {float: none;}
 	.navbar .about { float: none; }
-	.anchor { padding-top: 0pt; }
 	.content { padding-top: 0pt; }
 }
 
