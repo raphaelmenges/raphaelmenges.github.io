@@ -3,7 +3,6 @@ body {
 	font-family: Tahoma, Geneva, sans-serif;
 	padding:0pt;
 	margin: 0 auto;
-	/* width: 800pt; */
 	overflow-y: scroll;
 }
 
@@ -14,7 +13,7 @@ body {
 	margin: 0;
 	padding: 0;
 	top: -1px;
-	/* width: 800pt; */
+	width: 100%;
 	overflow: hidden;
 	background-color: #333;
 }
@@ -55,4 +54,10 @@ body {
 		.navbar { position: static ; }
     .navbar li {float: none;}
 		.content { padding-top: 0pt;
+}
+
+/* Show whitespace around page on desktop browsers */
+@media only screen and (min-device-width: 1300px) {
+    body { width: 800pt; }
+		.navbar { width: 800pt; }
 }
