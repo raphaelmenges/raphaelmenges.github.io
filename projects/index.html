@@ -7,7 +7,7 @@ project_labels: ["eyegui", "gtw-browse"]
 {% for label in page.project_labels %}
 	{% assign project =  site.projects | where:"label", label  | first %}
 	<div class="project">
-		<div class="project-conmaintent">
+		<div class="project-main">
 			<div class="project-info">
 				<div class="project-title">
 					<h3 class="anchor" id="{{ project.label }}">{{ project.title }}</h3>
@@ -19,7 +19,7 @@ project_labels: ["eyegui", "gtw-browse"]
 			<div class="project-content">
 				{{ project.content }}
 			</div> <!-- project-content -->
-		</div>
+		</div> <!-- project-main -->
 		<div class="project-links">
 			<ul>
 				{% for link in project.links %}
