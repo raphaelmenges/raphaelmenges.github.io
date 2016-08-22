@@ -105,12 +105,13 @@ body {
 .project-links {
 	clear: left;
 	overflow: hidden;
+	margin: 0;
+	padding: 0;
 }
 
 .project-links ul {
 	list-style-type: none;
 }
-
 
 .project-links li {
 	float: left;

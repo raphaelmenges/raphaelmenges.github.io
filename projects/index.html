@@ -21,7 +21,7 @@ project_labels: ["eyegui", "gtw-browse"]
 			</div> <!-- project-content -->
 		</div> <!-- project-main -->
 		<div class="project-links">
-			<ul>
+			<ul class="project-links">
 				{% for link in project.links %}
 					<li>
 						<a href=" {{ link }}"> {{ project.linktitles[forloop.index0] }} </a>
