@@ -96,9 +96,8 @@ body {
 }
 
 .project-thumbnail {
-	width: 100%;
-  height: 100%;
 	object-fit: cover;
+	height: auto;
 }
 
 .project-content {
@@ -141,12 +140,8 @@ body {
 	.navbar .about { float: none; }
 	.anchor { padding-top: 0pt; top: 0pt; }
 	.content { padding-top: 0pt; }
+	.project-info { width: 100%; clear: both; }
 	.project-links li {	float: none; }
-	
-	/* project-info: widht:100%; clear: both;
-	height aus thumbnail löschen
-	height auf auto */
-	
 }
 
 /* Width on small screens */
