@@ -97,7 +97,6 @@ body {
 
 .project-thumbnail {
 	object-fit: cover;
-	height: auto;
 }
 
 .project-content {
@@ -141,6 +140,7 @@ body {
 	.anchor { padding-top: 0pt; top: 0pt; }
 	.content { padding-top: 0pt; }
 	.project-info { width: 100%; clear: both; }
+	.project-thumbnail img { width: 100%; height: auto; } 
 	.project-links li {	float: none; }
 }
 
