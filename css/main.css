@@ -78,7 +78,7 @@ body {
 .project {
   box-shadow: 0pt 0pt 5pt #888888;
   margin-top: 12pt;
-  overflow: auto;
+  overflow: hidden;
   display: block;
 }
 
