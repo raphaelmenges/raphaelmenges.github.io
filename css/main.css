@@ -13,6 +13,9 @@ body {
 .anchor {
 	text-align: center; /* extra class for anchors on project page? */
 	/* padding-top: 30pt; */ /* TODO: find better solution */
+	padding-top: 30px;
+	position: relative;
+	top: -30px;
 }
 
 /* Content of page */
@@ -33,6 +36,7 @@ body {
 	overflow: hidden;
 	background-color: #333;
 	box-shadow: 0pt 2pt 5pt #888888;
+	z-index: 100;
 }
 
 /* Elements in navbar */
@@ -133,7 +137,7 @@ body {
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
 @media only screen and (max-width: 480px) {
-	.navbar { position: static; }
+	.navbar { position: relative; }
 	.navbar li {float: none;}
 	.navbar .about { float: none; }
 	.anchor { padding-top: 0pt; }
