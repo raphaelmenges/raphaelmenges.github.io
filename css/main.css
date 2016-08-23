@@ -12,10 +12,9 @@ body {
 /* Anchor class to be beneath fixed navigation and text centering */
 .anchor {
 	text-align: center; /* extra class for anchors on project page? */
-	/* padding-top: 30pt; */ /* TODO: find better solution */
-	padding-top: 40pt;
 	position: relative;
 	top: -40pt;
+	padding-top: 40pt;
 }
 
 /* Content of page */
@@ -140,9 +139,14 @@ body {
 	.navbar { position: relative; }
 	.navbar li {float: none;}
 	.navbar .about { float: none; }
-	.anchor { padding-top: 0pt; }
+	.anchor { padding-top: 0pt; top: 0pt; }
 	.content { padding-top: 0pt; }
 	.project-links li {	float: none; }
+	
+	/* project-info: widht:100%; clear: both;
+	height aus thumbnail löschen
+	height auf auto */
+	
 }
 
 /* Width on small screens */
