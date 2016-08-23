@@ -13,9 +13,9 @@ body {
 .anchor {
 	text-align: center; /* extra class for anchors on project page? */
 	/* padding-top: 30pt; */ /* TODO: find better solution */
-	padding-top: 30px;
+	padding-top: 20pt;
 	position: relative;
-	top: -30px;
+	top: -20pt;
 }
 
 /* Content of page */
