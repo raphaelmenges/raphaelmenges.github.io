@@ -6,5 +6,28 @@ project_labels: ["eyegui", "gtw-browse"]
 ---
 {% for label in page.project_labels %}
 	{% assign project =  site.projects | where:"label", label  | first %}
-	<p> {{ project.label }} </p>
+	<div class="project">
+		<div class="project-main">
+			<div class="project-info">
+				<div class="project-title">
+					<h3 class="anchor" id="{{ project.label }}">{{ project.title }}</h3>
+				</div> <!-- project-title -->
+				<div class="project-thumbnail">
+					<img src="/images/projects/{{ project.thumbnail }}" alt="Project thumbnail cannot be displayed!"/>
+				</div> <!-- project-thumbnail -->
+			</div> <!-- project-info -->
+			<div class="project-content">
+				{{ project.content }}
+			</div> <!-- project-content -->
+		</div> <!-- project-main -->
+		<div class="project-links">
+			<ul class="project-links">
+				{% for link in project.links %}
+					<li>
+						<a href=" {{ link }}"> {{ project.linktitles[forloop.index0] }} </a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div> <!-- project-links -->
+	</div> <!-- project -->
 {% endfor %}
