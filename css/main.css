@@ -49,12 +49,12 @@ body {
 
 /* Elements which are hovered */
 .navbar li:hover:not(.active)  {
-	background-color: #111;
+	background-color: #050505;
 }
 
 /* Active element */
 .navbar .active {
-	background-color: #4CAF50;
+	background-color: #6753ff;
 }
 
 /* About element */
