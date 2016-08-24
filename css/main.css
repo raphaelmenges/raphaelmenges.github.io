@@ -7,6 +7,7 @@ body {
   padding: 0;
 	overflow-y: scroll;
 	width: 900px;
+	background-color: #f3f3f3;
 }
 
 /* Anchor class to be beneath fixed navigation and text centering */
@@ -60,7 +61,7 @@ body {
 /* About element */
 .navbar .about {
 	float: right;
-	background-color: #444;
+	background-color: #4437a0;
 }
 
 /* Links in navbar elements */
