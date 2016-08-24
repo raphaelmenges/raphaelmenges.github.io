@@ -120,6 +120,10 @@ body {
 	float: left;
 }
 
+.navbar li:hover  {
+	background-color: #050505;
+}
+
 .project-links a {
 	color: white;
 	padding: 8pt 13pt;
