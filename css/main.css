@@ -134,6 +134,10 @@ body {
 	float: left;
 }
 
+.project-links li:hover:not(.active)  {
+	background-color: #050505;
+}
+
 .project-links a {
 	color: white;
 	padding: 8pt 13pt;
