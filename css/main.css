@@ -22,6 +22,8 @@ body {
 .content {
 	padding-top: 20pt;
 	text-align: justify;
+  margin-left: 2pt;
+  margin-right: 2pt;
 }
 
 /* Footer of page */
@@ -41,7 +43,7 @@ body {
 	top: -1px;
 	width: 900px;
 	overflow: hidden;
-	background-color: #333;
+	background-color: #444;
 	box-shadow: 0pt 2pt 5pt #888888;
 	z-index: 100;
 }
@@ -62,13 +64,13 @@ body {
 
 /* Active element */
 .navbar .active {
-	background-color: #6753ff;
+	background-color: #278c9c;
 }
 
 /* About element */
 .navbar .about {
 	float: right;
-	background-color: #4437a0;
+	background-color: #1e6d7b;
 }
 
 /* Links in navbar elements */
@@ -85,27 +87,30 @@ body {
 /***************/
 .project {
   box-shadow: 0pt 0pt 5pt #888888;
-  margin-top: 12pt;
-  margin-bottom: 12pt;
+  margin-top: 16pt;
+  margin-bottom: 16pt;
   overflow: hidden;
   display: block;
-}
-
-.project-main {
-}
-
-
-.project-info {
-	margin: 5pt;
-	float: left;
+  border-style: solid;
+  border-color: white;
+  /*border-radius: 5pt;*/
+  border-width: 2pt;
+  background-color: white;
 }
 
 .project-title {
 	text-align: center;
+	display: block;
+	background-size: cover;
+	height: 100pt;
+	color: white;
 }
 
-.project-thumbnail {
-	object-fit: cover;
+.project-title h2 {
+	padding: 0pt;
+	margin: 0pt;
+	padding-top: 20pt;
+	text-shadow: 0pt 0pt 5pt #888888;
 }
 
 .project-content {
@@ -118,6 +123,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #333;
+	display: block;
 }
 
 .project-links ul {
@@ -136,7 +142,6 @@ body {
 	text-decoration: none;
 }
 
-
 /*********************/
 /*** Responsivenes ***/
 /*********************/
@@ -145,11 +150,10 @@ body {
 @media only screen and (max-width: 480px) {
 	.navbar { position: relative; }
 	.navbar li {float: none;}
-	.navbar .about { float: none; }
+	.navbar .about { float: none; background-color: #444; }
 	.anchor { top: 0pt; }
 	.content { padding-top: 0pt; }
-	.project-info { width: 100%; clear: both; }
-	.project-thumbnail img { width: 100%; height: auto; } 
+	
 	.project-links li {	float: none; }
 }
 
