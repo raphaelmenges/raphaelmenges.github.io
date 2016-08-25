@@ -10,17 +10,24 @@ body {
 	background-color: #f3f3f3;
 }
 
-/* Anchor class to be beneath fixed navigation and text centering */
+/* Anchor class for invisible anchor which is beneatch fixed navigation */
 .anchor {
-	text-align: center; /* extra class for anchors on project page? */
-	position: relative;
-	top: -40pt;
-	padding-top: 40pt;
+	display: block;
+  position: relative;
+  top: -40pt;
+  visibility: hidden;
 }
 
 /* Content of page */
 .content {
 	padding-top: 20pt;
+	text-align: justify;
+}
+
+/* Footer of page */
+.footer {
+	padding-bottom: 10pt;
+	text-align: center;
 }
 
 /**************/
@@ -79,6 +86,7 @@ body {
 .project {
   box-shadow: 0pt 0pt 5pt #888888;
   margin-top: 12pt;
+  margin-bottom: 12pt;
   overflow: hidden;
   display: block;
 }
@@ -88,12 +96,12 @@ body {
 
 
 .project-info {
+	margin: 5pt;
 	float: left;
 }
 
-
 .project-title {
-	
+	text-align: center;
 }
 
 .project-thumbnail {
@@ -120,10 +128,6 @@ body {
 	float: left;
 }
 
-.navbar li:hover  {
-	background-color: #050505;
-}
-
 .project-links a {
 	color: white;
 	padding: 8pt 13pt;
@@ -142,7 +146,7 @@ body {
 	.navbar { position: relative; }
 	.navbar li {float: none;}
 	.navbar .about { float: none; }
-	.anchor { padding-top: 0pt; top: 0pt; }
+	.anchor { top: 0pt; }
 	.content { padding-top: 0pt; }
 	.project-info { width: 100%; clear: both; }
 	.project-thumbnail img { width: 100%; height: auto; } 
