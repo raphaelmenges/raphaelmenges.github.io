@@ -30,6 +30,7 @@ body {
 .footer {
 	padding-bottom: 10pt;
 	text-align: center;
+	font-size: 10pt;
 }
 
 /**************/
@@ -93,7 +94,6 @@ body {
   display: block;
   border-style: solid;
   border-color: white;
-  /*border-radius: 5pt;*/
   border-width: 2pt;
   background-color: white;
 }
@@ -102,15 +102,26 @@ body {
 	text-align: center;
 	display: block;
 	background-size: cover;
-	height: 100pt;
+	background-position: 50% 50%;
 	color: white;
 }
 
 .project-title h2 {
-	padding: 0pt;
 	margin: 0pt;
-	padding-top: 20pt;
+	padding: 0pt;
 	text-shadow: 0pt 0pt 5pt #888888;
+	padding-top: 20pt;
+	padding-bottom: 30pt;
+	padding-left: 0pt;
+	padding-right: 0pt;
+}
+
+.project-title p {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-top: 15pt;
+	padding-bottom: 15pt;
+	padding-left: 0pt;
+	padding-right: 0pt;
 }
 
 .project-content {
@@ -161,7 +172,6 @@ body {
 	.navbar .about { float: none; background-color: #444; }
 	.anchor { top: 0pt; }
 	.content { padding-top: 0pt; }
-	
 	.project-links li {	float: none; }
 }
 

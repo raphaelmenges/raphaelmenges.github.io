@@ -2,7 +2,7 @@
 layout: default
 title: Raphael Menges
 navigation: projects
-project_labels: ["eyegui", "gtw-browse"]
+project_labels: ["eyegui", "gtw-browse", "ma", "schaugenau", "jha", "shiphappens", "voraca", "steoreo", "pulsedrive", "tre"]
 ---
 {% for label in page.project_labels %}
 	{% assign project =  site.projects | where:"label", label  | first %}
@@ -10,6 +10,7 @@ project_labels: ["eyegui", "gtw-browse"]
 	<div class="project">
 		<div class="project-title" style="background-image: url(/images/projects/{{ project.thumbnail }});">
 			<h2 class="project-title">{{ project.title }}</h2>
+			<p> {{ project.description }} </p>
 		</div> <!-- project-title -->
 		<div class="project-content">
 			{{ project.content }}
