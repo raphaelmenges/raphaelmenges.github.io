@@ -88,8 +88,8 @@ body {
 /***************/
 .project {
   box-shadow: 0pt 0pt 5pt #888888;
-  margin-top: 16pt;
-  margin-bottom: 16pt;
+  margin-top: 24pt;
+  margin-bottom: 24pt;
   overflow: hidden;
   display: block;
   border-style: solid;
