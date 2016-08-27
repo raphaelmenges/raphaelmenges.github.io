@@ -1,13 +1,18 @@
+@font-face {
+    font-family:"Segan Light";
+    src: url("/fonts/Segan-Light.ttf")
+}
+
 /**************/
 /**** Body ****/
 /**************/
 body {
-	font-family: Tahoma, Geneva, sans-serif;
+	font-family: Segan Light, Tahoma, Geneva, sans-serif;
 	margin: 0 auto;
   padding: 0;
 	overflow-y: scroll;
 	width: 900px;
-	background-color: #f3f3f3;
+	background-color: #FAFAFA;
 }
 
 /* Anchor class for invisible anchor which is beneatch fixed navigation */
@@ -20,7 +25,7 @@ body {
 
 /* Content of page */
 .content {
-	padding-top: 22pt;
+	padding-top: 40pt;
 	text-align: justify;
   margin-left: 2pt;
   margin-right: 2pt;
@@ -52,11 +57,12 @@ body {
 	top: -1px;
 	width: 900px;
 	overflow: hidden;
-	background-color: #444;
-	box-shadow: 0pt 2pt 5pt #888888;
+	background-color: #EEE;
+	box-shadow: 0pt 1pt 5pt #888888;
 	z-index: 100;
 	border-bottom-right-radius: 8pt;
 	border-bottom-left-radius: 8pt;
+	border-width: 0pt;
 }
 
 /* Elements in navbar */
@@ -70,27 +76,33 @@ body {
 
 /* Elements which are hovered */
 .navbar li:hover:not(.active)  {
-	background-color: #050505;
+	background-color: #CCC;
 }
 
 /* Active element */
 .navbar .active {
-	background-color: #278c9c;
+	background-color: #FFCF00;
+	background: -webkit-linear-gradient(#FFCF00, #FFE264); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FFCF00, #FFE264); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FFCF00, #FFE264); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#FFCF00, #FFE264); /* Standard syntax */
 }
 
 /* About element */
 .navbar .about {
 	float: right;
-	background-color: #1e6d7b;
+	background-color: #DDD;
 }
 
 /* Links in navbar elements */
 .navbar a {
-	color: white;
+	color: black;
 	padding: 10pt 13pt;
 	display: block;
 	text-align: center;
 	text-decoration: none;
+	font-size: 12pt;
+	font-weight: bold;
 }
 
 /***************/
@@ -115,12 +127,13 @@ body {
 	background-size: cover;
 	background-position: 50% 50%;
 	color: white;
+	font-weight: bold;
 }
 
 .project-title h2 {
 	margin: 0pt;
 	padding: 0pt;
-	text-shadow: 0pt 0pt 5pt #000000;
+	text-shadow: 0pt 0pt 6pt #000000;
 	padding-top: 30pt;
 	padding-bottom: 40pt;
 	padding-left: 0pt;
@@ -170,11 +183,11 @@ body {
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
 @media only screen and (max-width: 480px) {
-	.navbar { position: relative; }
+	.navbar { position: relative; border-radius: 0pt;}
 	.navbar li {float: none;}
-	.navbar .about { float: none; background-color: #444; }
+	.navbar .about { float: none; background-color: #EEE; }
 	.anchor { top: 0pt; }
-	.content { padding-top: 0pt; }
+	.content { padding-top: 5pt; }
 	.project-links li {	float: none; }
 }
 
