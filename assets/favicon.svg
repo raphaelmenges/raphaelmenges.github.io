@@ -6,33 +6,44 @@
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:xlink="http://www.w3.org/1999/xlink"
-   version="1.1"
-   id="svg2"
-   viewBox="0 0 354.33071 354.33071"
+   width="100mm"
    height="100mm"
-   width="100mm">
+   viewBox="0 0 354.33071 354.33071"
+   id="svg2"
+   version="1.1">
   <defs
      id="defs4">
     <linearGradient
        id="linearGradient4138">
       <stop
-         id="stop4140"
+         style="stop-color:#ffcf00;stop-opacity:1"
          offset="0"
-         style="stop-color:#ffcf00;stop-opacity:1" />
+         id="stop4140" />
       <stop
-         id="stop4142"
+         style="stop-color:#ffe264;stop-opacity:1"
          offset="1"
-         style="stop-color:#ffe264;stop-opacity:1" />
+         id="stop4142" />
     </linearGradient>
     <linearGradient
-       gradientTransform="matrix(0.91936507,0,0,0.91936507,728.34938,-749.23633)"
-       gradientUnits="userSpaceOnUse"
-       y2="875.19684"
-       x2="354.33069"
-       y1="875.19684"
-       x1="0"
+       xlink:href="#linearGradient4138"
        id="linearGradient4148"
-       xlink:href="#linearGradient4138" />
+       x1="0"
+       y1="875.19684"
+       x2="354.33069"
+       y2="875.19684"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.91936507,0,0,0.91936507,728.34938,-749.23633)" />
+    <filter
+       height="1.072"
+       y="-0.036"
+       width="1.072"
+       x="-0.036"
+       id="filter4161"
+       style="color-interpolation-filters:sRGB">
+      <feGaussianBlur
+         id="feGaussianBlur4163"
+         stdDeviation="4.8863887" />
+    </filter>
   </defs>
   <metadata
      id="metadata7">
@@ -47,23 +58,44 @@
     </rdf:RDF>
   </metadata>
   <g
+     style="fill:#000000;fill-opacity:1;filter:url(#filter4161);opacity:0.5"
      transform="translate(0,-698.0315)"
-     id="layer1">
+     id="g4141">
     <circle
        transform="matrix(0.25881904,0.96592583,-0.96592583,0.25881904,0,0)"
        r="162.87962"
        cy="55.38903"
        cx="891.229"
-       id="path4136"
-       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:url(#linearGradient4148);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.24000406;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
+       id="circle4143"
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.24000406;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate" />
     <g
        transform="matrix(5.7187477,0,0,5.7187477,-823.54403,-4166.7781)"
-       id="text4150"
+       id="g4145"
        style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1">
       <path
-         id="path4141"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:60px;font-family:Segan;-inkscape-font-specification:'Segan Light'"
+         id="path4147"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:60px;font-family:Segan;-inkscape-font-specification:'Segan Light';fill:#000000;fill-opacity:1"
          d="m 184.67143,902.36218 q -1.5,-2.52 -2.94,-5.16 -1.44,-2.64 -3.06,-5.22 -3.66,-6.06 -8.64,-8.64 l -2.64,0 0,19.02 -3.12,0 0,-41.34 q 3.06,-0.12 6.18,-0.12 3.18,-0.06 6.6,0.24 4.56,0.3 7.08,3.12 2.52,2.76 2.52,7.08 0,2.64 -1.02,4.74 -1.02,2.04 -2.76,3.54 -1.68,1.44 -3.96,2.28 -2.22,0.84 -4.68,1.02 l 0.3,0 q 1.08,0.78 2.16,1.8 1.08,0.96 2.58,3.12 2.76,4.02 4.98,7.68 2.22,3.6 4.2,6.9 l -3.78,-0.06 z m -1.14,-30.54 q 0,-4.32 -2.7,-6.3 -2.7,-2.04 -7.62,-2.04 -2.1,0 -3.42,0.06 -1.26,0 -2.4,0.06 l 0,17.04 q 1.08,0 2.4,0.06 1.38,0 3,0 4.98,0 7.86,-2.34 2.88,-2.34 2.88,-6.54 z" />
+    </g>
+  </g>
+  <g
+     id="layer1"
+     transform="translate(0,-698.0315)">
+    <circle
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:url(#linearGradient4148);fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2.24000406;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       id="path4136"
+       cx="891.229"
+       cy="55.38903"
+       r="162.87962"
+       transform="matrix(0.25881904,0.96592583,-0.96592583,0.25881904,0,0)" />
+    <g
+       style="font-style:normal;font-weight:normal;font-size:20px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="text4150"
+       transform="matrix(5.7187477,0,0,5.7187477,-823.54403,-4166.7781)">
+      <path
+         d="m 184.67143,902.36218 q -1.5,-2.52 -2.94,-5.16 -1.44,-2.64 -3.06,-5.22 -3.66,-6.06 -8.64,-8.64 l -2.64,0 0,19.02 -3.12,0 0,-41.34 q 3.06,-0.12 6.18,-0.12 3.18,-0.06 6.6,0.24 4.56,0.3 7.08,3.12 2.52,2.76 2.52,7.08 0,2.64 -1.02,4.74 -1.02,2.04 -2.76,3.54 -1.68,1.44 -3.96,2.28 -2.22,0.84 -4.68,1.02 l 0.3,0 q 1.08,0.78 2.16,1.8 1.08,0.96 2.58,3.12 2.76,4.02 4.98,7.68 2.22,3.6 4.2,6.9 l -3.78,-0.06 z m -1.14,-30.54 q 0,-4.32 -2.7,-6.3 -2.7,-2.04 -7.62,-2.04 -2.1,0 -3.42,0.06 -1.26,0 -2.4,0.06 l 0,17.04 q 1.08,0 2.4,0.06 1.38,0 3,0 4.98,0 7.86,-2.34 2.88,-2.34 2.88,-6.54 z"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:60px;font-family:Segan;-inkscape-font-specification:'Segan Light'"
+         id="path4141" />
     </g>
   </g>
 </svg>
