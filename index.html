@@ -4,14 +4,27 @@ title: Raphael Menges
 navigation: home
 ---
 <div>
-	<h1>Hello</h1>
-	<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-	<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-			{{ post.excerpt }} <!-- p exists implicitly -->
-    </li>
-  {% endfor %}
-</ul>
+	<h1>Welcome</h1>
+	<p>Feel free to crawl through <a href="#blog">my blog</a> posts below, scroll through <a href="/projects">my projects</a>, read some of <a href="/papers">my papers</a> or get to <a href="/about">know me!</a></p>
+	<div class="blog-list">
+		<a class="anchor" id="blog"></a>
+		<h2>Blog</h2>
+		<ul class="blog-list">
+		{% for post in site.posts %}
+			<li>
+				<div class="blog-list-title">
+					<ul class="blog-list-title">
+						<li>
+							{{ post.date | date: '%B %d, %Y' }}
+						</li>
+						<li>
+								<a href="{{ post.url }}"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> {{ post.title }} </a>
+						</li>
+					</ul>
+				</div> <!-- blog-list-title -->
+				<div class="blog-list-excerpt"> {{ post.excerpt }} </div> <!-- p exists implicitly -->
+			</li>
+		{% endfor %}
+		</ul>
+	</div> <!-- blog-list -->
 </div>

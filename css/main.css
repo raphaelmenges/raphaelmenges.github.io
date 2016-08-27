@@ -33,6 +33,7 @@ body {
 
 /* Footer of page */
 .footer {
+	margin-top: 30pt;
 	padding-bottom: 10pt;
 	text-align: center;
 	font-size: 10pt;
@@ -130,16 +131,16 @@ body {
 /* Active element */
 .navbar .active {
 	background-color: #FFCF00;
-	background: -webkit-linear-gradient(#FFCF00, #FFE264); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(#FFCF00, #FFE264); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(#FFCF00, #FFE264); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(#FFCF00, #FFE264); /* Standard syntax */
+	background: -webkit-linear-gradient(#FFCF00, #FFE264);
+  background: -o-linear-gradient(#FFCF00, #FFE264);
+  background: -moz-linear-gradient(#FFCF00, #FFE264);
+  background: linear-gradient(#FFCF00, #FFE264);
 }
 
 /* About element */
 .navbar .about {
 	float: right;
-	background-color: #DDD;
+	background-color: #E0E0E0;
 }
 
 /* Links in navbar elements */
@@ -151,6 +152,29 @@ body {
 	text-decoration: none;
 	font-size: 12pt;
 	font-weight: bold;
+}
+
+/************/
+/*** Blog ***/
+/************/
+.blog-list {
+	list-style-type: none;
+}
+
+.blog-list-title {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.blog-list-title li {
+	display: block;
+	float: left;
+	margin-right: 6pt;
+}
+
+.blog-list-excerpt {
+	clear: both;
 }
 
 /***************/
