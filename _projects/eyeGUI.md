@@ -1,7 +1,6 @@
 ---
 title: eyeGUI
 label: eyegui
-description: Lorem ipsum
 thumbnail: eyegui.png
 links: ["https://github.com/raphaelmenges/eyegui"]
 linktitles: ["GitHub Project"]

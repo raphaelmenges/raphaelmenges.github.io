@@ -10,7 +10,6 @@ project_labels: ["eyegui", "gtw-browse", "ma", "schaugenau", "jha", "shiphappens
 	<div class="project">
 		<div class="project-title" style="background-image: url(/images/projects/{{ project.thumbnail }});">
 			<h2 class="project-title">{{ project.title }}</h2>
-			<p> {{ project.description }} </p>
 		</div> <!-- project-title -->
 		<div class="project-content">
 			{{ project.content }}
@@ -19,7 +18,7 @@ project_labels: ["eyegui", "gtw-browse", "ma", "schaugenau", "jha", "shiphappens
 			<ul class="project-links">
 				{% for link in project.links %}
 					<li>
-						<a href=" {{ link }}"> {{ project.linktitles[forloop.index0] }} </a>
+						<a href=" {{ link }}"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> {{ project.linktitles[forloop.index0] }} </a>
 					</li>
 				{% endfor %}
 			</ul>
