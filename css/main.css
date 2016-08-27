@@ -244,6 +244,7 @@ body {
 	.anchor { top: 0pt; }
 	.content { padding-top: 5pt; }
 	.project-links li {	float: none; }
+	.project-links a { text-align: left; }
 }
 
 /* Width on small screens */
