@@ -312,6 +312,7 @@ hr {
 	.navbar li {float: none;}
 	.navbar .about { float: none; background-color: #EEE; }
 	.anchor { top: 0pt; }
+	.welcome { margin: auto; }
 	.page { height: 600px; }
 	.content { padding-top: 5pt; margin-left: 5pt; margin-right: 10pt;}
 	.avatar { float: none; margin: auto; }
