@@ -14,3 +14,4 @@ Since the documentation of how to use the word prediction library presage in com
   - not the one from chocolatey!
 	- mingw-developer-toolkit mingw32-base mingw32-gcc-g++ msys-base
 	- libgcc is dynamically linked to there (remember path!) libgcc_s_dw2-1.dll
+- Example code
