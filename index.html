@@ -4,7 +4,8 @@ title: Raphael Menges
 navigation: home
 ---
 <div>
-	<h1>Welcome</h1>
+	<div class="avatar"></div>
+	<h1>Welcome!</h1>
 	<p>Feel free to crawl through <a href="#blog">my blog</a> posts below, scroll through <a href="/projects">my projects</a>, read some of <a href="/papers">my papers</a> or get to <a href="/about">know me!</a></p>
 	<div class="blog-list">
 		<a class="anchor" id="blog"></a>
@@ -14,7 +15,7 @@ navigation: home
 			<li>
 				<div class="blog-list-title">
 					<ul class="blog-list-title">
-						<li>
+						<li div class="blog-list-title-date">
 							{{ post.date | date: '%B %d, %Y' }}
 						</li>
 						<li>
@@ -23,6 +24,7 @@ navigation: home
 					</ul>
 				</div> <!-- blog-list-title -->
 				<div class="blog-list-excerpt"> {{ post.excerpt }} </div> <!-- p exists implicitly -->
+				<!-- {% if forloop.last == false  %} <hr> {% endif %} -->
 			</li>
 		{% endfor %}
 		</ul>

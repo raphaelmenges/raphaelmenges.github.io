@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: Presage and Visual Studio
 ---
 Since the documentation of how to use the word prediction library presage in combination with Visual Studio, I decided to write down my approach. It is not guaranteed to be optimal and I am not sure whether all steps are really necessary, but at least it works.

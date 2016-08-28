@@ -15,6 +15,15 @@ body {
 	background-color: #FAFAFA;
 }
 
+/* Design of horizontal lines */
+hr {
+	margin-left: 10pt;
+	margin-right: 10pt;
+	border: 1pt solid #E0E0E0;;
+	border-radius: 1pt;
+}
+
+
 /* Anchor class for invisible anchor which is beneatch fixed navigation */
 .anchor {
 	display: block;
@@ -23,29 +32,43 @@ body {
   visibility: hidden;
 }
 
+/* Page */
+.page {
+	height: 900px;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-direction: column;
+	-moz-flex-direction: column;
+	-webkit-flex-direction: column;
+	flex-direction: column;
+}
+
 /* Content of page */
 .content {
 	padding-top: 40pt;
 	text-align: justify;
-  margin-left: 2pt;
-  margin-right: 2pt;
+  margin-left: 10pt;
+  margin-right: 10pt;
+}
+
+/* Space between content and footer */
+.placeholder {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
 }
 
 /* Footer of page */
 .footer {
-	margin-top: 30pt;
+	margin-top: 10pt;
 	padding-bottom: 10pt;
 	text-align: center;
 	font-size: 10pt;
-}
-
-/* Design of horizontal line */
-.footer hr {
-	margin-left: 30pt;
-	margin-right: 30pt;
-	border: 1pt solid #FFF;
-	box-shadow: 0pt 2pt 3pt #888888;
-	border-radius: 1pt;
 }
 
 /*****************/
@@ -154,10 +177,25 @@ body {
 	font-weight: bold;
 }
 
-/************/
-/*** Blog ***/
-/************/
+/******************/
+/*** Front Page ***/
+/******************/
+/* Avatar on front page */
+.avatar {
+	float: right;
+	width: 150pt;
+	height: 150pt;
+	border-radius: 75pt;
+	-webkit-border-radius: 75pt;
+	-moz-border-radius: 75pt;
+	background: url(/assets/avatar.png) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+	margin: 10pt;
+}
+
 .blog-list {
+	clear: both;
 	list-style-type: none;
 }
 
@@ -173,8 +211,16 @@ body {
 	margin-right: 6pt;
 }
 
+.blog-list-title-date {
+	font-weight: bold;
+}
+
 .blog-list-excerpt {
 	clear: both;
+}
+
+.post-date {
+	font-weight: bold;
 }
 
 /***************/
@@ -266,13 +312,15 @@ body {
 	.navbar li {float: none;}
 	.navbar .about { float: none; background-color: #EEE; }
 	.anchor { top: 0pt; }
-	.content { padding-top: 5pt; }
+	.page { height: 600px; }
+	.content { padding-top: 5pt; margin-left: 5pt; margin-right: 10pt;}
+	.avatar { float: none; margin: auto; }
 	.project-links li {	float: none; }
 	.project-links a { text-align: left; }
 }
 
 /* Width on small screens */
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
 	body { width: auto; }
 	.navbar { width: 100%; }
 }
