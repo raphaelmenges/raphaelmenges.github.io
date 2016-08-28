@@ -239,28 +239,34 @@ hr {
 	border-radius: 5pt;
 }
 
+/* Link to anchor */
+.project-link {
+	text-decoration: none;
+}
+
 /* Title of project inclusive thumbnail as background */
 .project-title {
-	text-align: center;
 	display: block;
 	background-size: cover;
 	background-position: 50% 50%;
-	color: white;
-	font-weight: bold;
-	-moz-box-shadow:    inset 0pt 0pt 5pt #888888;
+	-moz-box-shadow: inset 0pt 0pt 5pt #888888;
 	-webkit-box-shadow: inset 0pt 0pt 5pt #888888;
-	box-shadow:         inset 0pt 0pt 5pt #888888;
+	box-shadow: inset 0pt 0pt 5pt #888888;
 }
 
-/* Title itself */
-.project-title h2 {
+/* Title text itself */
+.project-title-text {
 	margin: 0pt;
 	padding: 0pt;
+	color: white;
 	text-shadow: 0pt 0pt 6pt #000000;
 	padding-top: 30pt;
 	padding-bottom: 40pt;
 	padding-left: 0pt;
 	padding-right: 0pt;
+	text-align: center;
+	font-size: 24pt;
+	font-weight: bold;
 }
 
 /* Description of project */
