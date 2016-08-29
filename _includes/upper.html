@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<!-- TITLE -->
 		<title>{{ page.title }}</title>
+		
+		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 		<link rel="stylesheet" type="text/css" href="/css/font-awesome/css/font-awesome.min.css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- FAVICON -->
 		<link rel="icon" type="image/png" href="/assets/favicon-32x32.png" sizes="32x32">
 		<link rel="icon" type="image/png" href="/assets/favicon-128x128.png" sizes="128x128">
 		<link rel="icon" type="image/png" href="/assets/favicon.png"> <!-- fallback -->
+		
+		<!-- SECURITY -->
+		<meta http-equiv="Content-Security-Policy" content="default-src https:"> <!-- only allow https -->
+		
+		<!-- OTHER -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<nav class="navbar">
