@@ -314,7 +314,7 @@ hr {
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
 @media only screen and (max-width: 480px) {
-	.navbar { position: relative; border-radius: 0pt;}
+	.navbar { position: relative; }
 	.navbar li {float: none;}
 	.navbar .about { float: none; background-color: #EEE; }
 	.anchor { top: 0pt; }
@@ -329,5 +329,5 @@ hr {
 /* Width on small screens */
 @media only screen and (max-width: 920px) {
 	body { width: auto; }
-	.navbar { width: 100%; }
+	.navbar { width: 100%; border-radius: 0pt; }
 }
