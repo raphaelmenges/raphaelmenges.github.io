@@ -320,7 +320,7 @@ hr {
 	.anchor { top: 0pt; }
 	.welcome { text-align: center; }
 	.page { height: 600px; }
-	.content { padding-top: 5pt; margin-left: 5pt; margin-right: 10pt;}
+	.content { padding-top: 5pt; margin-left: 5pt; margin-right: 5pt;}
 	.avatar { float: none; margin: auto; }
 	.project-links li {	float: none; }
 	.project-links a { text-align: left; }
