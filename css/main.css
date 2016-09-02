@@ -169,7 +169,9 @@ hr {
 /* Links in navbar elements */
 .navbar a {
 	color: black;
-	padding: 10pt 13pt;
+	padding-left: 12pt;
+	padding-right: 12pt;
+	line-height: 35pt;
 	display: block;
 	text-align: center;
 	text-decoration: none;
@@ -201,8 +203,8 @@ hr {
 
 .blog-list-title {
 	list-style-type: none;
-	margin: 0;
-	padding: 0;
+	margin: 0pt;
+	padding: 0pt;
 }
 
 .blog-list-title li {
@@ -302,7 +304,9 @@ hr {
 
 .project-links a {
 	color: black;
-	padding: 8pt 13pt;
+	padding-left: 12pt;
+	padding-right: 12pt;
+	line-height: 30pt;
 	display: block;
 	text-align: center;
 	text-decoration: none;
@@ -320,7 +324,7 @@ hr {
 	.anchor { top: 0pt; }
 	.welcome { text-align: center; }
 	.page { height: 600px; }
-	.content { padding-top: 5pt; margin-left: 5pt; margin-right: 10pt;}
+	.content { padding-top: 5pt; margin-left: 5pt; margin-right: 5pt;}
 	.avatar { float: none; margin: auto; }
 	.project-links li {	float: none; }
 	.project-links a { text-align: left; }
