@@ -1,7 +1,7 @@
 ---
 title: Voraca
 label: voraca
-thumbnail: eyegui.png
+thumbnail: voraca.png
 links: ["https://github.com/raphaelmenges/Voraca"]
 linktitles: ["GitHub Project"]
 ---

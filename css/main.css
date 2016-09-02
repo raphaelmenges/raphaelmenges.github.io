@@ -259,7 +259,6 @@ hr {
 	margin: 0pt;
 	padding: 0pt;
 	color: white;
-	text-shadow: 0pt 0pt 6pt #000000;
 	padding-top: 30pt;
 	padding-bottom: 40pt;
 	padding-left: 0pt;
@@ -267,6 +266,7 @@ hr {
 	text-align: center;
 	font-size: 24pt;
 	font-weight: bold;
+	text-shadow: black 0pt 0pt 2pt;
 }
 
 /* Description of project */
