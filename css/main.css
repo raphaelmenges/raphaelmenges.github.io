@@ -19,7 +19,7 @@ body {
 hr {
 	margin-left: 10pt;
 	margin-right: 10pt;
-	border: 1pt solid #E0E0E0;;
+	border: 1pt solid #E0E0E0;
 	border-radius: 1pt;
 }
 
@@ -130,7 +130,7 @@ hr {
 	width: 900px;
 	overflow: hidden;
 	background-color: #EEE;
-	box-shadow: 0pt 1pt 5pt #888888;
+	box-shadow: 0pt 1pt 5pt rgba(0,0,0,0.3);
 	z-index: 100;
 	border-bottom-right-radius: 8pt;
 	border-bottom-left-radius: 8pt;
@@ -182,18 +182,24 @@ hr {
 /******************/
 /*** Front Page ***/
 /******************/
+.front {
+	margin-left: 75pt;
+	margin-right: 75pt;
+}
+
 /* Avatar on front page */
 .avatar {
 	float: right;
-	width: 150pt;
-	height: 150pt;
-	border-radius: 75pt;
-	-webkit-border-radius: 75pt;
-	-moz-border-radius: 75pt;
+	width: 130pt;
+	height: 130pt;
+	border-radius: 65pt;
+	-webkit-border-radius: 65pt;
+	-moz-border-radius: 65pt;
 	background: url(/assets/avatar.png) no-repeat;
 	background-size: cover;
 	background-position: 50% 50%;
 	margin: 10pt;
+	box-shadow: inset 0pt 0pt 10pt rgba(0,0,0,0.8);
 }
 
 .blog-list {
@@ -229,7 +235,7 @@ hr {
 /*** Projecs ***/
 /***************/
 .project {
-  box-shadow: 0pt 0pt 5pt #888888;
+  box-shadow: 0pt 0pt 5pt rgba(0,0,0,0.3);
   margin-top: 20pt;
   margin-bottom: 20pt;
   overflow: hidden;
@@ -269,8 +275,8 @@ hr {
 	font-size: 26pt;
 	font-weight: bold;
 	text-shadow:	0pt 0pt 3pt rgba(0,0,0,1.0),
-								0pt 4pt 13pt rgba(0,0,0,0.1),
-								0pt 8pt 23pt rgba(0,0,0,0.1);
+								0pt 4pt 13pt rgba(0,0,0,0.4),
+								0pt 8pt 23pt rgba(0,0,0,0.2);
 }
 
 /* Description of project */
@@ -330,10 +336,12 @@ hr {
 	.avatar { float: none; margin: auto; }
 	.project-links li {	float: none; }
 	.project-links a { text-align: left; }
+	.front {	margin-left: 0pt;	margin-right: 0pt; }
 }
 
 /* Width on small screens */
 @media only screen and (max-width: 920px) {
 	body { width: auto; }
 	.navbar { width: 100%; border-radius: 0pt; }
+	.front {	margin-left: 50pt;	margin-right: 50pt; }
 }
