@@ -266,9 +266,11 @@ hr {
 	padding-left: 0pt;
 	padding-right: 0pt;
 	text-align: center;
-	font-size: 24pt;
+	font-size: 26pt;
 	font-weight: bold;
-	text-shadow: black 0pt 0pt 2pt;
+	text-shadow:	0pt 0pt 3pt rgba(0,0,0,1.0),
+								0pt 4pt 13pt rgba(0,0,0,0.1),
+								0pt 8pt 23pt rgba(0,0,0,0.1);
 }
 
 /* Description of project */
