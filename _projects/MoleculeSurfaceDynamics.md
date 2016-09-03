@@ -1,7 +1,7 @@
 ---
 title: Molecule Surface Dynamics
 label: ma
-thumbnail: eyegui.png
+thumbnail: ma.png
 links: []
 linktitles: []
 ---
