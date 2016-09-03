@@ -5,4 +5,4 @@ thumbnail: eyegui.png
 links: ["https://github.com/raphaelmenges/eyegui"]
 linktitles: ["GitHub Project"]
 ---
-TODO
+Easy creation of user interfaces for real-time eye tracking input.

@@ -5,4 +5,4 @@ thumbnail: gtw-browse.png
 links: ["https://github.com/MAMEM/GazeTheWeb/tree/master/Browse", "http://www.mamem.eu/"]
 linktitles: ["GitHub Project", "Official Project Page"]
 ---
-TODO
+Web browser controlled with gaze. Part of European project MAMEM.
