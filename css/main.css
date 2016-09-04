@@ -13,6 +13,9 @@ body {
 	overflow-y: scroll;
 	width: 900px;
 	background-color: #FAFAFA;
+	-moz-tab-size: 2;
+	-o-tab-size: 2;
+	tab-size: 2;
 }
 
 /* Design of horizontal lines */
