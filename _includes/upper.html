@@ -26,13 +26,22 @@
 				</a>
 			</li>
 			<li>
-				<a {% if page.navigation == "projects" %} class="active" {% endif %} href="/projects">Projects</a>
+				<a {% if page.navigation == "projects" %} class="active" {% endif %} href="/projects">
+					<span class="navbar-text">Projects</span>
+					<span class="navbar-icon"><i class="fa fa-briefcase"></i></span>
+				</a>
 			</li>
 			<li>
-				<a {% if page.navigation == "papers" %} class="active" {% endif %} href="/papers">Papers</a>
+				<a {% if page.navigation == "papers" %} class="active" {% endif %} href="/papers">
+					<span class="navbar-text">Papers</span>
+					<span class="navbar-icon"><i class="fa fa-sticky-note"></i></span>
+				</a>
 			</li>
 			<li class="about">
-				<a {% if page.navigation == "about" %} class="active" {% endif %} href="/about">Raphael Menges</a>
+				<a {% if page.navigation == "about" %} class="active" {% endif %} href="/about">
+					<span class="navbar-text">Raphael Menges</span>
+					<span class="navbar-icon"><i class="fa fa-user"></i></span>
+				</a>
 			</li>
 		</nav>
 		<div class="page">

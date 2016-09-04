@@ -169,7 +169,7 @@ hr {
 	background-color: #E0E0E0;
 }
 
-/* Links in navbar elements */
+/* Link in navbar element */
 .navbar a {
 	color: black;
 	padding-left: 12pt;
@@ -180,6 +180,16 @@ hr {
 	text-decoration: none;
 	font-size: 12pt;
 	font-weight: bold;
+}
+
+/* Link text in navbar element */
+.navbar-text {
+	display: block;
+}
+
+/* Link icon in navbar element */
+.navbar-icon {
+	display: none;
 }
 
 /******************/
@@ -329,22 +339,20 @@ hr {
 
 /* Stack navbar content on small screens, unfix navigation and hide whitespace */
 @media only screen and (max-width: 480px) {
-	.navbar { position: relative; }
-	.navbar li {float: none;}
-	.navbar .about { float: none; background-color: #EEE; }
-	.anchor { top: 0pt; }
+	.navbar-text { display: none; }
+	.navbar-icon { display: block; }
 	.welcome { text-align: center; }
 	.page { height: 600px; }
-	.content { padding-top: 5pt; margin-left: 5pt; margin-right: 5pt;}
+	.content { margin-left: 5pt; margin-right: 5pt;}
 	.avatar { float: none; margin: auto; }
 	.project-links li {	float: none; }
 	.project-links a { text-align: left; }
-	.front {	margin-left: 0pt;	margin-right: 0pt; }
+	.front {	margin-left: 0pt;	margin-right: 0pt; margin-top: 5pt;}
 }
 
 /* Width on small screens */
 @media only screen and (max-width: 920px) {
 	body { width: auto; }
 	.navbar { width: 100%; border-radius: 0pt; }
-	.front {	margin-left: 50pt;	margin-right: 50pt; }
+	.front { margin-left: 50pt;	margin-right: 50pt; }
 }
