@@ -2,7 +2,7 @@
 layout: post
 title: Presage and Visual Studio
 ---
-Since the documentation of how to use the word prediction library *Presage* in combination with *Visual Studio 2015* is, let's say, minimal, I decided to write down my approach.
+Since the documentation of how to use the word prediction library [*Presage*](http://presage.sourceforge.net/) in combination with *Visual Studio 2015* is, let's say, minimal, I decided to write down my approach.
 
 Just to start with the system setup: MinGW is necessary, because Presage seems to link at least against "libgcc_s_dw2-1.dll" at runtime. That DLL can be found in the binary folder of MinGW with a complete base (mingw-developer-toolkit, mingw32-base, mingw32-gcc-g++ and msys-base) installation. Verify that the binary folder of MinGW is in your PATH variable, otherwise the DLL could not be found at application startup. If you are motivated, you can find out which DDLs are really necessary and collect them. I tested the following approach with Visual Studio 2015 and Presage for x86 under Windows 10, only.
 
