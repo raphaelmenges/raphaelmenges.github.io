@@ -4,7 +4,7 @@ title: Presage and Visual Studio
 ---
 Since the documentation of how to use the word prediction library [*Presage*](http://presage.sourceforge.net/) in combination with *Visual Studio 2015* is, let's say, minimal, I decided to write down my approach.
 
-Just to start with the system setup: MinGW is necessary, because Presage seems to link at least against "libgcc_s_dw2-1.dll" at runtime. That DLL can be found in the binary folder of MinGW with a complete base (mingw-developer-toolkit, mingw32-base, mingw32-gcc-g++ and msys-base) installation. Verify that the binary folder of MinGW is in your PATH variable, otherwise the DLL could not be found at application startup. If you are motivated, you can find out which DDLs are really necessary and collect them. I tested the following approach with Visual Studio 2015 and Presage for x86 under Windows 10, only.
+Just to start with the system setup: MinGW is necessary, because Presage seems to link at least against libgcc_s_dw2-1.dll at runtime. That DLL can be found in the binary folder of MinGW with a complete base (mingw-developer-toolkit, mingw32-base, mingw32-gcc-g++ and msys-base) installation. Verify that the binary folder of MinGW is in your PATH variable, otherwise the DLL could not be found at application startup. If you are motivated, you can find out which DDLs are really necessary and collect them. I tested the following approach with Visual Studio 2015 and Presage for x86 under Windows 10, only.
 
 Ok, then start with the easy part.
 
@@ -12,11 +12,11 @@ Ok, then start with the easy part.
 - Install Presage to a destination of your choice and include the development files and demos at installation
   - I recommend **not** to install the Notepad++ plugin because it was not possible to uninstall it afterwards
 	
-Congratulations, you have installed Presage. It seems, that the C++ header part of "Presage.h" ist only available for MinGW on Windows and one has to use the plain C functions, as far as I interpreted this [news](http://presage.sourceforge.net/?q=node/51). After some reseach in the source code I found a ["bindings"](https://sourceforge.net/p/presage/presage/ci/master/tree/bindings/c/)  folder with some instructions to get it running. 
+Congratulations, you have installed Presage. It seems, that the C++ header part of Presage.h ist only available for MinGW on Windows and one has to use the plain C functions, as far as I interpreted this [news](http://presage.sourceforge.net/?q=node/51). After some reseach in the source code I found a [Bindings](https://sourceforge.net/p/presage/presage/ci/master/tree/bindings/c/)  folder with some instructions to get it running. 
 
 - A .lib file for linking via Visual Studio is necessary and is created with the command line tools from a .def file
-  - Fetch "libpresage-1.def" from the [repository](https://sourceforge.net/p/presage/presage/ci/master/tree/bindings/c/libpresage-1.def?format=raw)
-  - Open Visual Studio and search for "Visual Studio Command Prompt" under Tools
+  - Fetch libpresage-1.def from the [repository](https://sourceforge.net/p/presage/presage/ci/master/tree/bindings/c/libpresage-1.def?format=raw)
+  - Open Visual Studio and search for Visual Studio Command Prompt under Tools
   - Navigate with *cd* to the directory were you downloaded the .def file and do as the readme from the Bindings folder indicates:
  
 ```
