@@ -38,7 +38,7 @@ or, for x64 builds:
 
 Now everything should be set up and you can link your program to the now existing .lib file inside the Presage installation. Below is a minimal sample program which does not need a configuration file. The header file of Presage can be found in the include folder of your Presage installation. Alternatively, you can take a look at the official [example](https://sourceforge.net/p/presage/presage/ci/master/tree/bindings/c/presage_c_demo.c).
 
-```C++
+```
 #include "presage.h"
 #include <string>
 #include <iostream>

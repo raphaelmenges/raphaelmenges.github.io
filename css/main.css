@@ -356,3 +356,16 @@ hr {
 	.navbar { width: 100%; border-radius: 0pt; }
 	.front { margin-left: 50pt;	margin-right: 50pt; }
 }
+
+/*************/
+/*** OTHER ***/
+/*************/
+
+/* Add properties to code highlight */
+.highlighter-rouge {
+	overflow: auto;
+	background-color: #F0F0F0;
+	padding: 5pt;
+	border-radius: 5pt;
+	box-shadow: inset 0pt 0pt 10pt rgba(0,0,0,0.1);
+}
