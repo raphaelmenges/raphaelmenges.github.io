@@ -83,14 +83,19 @@ int main()
 	char** prediction;
 	if (PRESAGE_OK == presage_predict(presage, &prediction))
 	{
-			for (i = 0; prediction[i] != 0; i++)
+			for (int i = 0; prediction[i] != 0; i++)
 			{
 				std::cout << prediction[i] << std::endl;
 			}
 			presage_free_string_array(prediction);
 	}
 	
+	// Wait for user to type in char so console output can be viewed
+	getchar();
+	
 	// Terminate Presage
 	presage_free(presage);
 }
 ```
+
+I suggest to create and terminate a presage structure each time you need one. It seems that when you reuse it multiple times, it stops to give new suggestions when the past reaches a certain length.
