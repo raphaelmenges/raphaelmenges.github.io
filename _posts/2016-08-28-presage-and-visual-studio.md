@@ -98,4 +98,4 @@ int main()
 }
 ```
 
-I suggest to create and terminate a presage structure each time you need one. It seems that when you reuse it multiple times, it stops to give new suggestions when the past reaches a certain length.
+I suggest to create and terminate a presage_t structure each time you need one. It seems that when you reuse it multiple times, it stops to give new suggestions when the past reaches a certain length.
