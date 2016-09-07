@@ -1,8 +1,8 @@
 ---
 title: Molecule Surface Dynamics
 label: ma
-thumbnail: ma.png
+thumbnail: ma.jpg
 links: []
 linktitles: []
 ---
-My master thesis at University Koblenz-Landau in cooperation with University Bonn. More information and links will come soon.
+My master thesis at University Koblenz-Landau in cooperation with University Bonn. More information and links will follow soon.
