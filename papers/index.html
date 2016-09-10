@@ -2,5 +2,28 @@
 layout: default
 title: Raphael Menges
 navigation: papers
+paper_labels: ["eyeplay2014"]
 ---
-Will be listed here soon.
+{% for label in page.paper_labels %}
+	{% assign paper =  site.papers | where:"label", label  | first %}
+	<a class="anchor" id="{{ paper.label }}"></a>
+	<div class="paper">
+			<ul class="paper-information">
+				<li class="paper-title">
+					{{ paper.title }}
+				</li>
+				<li>
+					{{ paper.authors }}
+				</li>
+				<li>
+					{{ paper.publishment }}
+				</li>
+				<li>
+					{{ paper.year }}
+				</li>
+				<li class="paper-link">
+					<a href="{{ paper.link }}"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> Link To Paper</a>
+				</li>
+			</ul> <!-- paper-information -->
+	</div> <!-- paper -->
+{% endfor %}
