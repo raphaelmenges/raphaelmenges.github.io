@@ -36,16 +36,7 @@ hr {
 
 /* Page */
 .page {
-	height: 900px;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: flex;
-	-ms-flex-direction: column;
-	-moz-flex-direction: column;
-	-webkit-flex-direction: column;
-	flex-direction: column;
+
 }
 
 /* Content of page */
@@ -54,15 +45,6 @@ hr {
 	text-align: justify;
   margin-left: 10pt;
   margin-right: 10pt;
-}
-
-/* Space between content and footer */
-.placeholder {
-	-webkit-box-flex: 1;
-	-moz-box-flex: 1;
-	-webkit-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
 }
 
 /* Footer of page */
@@ -214,6 +196,7 @@ hr {
 	box-shadow: inset 0pt 0pt 10pt rgba(0,0,0,0.8);
 }
 
+/* List of posts */
 .blog-list {
 	clear: both;
 	list-style-type: none;
@@ -223,6 +206,7 @@ hr {
 	list-style-type: none;
 	margin: 0pt;
 	padding: 0pt;
+	font-weight: bold;
 }
 
 .blog-list-title li {
@@ -239,6 +223,7 @@ hr {
 	clear: both;
 }
 
+/* Post */
 .post-date {
 	font-weight: bold;
 }
