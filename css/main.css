@@ -26,7 +26,6 @@ hr {
 	border-radius: 1pt;
 }
 
-
 /* Anchor class for invisible anchor which is beneatch fixed navigation */
 .anchor {
 	display: block;
@@ -337,43 +336,42 @@ hr {
 /*** Papers ***/
 /**************/
 .paper {
-  box-shadow: 0pt 0pt 5pt rgba(0,0,0,0.3);
-  margin-top: 20pt;
-  margin-bottom: 20pt;
-  border-style: solid;
-  border-color: white;
-  border-width: 1pt;
-	border-radius: 5pt;
-	list-style-type: none;
-	overflow: none;
+	margin: 0;
+	padding: 0;
 }
 
-.paper-information {
-	margin: 0;
+.paper-list {
+	margin: 10pt;
 	padding: 0;
 	display: block;
 	list-style-type: none;
 }
 
-.paper-link {
-	background-color: #EEE;
-}
-
 .paper-title {
-	background-color: #EEE;
-	line-height: 30pt;
-	text-align: center;
 	font-weight: bold;
 }
 
-.paper-link a {
-	color: black;
-	padding-left: 12pt;
-	padding-right: 12pt;
-	line-height: 30pt;
-	display: block;
+.paper-publishment {
+	font-style: italic;
+}
+
+/*************/
+/*** About ***/
+/*************/
+.banner {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 300pt;
+	background: url(/assets/images/about.jpg) no-repeat;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.contact {
+	margin: 10pt;
+	font-weight: bold;
 	text-align: center;
-	text-decoration: none;
 }
 
 /*********************/
