@@ -42,7 +42,7 @@ hr {
 /* Content of page */
 .content {
 	padding-top: 40pt;
-	text-align: justify;
+	/* text-align: justify; */
   margin-left: 10pt;
   margin-right: 10pt;
 }
