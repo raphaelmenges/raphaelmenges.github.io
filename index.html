@@ -59,6 +59,11 @@ project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens
 						<li>
 							{{ paper.authors }}
 						</li>
+						{% if paper.award != nil %}
+						<li>
+							<i class="highlight fa fa-trophy" aria-hidden="true">&nbsp;</i> {{ paper.award }}
+						</li>
+						{% endif %}
 						<li class="paper-publishment">
 							<a href="{{ paper.publishment-link }}">
 								{{ paper.publishment }}
