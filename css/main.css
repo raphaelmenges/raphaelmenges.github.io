@@ -137,6 +137,15 @@ a {
 	float: left;
 }
 
+/* About element */
+.navbar .github {
+	float: right;
+	background-color: #800080;
+}
+.navbar .github a {
+	color: white;
+}
+
 /* Elements which are hovered */
 .navbar li:hover:not(.front)  {
 	background-color: #FFCF00;
