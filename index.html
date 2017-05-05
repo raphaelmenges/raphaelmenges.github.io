@@ -11,13 +11,13 @@ project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens
 		<div class="avatar"></div>
 		<h1 class="welcome">Welcome!</h1>
 		<p>I am Raphael Menges, PhD-student at the Institute for Web Science and Technologies in Koblenz, Germany. My interests cover cross-platform programming, computer graphics and eye tracking. Feel free to crawl through <a href="#blog">my blog</a> posts below, scroll through <a href="#projects">my projects</a> or read some of <a href="#papers">my papers</a></p>
-		<div class="contact">raphaelmenges<i class="fa fa-at"></i>uni-koblenz.de</div>
+		<div class="contact"><i class="fa fa-envelope-o" aria-hidden="true">&nbsp;</i>raphaelmenges<i class="fa fa-at"></i>uni-koblenz.de</div>
 	</div> <!-- front -->
 
 	<!-- ### BLOG ### -->
 	<div class="blog">
 		<a class="anchor" id="blog"></a>
-		<h2>Blog</h2>
+		<h2><i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>Blog</h2>
 		<div class="blog-list">
 			<ul class="blog-list">
 			{% for post in site.posts %}
@@ -43,28 +43,28 @@ project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens
 	<!-- ### PAPERS ### -->
 	<div class="papers">
 		<a class="anchor" id="papers"></a>
-		<h2>Papers</h2>
+		<h2><i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>Papers</h2>
 		<div class="paper-list">
 			{% for label in page.paper_labels %}
 				{% assign paper =  site.papers | where:"label", label  | first %}
 				<a class="anchor" id="{{ paper.label }}"></a>
 				<div class="paper">
-						<ul class="paper-list">
-							<li class="paper-title">
-								{{ paper.year }}
-								<a href="{{ paper.link }}">
-									<i class="fa fa-hand-o-right" aria-hidden="true"></i> {{ paper.title }}
-								</a>
-							</li> <!-- paper-title -->
-							<li>
-								{{ paper.authors }}
-							</li>
-							<li class="paper-publishment">
-								<a href="{{ paper.publishment-link }}">
-									{{ paper.publishment }}
-								</a>
-							</li> <!-- paper-publishment -->
-						</ul> <!-- paper-list -->
+					<ul class="paper-list">
+						<li class="paper-title">
+							{{ paper.year }}
+							<a href="{{ paper.link }}">
+								<i class="fa fa-hand-o-right" aria-hidden="true"></i> {{ paper.title }}
+							</a>
+						</li> <!-- paper-title -->
+						<li>
+							{{ paper.authors }}
+						</li>
+						<li class="paper-publishment">
+							<a href="{{ paper.publishment-link }}">
+								{{ paper.publishment }}
+							</a>
+						</li> <!-- paper-publishment -->
+					</ul> <!-- paper-list -->
 				</div> <!-- paper -->
 			{% endfor %}
 		</div> <!-- paper-list -->
@@ -73,7 +73,7 @@ project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens
 	<!-- ### PROJECTS ### -->
 	<div class="projects">
 		<a class="anchor" id="projects"></a>
-		<h2>Projects</h2>
+		<h2><i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>Projects</h2>
 		<div class="project-list">
 			{% for label in page.project_labels %}
 				{% assign project =  site.projects | where:"label", label  | first %}
