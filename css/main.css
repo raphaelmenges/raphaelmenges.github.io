@@ -131,17 +131,12 @@ hr {
 }
 
 /* Elements which are hovered */
-.navbar li:hover:not(.active)  {
-	background-color: #CCC;
-}
-
-/* Active element */
-.navbar .active {
+.navbar li:hover:not(.front)  {
 	background-color: #FFCF00;
 	background: -webkit-linear-gradient(#FFCF00, #FFE264);
-  background: -o-linear-gradient(#FFCF00, #FFE264);
-  background: -moz-linear-gradient(#FFCF00, #FFE264);
-  background: linear-gradient(#FFCF00, #FFE264);
+  	background: -o-linear-gradient(#FFCF00, #FFE264);
+	background: -moz-linear-gradient(#FFCF00, #FFE264);
+	background: linear-gradient(#FFCF00, #FFE264);
 }
 
 /* Link in navbar element */
@@ -167,15 +162,15 @@ hr {
 	display: none;
 }
 
-/******************/
-/*** Front Page ***/
-/******************/
+/*************/
+/*** Front ***/
+/*************/
 .front {
 	margin-left: 75pt;
 	margin-right: 75pt;
 }
 
-/* Avatar on front page */
+/* Avatar at front */
 .avatar {
 	float: right;
 	width: 130pt;
@@ -189,6 +184,10 @@ hr {
 	margin: 10pt;
 	box-shadow: inset 0pt 0pt 10pt rgba(0,0,0,0.8);
 }
+
+/************/
+/*** Blog ***/
+/************/
 
 /* List of posts */
 .blog-list {
@@ -222,19 +221,41 @@ hr {
 	font-weight: bold;
 }
 
+/**************/
+/*** Papers ***/
+/**************/
+.paper {
+	margin: 0;
+	padding: 0;
+}
+
+.paper-list {
+	margin: 10pt;
+	padding: 0;
+	display: block;
+	list-style-type: none;
+}
+
+.paper-title {
+	font-weight: bold;
+}
+
+.paper-publishment {
+	font-style: italic;
+}
 /***************/
 /*** Projecs ***/
 /***************/
 .project {
-  box-shadow: 0pt 0pt 5pt rgba(0,0,0,0.3);
-  margin-top: 20pt;
-  margin-bottom: 20pt;
-  overflow: hidden;
-  display: block;
-  border-style: solid;
-  border-color: white;
-  border-width: 1pt;
-  background-color: white;
+	box-shadow: 0pt 0pt 5pt rgba(0,0,0,0.3);
+	margin-top: 20pt;
+	margin-bottom: 20pt;
+	overflow: hidden;
+	display: block;
+	border-style: solid;
+	border-color: white;
+	border-width: 1pt;
+	background-color: white;
 	border-radius: 5pt;
 }
 
@@ -265,9 +286,9 @@ hr {
 	text-align: center;
 	font-size: 26pt;
 	font-weight: bold;
-	text-shadow:	0pt 0pt 3pt rgba(0,0,0,1.0),
-								0pt 4pt 13pt rgba(0,0,0,0.4),
-								0pt 8pt 23pt rgba(0,0,0,0.2);
+	text-shadow: 	0pt 0pt 3pt rgba(0,0,0,1.0),
+					0pt 4pt 13pt rgba(0,0,0,0.4),
+					0pt 8pt 23pt rgba(0,0,0,0.2);
 }
 
 /* Description of project */
@@ -309,29 +330,6 @@ hr {
 	display: block;
 	text-align: center;
 	text-decoration: none;
-}
-
-/**************/
-/*** Papers ***/
-/**************/
-.paper {
-	margin: 0;
-	padding: 0;
-}
-
-.paper-list {
-	margin: 10pt;
-	padding: 0;
-	display: block;
-	list-style-type: none;
-}
-
-.paper-title {
-	font-weight: bold;
-}
-
-.paper-publishment {
-	font-style: italic;
 }
 
 /**********************/

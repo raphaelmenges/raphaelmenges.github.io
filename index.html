@@ -1,38 +1,103 @@
 ---
 layout: default
 title: Raphael Menges
-navigation: home
+paper_labels: ["eyeplay2014"]
+project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens", "voraca", "towerdefense", "retrofighter", "steoreo", "pulsedrive", "tre-last-life"]
 ---
 <div>
+	<!-- ### FRONT ### -->
 	<div class="front">
+		<a class="anchor" id="front"></a>
 		<div class="avatar"></div>
 		<h1 class="welcome">Welcome!</h1>
-		<p>I am Raphael Menges, student at University of Koblenz-Landau. My interests cover cross-platform programming, computer graphics and eye tracking. Feel free to crawl through <a href="#blog">my blog</a> posts below, scroll through <a href="/projects">my projects</a> or read some of <a href="/papers">my papers</a></p>
+		<p>I am Raphael Menges, student at University of Koblenz-Landau. My interests cover cross-platform programming, computer graphics and eye tracking. Feel free to crawl through <a href="#blog">my blog</a> posts below, scroll through <a href="#projects">my projects</a> or read some of <a href="#papers">my papers</a></p>
 		<div class="contact">raphaelmenges<i class="fa fa-at"></i>uni-koblenz.de</div>
 	</div> <!-- front -->
-	<div class="blog-list">
+
+	<!-- ### BLOG ### -->
+	<div class="blog">
 		<a class="anchor" id="blog"></a>
 		<h2>Blog</h2>
-		<ul class="blog-list">
-		{% for post in site.posts %}
-			<li>
-				<div class="blog-list-title">
-					<ul class="blog-list-title">
-						<li div class="blog-list-title-date">
-							{{ post.date | date: '%B %d, %Y' }}
-						</li>
-						<li>
-								<a href="{{ post.url }}"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> {{ post.title }} </a>
-						</li>
-					</ul>
-				</div> <!-- blog-list-title -->
-				<div class="blog-list-excerpt"> {{ post.excerpt }} </div> <!-- p exists implicitly -->
-				<!-- {% if forloop.last == false  %} <hr> {% endif %} -->
-			</li>
-		{% endfor %}
-		</ul>
-	</div> <!-- blog-list -->
-</div>
+		<div class="blog-list">
+			<ul class="blog-list">
+			{% for post in site.posts %}
+				<li>
+					<div class="blog-list-title">
+						<ul class="blog-list-title">
+							<li div class="blog-list-title-date">
+								{{ post.date | date: '%B %d, %Y' }}
+							</li>
+							<li>
+									<a href="{{ post.url }}"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> {{ post.title }} </a>
+							</li>
+						</ul>
+					</div> <!-- blog-list-title -->
+					<div class="blog-list-excerpt"> {{ post.excerpt }} </div> <!-- p exists implicitly -->
+					<!-- {% if forloop.last == false  %} <hr> {% endif %} -->
+				</li>
+			{% endfor %}
+			</ul>
+		</div> <!-- blog-list -->
+	</div> <!-- blog -->
 
-<!-- Some placeholder -->
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+	<!-- ### PAPERS ### -->
+	<div class="papers">
+		<a class="anchor" id="papers"></a>
+		<h2>Papers</h2>
+		<div class="paper-list">
+			{% for label in page.paper_labels %}
+				{% assign paper =  site.papers | where:"label", label  | first %}
+				<a class="anchor" id="{{ paper.label }}"></a>
+				<div class="paper">
+						<ul class="paper-list">
+							<li class="paper-title">
+								{{ paper.year }}
+								<a href="{{ paper.link }}">
+									<i class="fa fa-hand-o-right" aria-hidden="true"></i> {{ paper.title }}
+								</a>
+							</li> <!-- paper-title -->
+							<li>
+								{{ paper.authors }}
+							</li>
+							<li class="paper-publishment">
+								<a href="{{ paper.publishment-link }}">
+									{{ paper.publishment }}
+								</a>
+							</li> <!-- paper-publishment -->
+						</ul> <!-- paper-list -->
+				</div> <!-- paper -->
+			{% endfor %}
+		</div> <!-- paper-list -->
+	</div> <!-- papers -->
+
+	<!-- ### PROJECTS ### -->
+	<div class="projects">
+		<a class="anchor" id="projects"></a>
+		<h2>Projects</h2>
+		<div class="project-list">
+			{% for label in page.project_labels %}
+				{% assign project =  site.projects | where:"label", label  | first %}
+				<a class="anchor" id="{{ project.label }}"></a>
+				<div class="project">
+					<a class="project-link" href="#{{ project.label }}">
+						<div class="project-title" style="background-image: url(/assets/images/projects/{{ project.thumbnail }});">
+							<div class="project-title-text"> {{ project.title }} </div>
+						</div> <!-- project-title -->
+					</a>
+					<div class="project-content">
+						{{ project.content }}
+					</div> <!-- project-content -->
+					<div class="project-links">
+						<ul class="project-links">
+							{% for link in project.links %}
+								<li>
+									<a href=" {{ link }}"> <i class="fa fa-hand-o-right" aria-hidden="true"></i> {{ project.linktitles[forloop.index0] }} </a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div> <!-- project-links -->
+				</div> <!-- project -->
+			{% endfor %}
+		</div> <!-- project-list -->
+	</div> <!-- projects -->
+</div>

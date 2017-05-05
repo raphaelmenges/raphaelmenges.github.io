@@ -25,20 +25,26 @@
 	<body>
 		<nav class="navbar">
 			<li>
-				<a {% if page.navigation == "home" %} class="active" {% endif %} href="/">
+				<a href="/#front">
 					<i class="fa fa-newspaper-o"></i>
 				</a>
 			</li>
 			<li>
-				<a {% if page.navigation == "projects" %} class="active" {% endif %} href="/projects">
-					<span class="navbar-text">Projects</span>
-					<span class="navbar-icon"><i class="fa fa-briefcase"></i></span>
+				<a href="/#blog">
+					<span class="navbar-text">Blog</span>
+					<span class="navbar-icon"><i class="fa fa-pencil-square"></i></span>
 				</a>
 			</li>
 			<li>
-				<a {% if page.navigation == "papers" %} class="active" {% endif %} href="/papers">
+				<a href="/#papers">
 					<span class="navbar-text">Papers</span>
 					<span class="navbar-icon"><i class="fa fa-sticky-note"></i></span>
+				</a>
+			</li>
+			<li>
+				<a href="/#projects">
+					<span class="navbar-text">Projects</span>
+					<span class="navbar-icon"><i class="fa fa-briefcase"></i></span>
 				</a>
 			</li>
 		</nav>
