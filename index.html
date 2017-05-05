@@ -17,7 +17,10 @@ project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens
 	<!-- ### BLOG ### -->
 	<div class="blog">
 		<a class="anchor" id="blog"></a>
-		<h2><i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>Blog</h2>
+		<h2>
+			<i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>
+			<a href="#blog">Blog</a>
+		</h2>
 		<div class="blog-list">
 			<ul class="blog-list">
 			{% for post in site.posts %}
@@ -43,7 +46,10 @@ project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens
 	<!-- ### PAPERS ### -->
 	<div class="papers">
 		<a class="anchor" id="papers"></a>
-		<h2><i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>Papers</h2>
+		<h2>
+			<i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>
+			<a href="#papers">Papers</a>
+		</h2>
 		<div class="paper-list">
 			{% for label in page.paper_labels %}
 				{% assign paper =  site.papers | where:"label", label  | first %}
@@ -61,7 +67,7 @@ project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens
 						</li>
 						{% if paper.award != nil %}
 						<li>
-							<i class="highlight fa fa-trophy" aria-hidden="true">&nbsp;</i> {{ paper.award }}
+							<i class="fa fa-trophy" aria-hidden="true">&nbsp;</i> {{ paper.award }}
 						</li>
 						{% endif %}
 						<li class="paper-publishment">
@@ -78,7 +84,10 @@ project_labels: ["gtw-browse", "eyegui", "ma", "schaugenau", "jha", "shiphappens
 	<!-- ### PROJECTS ### -->
 	<div class="projects">
 		<a class="anchor" id="projects"></a>
-		<h2><i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>Projects</h2>
+		<h2>
+			<i class="highlight fa fa-caret-right" aria-hidden="true">&nbsp;</i>
+			<a href="#projects">Projects</a>
+		</h2>
 		<div class="project-list">
 			{% for label in page.project_labels %}
 				{% assign project =  site.projects | where:"label", label  | first %}
