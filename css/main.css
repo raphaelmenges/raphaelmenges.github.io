@@ -66,6 +66,11 @@ a {
 	color: #FFCF00;
 }
 
+/* Simple underlined link */
+.underlined {
+	text-decoration: underline;
+}
+
 /*****************/
 /**** Tooltip ****/
 /*****************/
