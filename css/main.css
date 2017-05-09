@@ -140,9 +140,13 @@ a {
 /* Elements in navbar */
 .navbar li {
 	float: left;
+	-moz-transition: background-color .2s ease-in;
+	-o-transition: background-color .2s ease-in;
+	-webkit-transition: background-color .2s ease-in;
+	transition: background-color .2s ease-in;
 }
 
-/* About element */
+/* GitHub link */
 .navbar .github {
 	float: right;
 	background-color: #800080;
@@ -151,13 +155,16 @@ a {
 	color: white;
 }
 
-/* Elements which are hovered */
-.navbar li:hover:not(.front)  {
+/* Elements which are hovered should have black text and gold background */
+.navbar li:hover:not(.front) {
 	background-color: #FFCF00;
 	background: -webkit-linear-gradient(#FFCF00, #FFE264);
   	background: -o-linear-gradient(#FFCF00, #FFE264);
 	background: -moz-linear-gradient(#FFCF00, #FFE264);
 	background: linear-gradient(#FFCF00, #FFE264);
+}
+.navbar li:hover:not(.front) a {
+	color: black;
 }
 
 /* Link in navbar element */
