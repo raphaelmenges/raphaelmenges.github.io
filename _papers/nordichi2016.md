@@ -5,5 +5,5 @@ year: 2016
 authors: Menges R., Kumar C., Sengupta K. and Staab S.
 publishment: NordiCHI'16
 publishment-link: http://www.nordichi2016.org
-link: http://dl.acm.org/citation.cfm?id=2996756
+link: https://www.bibsonomy.org/bibtex/23cbbecf77e6dc1132ed95780829deec1
 ---

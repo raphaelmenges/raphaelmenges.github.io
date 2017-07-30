@@ -5,5 +5,5 @@ year: 2014
 authors: Schaefer C., Menges R., Schmidt K., Kuich M. and Walber T.
 publishment: EyePlay workhop at CHI Play 2014
 publishment-link: https://www.facebook.com/eyeplayworkshop
-link: https://github.com/raphaelmenges/schaugenau/blob/master/media/schaefer_etal_schaugenau.pdf
+link: https://www.bibsonomy.org/bibtex/24b6f18ec083004fa46d6fc25b717e037
 ---
