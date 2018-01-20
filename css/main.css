@@ -15,16 +15,7 @@ body {
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;
-	
 	background-color:#204c6f;
-	background-image:
-		linear-gradient(rgba(255,255,255,.15) 2px, transparent 2px),
-		linear-gradient(90deg, rgba(255,255,255,.15) 2px, transparent 2px),
-		linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
-		linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
-	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
-	background-attachment: fixed;
-	background-position: center; 
 }
 
 /* Design of horizontal lines */
