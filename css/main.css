@@ -310,6 +310,7 @@ a {
 	-moz-box-shadow: inset 0pt 0pt 5pt #888888;
 	-webkit-box-shadow: inset 0pt 0pt 5pt #888888;
 	box-shadow: inset 0pt 0pt 5pt #888888;
+	background-color: gray;
 }
 
 /* Title text itself */

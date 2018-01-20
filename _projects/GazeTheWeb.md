@@ -1,6 +1,6 @@
 ---
-title: GazeTheWeb - Browse
-label: gtw-browse
+title: GazeTheWeb
+label: gtw
 thumbnail: gtw-browse.jpg
 links: ["https://github.com/MAMEM/GazeTheWeb/tree/master/Browse", "http://gazetheweb.com"]
 linktitles: ["GitHub Project", "Official Project Page"]
