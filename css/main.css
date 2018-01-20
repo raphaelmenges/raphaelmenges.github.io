@@ -12,10 +12,19 @@ body {
 	padding: 0;
 	overflow-y: scroll;
 	width: 900px;
-	background-color: #FAFAFA;
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;
+	
+	background-color:#204c6f;
+	background-image:
+		linear-gradient(rgba(255,255,255,.15) 2px, transparent 2px),
+		linear-gradient(90deg, rgba(255,255,255,.15) 2px, transparent 2px),
+		linear-gradient(rgba(255,255,255,.1) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(255,255,255,.1) 1px, transparent 1px);
+	background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+	background-attachment: fixed;
+	background-position: center; 
 }
 
 /* Design of horizontal lines */
@@ -42,7 +51,8 @@ a {
 
 /* Page */
 .page {
-
+	background-color: rgba(250,250,250,1);
+	box-shadow: 0pt 0pt 10pt rgba(0,0,0,0.3);
 }
 
 /* Content of page */
@@ -132,8 +142,8 @@ a {
 	background-color: #EEE;
 	box-shadow: 0pt 1pt 5pt rgba(0,0,0,0.3);
 	z-index: 100;
-	border-bottom-right-radius: 8pt;
-	border-bottom-left-radius: 8pt;
+	/* border-bottom-right-radius: 8pt; */
+	/* border-bottom-left-radius: 8pt; */
 	border-width: 0pt;
 }
 
@@ -159,7 +169,7 @@ a {
 .navbar li:hover:not(.front) {
 	background-color: #FFCF00;
 	background: -webkit-linear-gradient(#FFCF00, #FFE264);
-  	background: -o-linear-gradient(#FFCF00, #FFE264);
+  background: -o-linear-gradient(#FFCF00, #FFE264);
 	background: -moz-linear-gradient(#FFCF00, #FFE264);
 	background: linear-gradient(#FFCF00, #FFE264);
 }
@@ -369,7 +379,6 @@ a {
 	.navbar-text { display: none; }
 	.navbar-icon { display: block; }
 	.welcome { text-align: center; }
-	.page { height: 600px; }
 	.content { margin-left: 5pt; margin-right: 5pt;}
 	.avatar { float: none; margin: auto; }
 	.project-links li {	float: none; }
