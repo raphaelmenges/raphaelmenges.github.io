@@ -41,7 +41,7 @@ a {
 	text-decoration: none;
 }
 
-/* Anchor class for invisible anchor which is beneatch fixed navigation */
+/* Anchor class for invisible anchor which is beneath fixed navigation */
 .anchor {
 	display: block;
 	position: relative;
