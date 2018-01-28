@@ -16,6 +16,10 @@ body {
 	-o-tab-size: 2;
 	tab-size: 2;
 	background-color:#204c6f;
+	background-image: url("/assets/background.png");
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-position: center; 
 }
 
 /* Design of horizontal lines */
@@ -56,10 +60,12 @@ a {
 
 /* Footer of page */
 .footer {
-	margin-top: 10pt;
+	background-color: #EEE;
+	padding-top: 10pt;
 	padding-bottom: 10pt;
 	text-align: center;
 	font-size: 10pt;
+	box-shadow: 0pt -1pt 5pt rgba(0,0,0,0.3);
 }
 
 /* Accent color */
