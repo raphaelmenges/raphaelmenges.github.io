@@ -1,5 +1,5 @@
 ---
-title: "Hands-free Web Browsing: Enriching the User experience with Gaze and Voice Modality"
+title: "Hands-free Web Browsing: Enriching the User Experience with Gaze and Voice Modality"
 label: etra2018-voice
 year: 2018
 authors: Sengupta K., Ke M., Menges R., Kumar C., and Staab S.
