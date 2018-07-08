@@ -8,7 +8,6 @@
 /**************/
 body {
 	font-family: Segan Light, Tahoma, Geneva, sans-serif;
-	-webkit-font-smoothing: antialiased;
 	margin: 0 auto;
 	padding: 0;
 	overflow-y: scroll;
@@ -75,7 +74,7 @@ a {
 
 /* Accent color */
 .accent {
-	color: #FFCF00;
+	/* color: #FFCF00; */
 }
 
 /* Simple underlined link */
@@ -142,7 +141,7 @@ a {
 	width: 900px;
 	overflow: hidden;
 	background: #b5c8d2;
-	background: linear-gradient(#b5c8d2, #c6d2cf);
+	background: linear-gradient(rgba(181, 200, 210, 0.975), rgba(198, 210, 207, 0.925));
 	box-shadow: 0pt 1pt 7pt rgba(0,0,0,0.4);
 	z-index: 100;
 	/* border-bottom-right-radius: 8pt; */
@@ -168,10 +167,9 @@ a {
 	color: white;
 }
 
-/* Elements which are hovered should have black text and gold background */
+/* Elements which are hovered */
 .navbar li:hover:not(.front) {
-	background-color: #FFCF00;
-	background: linear-gradient(#FFCF00, #FFE264);
+	background-color: rgba(255, 255, 255, 0.5)
 }
 .navbar li:hover:not(.front) a {
 	color: black;
@@ -286,14 +284,13 @@ a {
 /***************/
 .project {
 	box-shadow: 0pt 0pt 5pt rgba(0,0,0,0.3);
-	margin-top: 20pt;
-	margin-bottom: 20pt;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
 	overflow: hidden;
 	display: block;
 	border-style: solid;
-	border-color: white;
+	border-color: #93abad;
 	border-width: 1pt;
-	background-color: white;
 	border-radius: 5pt;
 }
 
@@ -331,6 +328,7 @@ a {
 /* Description of project */
 .project-content {
 	padding: 10pt;
+	background-color: rgba(255,255,255,0.5);
 }
 
 /* Links beneath project */
@@ -339,8 +337,8 @@ a {
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
-	background-color: #EEE;
 	display: block;
+	background: linear-gradient(rgb(228, 239, 245), rgb(193, 205, 206))
 }
 
 .project-links ul {
@@ -356,7 +354,7 @@ a {
 }
 
 .project-links li:hover:not(.active)  {
-	background-color: #CCC;
+	background-color: rgba(255, 255, 255, 0.5)
 }
 
 .project-links a {
