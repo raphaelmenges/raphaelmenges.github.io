@@ -72,11 +72,6 @@ a {
 	text-shadow: 0pt 2pt 6pt rgba(255,255,255,0.5);
 }
 
-/* Accent color */
-.accent {
-	/* color: #FFCF00; */
-}
-
 /* Simple underlined link */
 .underlined {
 	text-decoration: underline;
@@ -150,7 +145,7 @@ a {
 }
 
 /* Elements in navbar */
-.navbar li {
+.navbar-item {
 	float: left;
 	-moz-transition: background-color .2s ease-in;
 	-o-transition: background-color .2s ease-in;
@@ -158,25 +153,8 @@ a {
 	transition: background-color .2s ease-in;
 }
 
-/* GitHub link */
-.navbar .github {
-	float: right;
-	background-color: #800080;
-}
-.navbar .github a {
-	color: white;
-}
-
-/* Elements which are hovered */
-.navbar li:hover:not(.front) {
-	background-color: rgba(255, 255, 255, 0.5)
-}
-.navbar li:hover:not(.front) a {
-	color: black;
-}
-
 /* Link in navbar element */
-.navbar a {
+.navbar-item a {
 	color: black;
 	padding-left: 12pt;
 	padding-right: 12pt;
@@ -186,6 +164,23 @@ a {
 	text-decoration: none;
 	font-size: 12pt;
 	font-weight: bold;
+}
+
+/* GitHub link */
+.github {
+	background-color: #800080;
+	float: right;
+}
+.github a {
+	color: white;
+}
+
+/* Elements which are hovered */
+.navbar li:hover:not(.front) {
+	background-color: rgba(255, 255, 255, 0.5)
+}
+.navbar li:hover:not(.front) a {
+	color: black;
 }
 
 /* Link text in navbar element */
