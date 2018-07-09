@@ -15,7 +15,7 @@ body {
 	-moz-tab-size: 2;
 	-o-tab-size: 2;
 	tab-size: 2;
-	background-color: white;
+	background: white;
 	background: linear-gradient(55deg, #e3bf79 15%, #4f9bd9 85%);
 	/* background-repeat: repeat;
 	background-attachment: fixed;
@@ -168,7 +168,8 @@ a {
 
 /* GitHub link */
 .github {
-	background-color: #800080;
+	background: #800080;
+	background: linear-gradient(0deg, #8b2694 0%, #3e1666 100%);
 	float: right;
 }
 .github a {
@@ -177,7 +178,7 @@ a {
 
 /* Elements which are hovered */
 .navbar li:hover:not(.front) {
-	background-color: rgba(255, 255, 255, 0.5)
+	background: rgba(255, 255, 255, 0.5);
 }
 .navbar li:hover:not(.front) a {
 	color: black;
