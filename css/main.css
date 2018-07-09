@@ -49,8 +49,8 @@ a {
 	background-color: rgba(250,250,250,0.8);
 	box-shadow: 0pt 0pt 10pt rgba(0,0,0,0.2);
 	padding-bottom: 2pt;
-	border-bottom-right-radius: 15pt;
-	border-bottom-left-radius: 15pt;
+	border-bottom-right-radius: 5pt;
+	border-bottom-left-radius: 5pt;
 }
 
 /* Content of page */
@@ -283,10 +283,12 @@ a {
 	margin-bottom: 10pt;
 	overflow: hidden;
 	display: block;
+	/*
 	border-style: solid;
 	border-color: #93abad;
 	border-width: 1pt;
 	border-radius: 5pt;
+	*/
 }
 
 /* Link to anchor */
@@ -333,7 +335,7 @@ a {
 	margin: 0;
 	padding: 0;
 	display: block;
-	background: linear-gradient(rgb(228, 239, 245), rgb(193, 205, 206))
+	/* background: linear-gradient(rgb(228, 239, 245), rgb(193, 205, 206)) */
 }
 
 .project-links ul {
@@ -349,7 +351,7 @@ a {
 }
 
 .project-links li:hover:not(.active)  {
-	background-color: rgba(255, 255, 255, 0.5)
+	background-color: rgba(255,255,255,0.5)
 }
 
 .project-links a {
