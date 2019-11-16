@@ -21,7 +21,7 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: _site
-        BUILD_SCRIPT: apt install software-properties-common
+        BUILD_SCRIPT: apt -yq install software-properties-common
                       && apt-add-repository ppa:brightbox/ruby-ng
                       && apt update
                       && apt -yq install ruby2.4 ruby2.4-dev
