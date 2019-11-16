@@ -1,0 +1,40 @@
+environment: production
+
+# Directories
+source:          .
+destination:     _site
+plugins_dir:     _plugins
+layouts_dir:     _layouts
+data_dir:        _data
+includes_dir:    _includes
+collections_dir: _collections
+
+# General
+title: Raphael Menges
+description: > # this means to ignore newlines
+  Homepage of Raphael Menges
+plugins: ['jekyll-scholar']
+baseurl: "" # must be empty string
+permalink: pretty
+markdown: kramdown
+
+# Compilation
+liquid:
+  strict_variables: true
+  strict_filters: true
+
+# Excludes
+exclude:
+  - README.md
+  - .gitignore
+  - docs
+  - .bundle
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Jekyll-Scholar
+scholar:
+  source: _bibliography
+  bibliography: references.bib
+  style: apa
