@@ -21,4 +21,4 @@ jobs:
         BASE_BRANCH: master
         BRANCH: gh-pages
         FOLDER: _site
-        BUILD_SCRIPT: apt update && apt install ruby-full && bundle install --path vendor && bundle exec jekyll build
+        BUILD_SCRIPT: apt update && apt -yq install ruby-full && bundle install --path vendor && bundle exec jekyll build
