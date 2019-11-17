@@ -24,5 +24,6 @@ jobs:
         BUILD_SCRIPT: apt update
                       && apt -yq install ruby-full
                       && gem install bundler
+                      && gem install unicode
                       && bundle install --path vendor
                       && bundle exec jekyll build
