@@ -41,7 +41,7 @@ jobs:
         git config --local user.name "GitHub Action"
     - name: Create local changes
       run: |
-        git pull
+        git pull origin master
         touch trigger.md
     - name: Commit files
       run: |
