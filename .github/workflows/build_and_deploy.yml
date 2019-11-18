@@ -7,8 +7,7 @@ on:
 
 jobs:
 
-  # Job to execute Jekyll force pushes generated site to master
-  build-and-force-push:
+  build-and-deploy:
 
     runs-on: ubuntu-latest
 
@@ -27,19 +26,14 @@ jobs:
                       && gem install bundler
                       && bundle install --path vendor
                       && bundle exec jekyll build
-
-  # Force push does not trigger page to deployed. So, trigger it by commiting an emtpy file
-  trigger-page-deploy:
-
-    runs-on: ubuntu-latest
-
-    steps:
     - name: Clone generated site
       uses: actions/checkout@v1
       with:
         ref: master
     - name: Create local changes
       run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
         touch trigger.md
         git add trigger.md
         git commit -m "Add changes"
