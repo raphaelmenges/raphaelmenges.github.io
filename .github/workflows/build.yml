@@ -47,7 +47,9 @@ jobs:
         git config --local user.name "GitHub Action"
         git checkout master
         git pull origin master
-        git commit -m 'rebuild pages' --allow-empty
+        touch trigger.md
+        git add trigger.md
+        git commit -m 'rebuild pages'
         git push origin master
     - name: Push changes
       uses: ad-m/github-push-action@master
