@@ -12,10 +12,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+    # Checkout the master branch (github-pages-deploy-action switches itself to dev branch)
     - name: Checkout
       uses: actions/checkout@master
+
+    # Build the dev branch and force push it to master
     - name: Build and Force Push
-      uses: JamesIves/github-pages-deploy-action@releases/v2
+      uses: JamesIves/github-pages-deploy-action@releases/v2 # takes ubuntu latest. Docker image with ruby would be much better
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BASE_BRANCH: dev # this is the branch where the actual code is
@@ -26,17 +30,19 @@ jobs:
                       && gem install bundler
                       && bundle install --path vendor
                       && bundle exec jekyll build
+                      && chmod -R ug+w _site
+
+    # Make a minimal change on the master branch to trigger site deployment
     - name: Create local changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        chmod -R ug+w _site
         git fetch --all
         git reset --hard origin/master
         git pull origin master
-        touch trigger.md
-        git add trigger.md
-        git commit -m "Add changes"
+        git commit -m 'rebuild pages' --allow-empty
+        git push origin master
+
     - name: Push changes
       uses: ad-m/github-push-action@master
       with:
