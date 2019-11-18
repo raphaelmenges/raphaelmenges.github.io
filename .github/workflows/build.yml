@@ -30,13 +30,13 @@ jobs:
                       && gem install bundler
                       && bundle install --path vendor
                       && bundle exec jekyll build
-                      && chmod -R ug+w _site
 
     # Make a minimal change on the master branch to trigger site deployment
     - name: Create local changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        chown -R "${USER:-$(id -un)}" .
         git fetch --all
         git reset --hard origin/master
         git pull origin master
