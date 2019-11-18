@@ -6,7 +6,7 @@ on:
       - dev
 
 jobs:
-  build-and-deploy:
+  build-and-force-push:
 
     runs-on: ubuntu-latest
 
@@ -26,3 +26,24 @@ jobs:
                       && gem install bundler
                       && bundle install --path vendor
                       && bundle exec jekyll build
+
+jobs:
+  trigger-page-deploy:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@master
+    - name: Create local changes
+      run: |
+        touch trigger.md
+    - name: Commit files
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add trigger.md
+        git commit -m "Add changes"
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
