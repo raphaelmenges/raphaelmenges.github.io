@@ -3,7 +3,7 @@ name: Build and deploy to GitHub pages
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   build-and-deploy:
@@ -12,14 +12,14 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@master 
+      uses: actions/checkout@dev 
           
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BASE_BRANCH: master
-        BRANCH: gh-pages
+        BASE_BRANCH: dev
+        BRANCH: master
         FOLDER: _site
         BUILD_SCRIPT: apt update
                       && apt -yq install ruby-full
