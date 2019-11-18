@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: Checkout
-      uses: actions/checkout@master 
+      uses: actions/checkout@master
     - name: Build and Force Push
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
@@ -30,6 +30,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        chmod -R ug+w _site
         git fetch --all
         git reset --hard origin/master
         git pull origin master
