@@ -27,7 +27,6 @@ jobs:
                       && bundle install --path vendor
                       && bundle exec jekyll build
 
-jobs:
   trigger-page-deploy:
 
     runs-on: ubuntu-latest
