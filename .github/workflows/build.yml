@@ -45,6 +45,8 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+        git checkout master
+        git pull origin master
         git commit -m 'rebuild pages' --allow-empty
         git push origin master
     - name: Push changes
