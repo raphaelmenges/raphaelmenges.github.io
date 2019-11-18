@@ -38,3 +38,5 @@ scholar:
   source: _bibliography
   bibliography: references.bib
   style: apa
+  bibliography_template: bib
+  repository: ./assets/pub
