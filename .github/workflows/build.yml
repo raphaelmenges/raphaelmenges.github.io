@@ -1,4 +1,4 @@
-name: Build and deploy to GitHub pages
+name: Build the site
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
 
 jobs:
 
-  build-and-deploy:
+  build:
 
     runs-on: ubuntu-latest
 
@@ -26,18 +26,3 @@ jobs:
                       && gem install bundler
                       && bundle install --path vendor
                       && bundle exec jekyll build
-    - name: Clone generated site
-      uses: actions/checkout@v1
-      with:
-        ref: master
-    - name: Create local changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        touch trigger.md
-        git add trigger.md
-        git commit -m "Add changes"
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
