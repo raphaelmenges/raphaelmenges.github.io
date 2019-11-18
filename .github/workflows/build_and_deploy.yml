@@ -6,6 +6,8 @@ on:
       - dev
 
 jobs:
+
+  # Job to execute Jekyll force pushes generated site to master
   build-and-force-push:
 
     runs-on: ubuntu-latest
@@ -13,33 +15,36 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@master 
-          
-    - name: Build and Deploy
+    - name: Build and Force Push
       uses: JamesIves/github-pages-deploy-action@releases/v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        BASE_BRANCH: dev
-        BRANCH: master
-        FOLDER: _site
+        BASE_BRANCH: dev # this is the branch where the actual code is
+        BRANCH: master # here is the generated site
+        FOLDER: _site # Jekyll standard output
         BUILD_SCRIPT: apt update
-                      && apt -yq install ruby-full
+                      && apt -yq install ruby-full # Jekyll needs ruby (only 2.3 here)
                       && gem install bundler
                       && bundle install --path vendor
                       && bundle exec jekyll build
 
+  # Force push does not trigger page to deployed. So, trigger it by commiting an emtpy file
   trigger-page-deploy:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@master
-    - name: Create local changes
-      run: |
-        touch trigger.md
-    - name: Commit files
+    - name: Set account
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
+    - name: Create local changes
+      run: |
+        git pull
+        touch trigger.md
+    - name: Commit files
+      run: |
         git add trigger.md
         git commit -m "Add changes"
     - name: Push changes
