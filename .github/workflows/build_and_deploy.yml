@@ -23,7 +23,7 @@ jobs:
         BRANCH: master # here is the generated site
         FOLDER: _site # Jekyll standard output
         BUILD_SCRIPT: apt update
-                      && apt -yq install ruby-full # Jekyll needs ruby (only 2.3 here)
+                      && apt -yq install ruby-full
                       && gem install bundler
                       && bundle install --path vendor
                       && bundle exec jekyll build
