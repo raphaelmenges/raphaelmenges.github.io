@@ -39,6 +39,10 @@ jobs:
     steps:
 
     # Make a minimal change on the master branch to trigger site deployment
+    - name: Sleep for 30 seconds
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '30s'
     - name: Checkout
       uses: actions/checkout@master
     - name: Create local changes
