@@ -22,7 +22,7 @@ jobs:
     - name: Build and Force Push
       uses: JamesIves/github-pages-deploy-action@releases/v2 # takes ubuntu latest. Docker image with ruby would be much better
       env:
-        ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: dev # this is the branch where the actual code is
         BRANCH: master # here is the generated site
         FOLDER: _site # Jekyll standard output
@@ -42,7 +42,7 @@ jobs:
     # Make a minimal change on the master branch to trigger site deployment
     - name: Create local changes
       run: |
-        git clone https://action:${{ secrets.DEPLOY_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
+        git clone https://action:${{ secrets.ACCESS_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
         cd raphaelmenges.github.io
         git checkout master
         git config --global user.email "action@github.com"
