@@ -1,4 +1,4 @@
-name: Build the site
+name: Build and deploy site
 
 on:
   push:
@@ -7,6 +7,7 @@ on:
 
 jobs:
 
+  # Build the site and force-push to master
   build:
 
     runs-on: ubuntu-latest
@@ -44,10 +45,7 @@ jobs:
         git clone https://action:${{ secrets.DEPLOY_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
         cd raphaelmenges.github.io
         git checkout master
-        git pull origin master
-        touch trigger.md
-        git add trigger.md
         git config --global user.email "action@github.com"
         git config --global user.name "action"
-        git commit -m 'rebuild pages'
+        git commit -m 'rebuild pages' --allow-empty
         git push origin master
