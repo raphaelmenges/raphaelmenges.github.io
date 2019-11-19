@@ -42,6 +42,7 @@ jobs:
     - name: Create local changes
       run: |
         git clone https://test:${{ secrets.DEPLOY_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
+        cd raphaelmenges.github.io
         git checkout master
         git pull origin master
         touch trigger.md
