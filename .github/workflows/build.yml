@@ -42,7 +42,7 @@ jobs:
     - name: Create local changes
       run: |
         git config --local user.email "action@github.com"
-        git clone https://test:${{ secrets.DEPLOY_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
+        git clone https://test:123@github.com/raphaelmenges/raphaelmenges.github.io.git
         git checkout master
         git pull origin master
         touch trigger.md
