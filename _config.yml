@@ -45,7 +45,7 @@ scholar:
   group_by: year
   bibliography_template: ref # how to render a reference
   details_layout: 'bib.html' # layout for page generated per entry
-  details_link: '.bibtex' # how the link to the generated pages is called
+  details_link: 'cite' # how the link to the generated pages is called
   # details_layout
   repository: ./assets/pubs
   bibliography_group_tag: h3
