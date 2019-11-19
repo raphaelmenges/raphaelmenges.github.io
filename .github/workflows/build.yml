@@ -23,10 +23,35 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: dev # this is the branch where the actual code is
-        BRANCH: gh-pages # here is the generated site
+        BRANCH: master # here is the generated site
         FOLDER: _site # Jekyll standard output
         BUILD_SCRIPT: apt update
                       && apt -yq install ruby-full
                       && gem install bundler
                       && bundle install --path vendor
                       && bundle exec jekyll build
+
+  deploy:
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+
+    # Make a minimal change on the master branch to trigger site deployment
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Create local changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git checkout master
+        git pull origin master
+        touch trigger.md
+        git add trigger.md
+        git commit -m 'rebuild pages'
+        git push origin master
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.ACCESS_TOKEN }}
