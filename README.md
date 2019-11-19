@@ -4,10 +4,10 @@
 - `bundle exec jekyll serve`
 
 # Todo
-- Picture / contact / city / links (github, linkedin)
+- Selected publications (ToCHI?) -> not so easy :-/ + think about terminology
+- Picture / contact / city / links (github, linkedin) -> fixed on the left
 - PDFs
 - Abstracts
-- Selected publications (ToCHI?)
 - Projects (MAMEM, GazeMining...)
 - Software (GazeTheWeb + eyeGUI, WeST Homepage, Schau genau!, Voraca, Votes, VoxelConeTracer?, BeerHeater)
 - Design (JustHotAir, Movies, ...)

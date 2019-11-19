@@ -5,22 +5,33 @@ title: Homepage of Raphael Menges
 
 <div class='page' id='page'>
 
-<input type='button' onclick='printPage()' value='Print!'/>
+<h1>Raphael Menges</h1>
 
-My home page is under construction. You may read my papers in the meanwhile:
+<button onclick='printPage()' id='print'>Print it!</button>
 
+<h2>Publications</h2>
 <div class='publications'>
 {%- bibliography -%}
 </div> <!-- publications -->
 
 </div> <!-- page -->
 
+<!-- Print the page -->
 <script>
-	function printPage() {
-		var printContents = document.getElementById('page').innerHTML;
-		var originalContents = document.body.innerHTML;
-		document.body.innerHTML = printContents;
-		window.print();
-		document.body.innerHTML = originalContents;
+function printPage() {
+	var printContents = document.getElementById('page').innerHTML;
+	var originalContents = document.body.innerHTML;
+	document.body.innerHTML = printContents;
+	window.print();
+	document.body.innerHTML = originalContents;
 }
+</script>
+
+<!-- Highlight me in refernces -->
+<script>
+var elems = document.getElementsByClassName('reference');
+const regex = new RegExp("Menges, R.", "g");
+Array.prototype.forEach.call(elems, function(elem) {
+	elem.innerHTML = elem.innerHTML.replace(regex, (match) => `<strong>${match}</strong>`);
+});
 </script>
