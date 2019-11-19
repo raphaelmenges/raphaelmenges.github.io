@@ -21,7 +21,7 @@ jobs:
     - name: Build and Force Push
       uses: JamesIves/github-pages-deploy-action@releases/v2 # takes ubuntu latest. Docker image with ruby would be much better
       env:
-        ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKE }}
+        ACCESS_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
         BASE_BRANCH: dev # this is the branch where the actual code is
         BRANCH: master # here is the generated site
         FOLDER: _site # Jekyll standard output
