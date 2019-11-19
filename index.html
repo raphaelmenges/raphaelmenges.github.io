@@ -3,6 +3,24 @@ layout: base
 title: Homepage of Raphael Menges
 ---
 
+<div class='page' id='page'>
+
+<input type='button' onclick='printPage()' value='Print!'/>
+
 My home page is under construction. You may read my papers in the meanwhile:
 
+<div class='publications'>
 {%- bibliography -%}
+</div> <!-- publications -->
+
+</div> <!-- page -->
+
+<script>
+	function printPage() {
+		var printContents = document.getElementById('page').innerHTML;
+		var originalContents = document.body.innerHTML;
+		document.body.innerHTML = printContents;
+		window.print();
+		document.body.innerHTML = originalContents;
+}
+</script>

@@ -37,7 +37,7 @@ exclude:
 scholar:
   source: _bibliography
   bibliography: references.bib
-  reference_tagname: div
+  reference_tagname: span
   style: apa
   sort_by: year,month
   group_order: descending # order of groups
