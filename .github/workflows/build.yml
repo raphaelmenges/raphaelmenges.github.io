@@ -23,7 +23,7 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BASE_BRANCH: dev # this is the branch where the actual code is
-        BRANCH: master # here is the generated site
+        BRANCH: gh-pages # here is the generated site
         FOLDER: _site # Jekyll standard output
         BUILD_SCRIPT: apt update
                       && apt -yq install ruby-full
