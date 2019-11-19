@@ -9,7 +9,7 @@ jobs:
 
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: ub
 
     steps:
 
@@ -39,19 +39,13 @@ jobs:
     steps:
 
     # Make a minimal change on the master branch to trigger site deployment
-    - name: Checkout
-      uses: actions/checkout@master
     - name: Create local changes
       run: |
         git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
+        git clone https://test:${{ secrets.DEPLOY_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
         git checkout master
         git pull origin master
         touch trigger.md
         git add trigger.md
         git commit -m 'rebuild pages'
         git push origin master
-    - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
-        github_token: ${{ secrets.DEPLOY_TOKEN }}
