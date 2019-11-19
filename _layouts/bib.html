@@ -1,13 +1,8 @@
 ---
 ---
-{{ reference }}
-
-{% if entry.abstract %}
-<p>{{ entry.abstract }}</p>
-{% endif %}
-
-<pre>{{ entry.bibtex }}</pre>
-
-{% if link %}
-	<a href='{{ link }}'>Download</a>
-{% endif %}
+<html>
+<head></head>
+<body>
+<pre>{{ page.entry.bibtex }}</pre>
+</body>
+</html>
