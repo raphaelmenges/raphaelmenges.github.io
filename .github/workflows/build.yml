@@ -41,11 +41,11 @@ jobs:
     # Make a minimal change on the master branch to trigger site deployment
     - name: Create local changes
       run: |
-        git config --local user.email 'action@github.com'
         git clone https://test:${{ secrets.DEPLOY_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
         git checkout master
         git pull origin master
         touch trigger.md
         git add trigger.md
+        git config --local user.email 'action@github.com'
         git commit -m 'rebuild pages'
         git push origin master
