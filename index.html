@@ -3,7 +3,7 @@ layout: base
 title: Homepage of Raphael Menges
 ---
 
-<div class='page' id='page'>
+<div class='page'>
 
 <div class='margin'>
 
@@ -26,7 +26,7 @@ title: Homepage of Raphael Menges
 <!-- Print the page -->
 <script>
 function printPage() {
-	var printContents = document.getElementById('page').innerHTML;
+	var printContents = document.getElementsByTagName("BODY")[0].innerHTML;
 	var originalContents = document.body.innerHTML;
 	document.body.innerHTML = printContents;
 	window.print();
