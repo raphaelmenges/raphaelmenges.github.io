@@ -5,5 +5,9 @@
 </div>
 
 {%- if link -%}
-<a href='{{ link }}'>read</a>
+<a class='pdf' href='{{ link }}'>PDF</a>
+{%- endif -%}
+
+{%- if entry.doi -%}
+<a class='doi' href='https://doi.org/{{ entry.doi }}'>DOI</a>
 {%- endif -%}
