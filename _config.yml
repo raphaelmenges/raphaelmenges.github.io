@@ -49,3 +49,7 @@ scholar:
   # details_layout
   repository: ./assets/pubs
   bibliography_group_tag: h3
+
+# Authorize links
+authorizer_link:
+  menges2019iue: 'https://dl.acm.org/authorize?N690524'

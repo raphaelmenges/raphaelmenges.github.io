@@ -5,7 +5,13 @@
 </div>
 
 {%- if link -%}
-<a class='pdf' href='{{ link }}'>PDF</a>
+	<a class='pdf' href='{{ link }}'>PDF</a>
+{%- else if site.authorizer_link[entry.key] -%}
+	{%- assign link = site.authorizer_link[entry.key] -%}
+	{%- assign len = link | size -%}
+	{%- if len > 1 -%}
+		<a class='pdf' href='{{ link }}'>PDF</a>
+	{%- endif -%}
 {%- endif -%}
 
 {%- if entry.doi -%}
