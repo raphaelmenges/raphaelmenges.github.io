@@ -38,7 +38,7 @@ scholar:
   source: _bibliography
   bibliography: references.bib
   reference_tagname: span
-  style: apa
+  style: acm-siggraph
   sort_by: year,month
   group_order: descending # order of groups
   order: desceding # order within group
