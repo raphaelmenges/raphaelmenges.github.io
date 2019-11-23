@@ -197,9 +197,7 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 }
 
 #print:hover {
-	background-color: white;
-	border-color: #c00;
-	box-shadow: 0px 5px 10px #ec9e9e;
+	text-decoration: underline;
 }
 
 #print:before {
