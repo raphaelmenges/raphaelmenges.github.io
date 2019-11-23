@@ -48,7 +48,7 @@ h3 {
 	padding-left: 14px;
 	margin-top: 5px;
 	margin-bottom: 5px;
-	color: #c00;
+	color: #b42041;
 }
 
 /* page */
@@ -64,7 +64,7 @@ body {
 }
 
 .margin {
-	margin-top: 100px;
+	top: 10%;
 	position: fixed;
 	width: 200px;
 	max-width: 200px;
@@ -83,6 +83,7 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	box-shadow: 0px 5px 10px white;
+	border: 1px solid #73152a;
 }
 
 .name {
@@ -136,7 +137,7 @@ body {
 /* line */
 .publications ol:before {
 	content: '';
-	border-left: solid 2px #c00;
+	border-left: solid 2px #b42041;
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
@@ -148,7 +149,7 @@ body {
 	position: absolute;
 	left: -6px;
 	top: 8px;
-	color: #c00;
+	color: #b42041;
 }
 
 /* reference */
@@ -184,16 +185,15 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 /* printing */
 
 #print {
-	background-color: #e8e8e8;
-	box-shadow: 0px 5px 10px grey;
-	border: solid 1px;
-	border-color: white;
+	background-color: #4bdfbe;
+	box-shadow: 0px 5px 10px lightgrey;
 	padding: 0.5rem;
 	cursor: pointer;
 	margin: auto;
 	display: block;
 	border-radius: 5px;
 	margin-top: 1rem;
+	border: none;
 }
 
 #print:hover {
