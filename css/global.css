@@ -1,4 +1,4 @@
-/* Font */
+/* font */
 @font-face {
 	font-family: "Roboto";
 	src: url("../assets/fonts/roboto/Roboto-Regular.ttf") format('truetype');
@@ -96,14 +96,17 @@ body {
 }
 
 .job {
+	position: relative;
 	width: 100%;
 	text-align: center;
 	font-size: 10pt;
 	margin-top: 0.5rem;
 	margin-bottom: 0.5rem;
+	font-weight: bold;
 }
 
 .location {
+	position: relative;
 	width: 100%;
 	text-align: center;
 	font-size: 10pt;
@@ -111,13 +114,48 @@ body {
 	margin-bottom: 0.5rem;
 }
 
-/* publications */
+/* social */
+.social {
+	position: relative;
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 0;
+}
 
-.publications {
+.github,.linkedin,.email {
+	background-color: #1e213d;
+	display: inline-block;
+	font-size: 10pt;
+	color: white;
+	border-radius: 5px;
+	font-size: 10pt;
+	padding: 2pt;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	box-shadow: 0px 5px 10px lightgrey;
+	text-decoration: none;
+	line-height: 18pt;
+}
+
+a.github:hover,a.linkedin:hover,a.email:hover  {
+	text-decoration: underline;
+}
+
+/* welcome */
+
+.welcome {
+	display: block;
+	margin-top: 2rem;
+}
+
+/* timeline */
+
+.timeline {
 	margin-top: 10px;
 }
 
-.publications ol {
+.timeline ol {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -125,7 +163,7 @@ body {
 	position: relative;
 }
 
-.publications li {
+.timeline li {
 	position: relative;
 	display: block;
 	margin: 0;
@@ -135,7 +173,7 @@ body {
 }
 
 /* line */
-.publications ol:before {
+.timeline ol:before {
 	content: '';
 	border-left: solid 2px #b42041;
 	position: absolute;
@@ -144,7 +182,7 @@ body {
 }
 
 /* dot */
-.publications li:before {
+.timeline li:before {
 	content: '⬤';
 	position: absolute;
 	left: -6px;
@@ -185,14 +223,16 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 /* printing */
 
 #print {
-	background-color: #4bdfbe;
+	background-color: #ffcb00;
 	box-shadow: 0px 5px 10px lightgrey;
 	padding: 0.5rem;
 	cursor: pointer;
 	margin: auto;
 	display: block;
-	border-radius: 5px;
+	border-radius: 100%;
 	margin-top: 1rem;
+	width: 5rem;
+	height: 5rem;
 	border: none;
 }
 
@@ -203,18 +243,17 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 #print:before {
 	content: "";
 	display: block;
-	height: 1rem;
-	width: 1rem;
-	background-size: 1rem 1rem;;
+	height: 2rem;
+	width: 2rem;
+	margin: auto;
+	background-size: 2rem 2rem;;
 	background-image: url(../assets/icons/feather/printer.svg);
 	background-repeat: no-repeat;
-	float: left;
-	margin-right: 0.25rem;
 }
 
 @media print
 {
-	#print,.details,.doi,.pdf
+	#print,.details,.doi,.pdf,.github,.linkedin,.email
 	{
 		display: none !important;
 	}
@@ -230,6 +269,10 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 		width: 100%;
 		position: inherit;
 		max-width: 200px;
+	}
+
+	#print {
+		display: none !important;
 	}
 
 	.content {
