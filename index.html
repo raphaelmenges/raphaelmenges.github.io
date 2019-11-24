@@ -65,27 +65,4 @@ Array.prototype.forEach.call(elems, function(elem) {
 </script>
 
 <!-- Lightbox -->
-<script type="text/javascript">
-function showLightbox(image) {
-	var body = document.getElementsByTagName('BODY')[0];
-
-	var a = document.createElement('a');
-	a.setAttribute('href', 'javascript:hideLightbox()');
-	a.setAttribute('id', 'lightbox');
-
-	var div = document.createElement('div');
-	div.setAttribute('class', 'lightbox');
-	a.appendChild(div)
-
-	var img = document.createElement('img');
-	img.setAttribute('src', '/assets/imgs/' + image);
-	div.appendChild(img)
-
-	body.appendChild(a);
-}
-function hideLightbox() {
-	var body = document.getElementsByTagName('BODY')[0];
-	var lightbox = document.getElementById('lightbox');
-	body.removeChild(lightbox);
-}
-</script>
+<script type="text/javascript" src="/js/lightbox.js"></script>
