@@ -4,16 +4,32 @@
 {{ reference }}
 </div>
 
+{% comment %} Abstract {% endcomment %}
+{%- if site.pubs[entry.key].select -%}
+	<div class='abstract'>
+		{{ entry.abstract }}
+	</div>
+{%- endif -%}
+
+{% comment %} Award {% endcomment %}
+{%- if site.pubs[entry.key].award -%}
+	<div class='award'>
+		<span>{{ site.pubs[entry.key].award }}</span>
+	</div>
+{%- endif -%}
+
+{% comment %} PDF Link {% endcomment %}
 {%- if link -%}
 	<a class='pdf' href='{{ link }}'>PDF</a>
-{%- else if site.authorizer_link[entry.key] -%}
-	{%- assign link = site.authorizer_link[entry.key] -%}
+{%- else if site.pubs[entry.key].authorizer_link -%}
+	{%- assign link = site.pubs[entry.key].authorizer_link -%}
 	{%- assign len = link | size -%}
 	{%- if len > 1 -%}
 		<a class='pdf' href='{{ link }}'>PDF</a>
 	{%- endif -%}
 {%- endif -%}
 
+{% comment %} DOI Link {% endcomment %}
 {%- if entry.doi -%}
 <a class='doi' href='https://doi.org/{{ entry.doi }}'>DOI</a>
 {%- endif -%}

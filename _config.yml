@@ -25,10 +25,11 @@ liquid:
 
 # Excludes
 exclude:
-  - README.md
   - .gitignore
-  - docs
   - .bundle
+  - .github
+  - README.md
+  - docs
   - vendor
   - Gemfile
   - Gemfile.lock
@@ -49,6 +50,16 @@ scholar:
   repository: ./assets/pubs
   bibliography_group_tag: h3
 
-# Authorize links
-authorizer_link:
-  menges2019iue: 'https://dl.acm.org/authorize?N690524'
+# Meta info about publications
+pubs:
+  menges2019iue:
+    authorizer_link: 'https://dl.acm.org/authorize?N690524'
+    select: true
+  kumar2017cbf:
+    award: 'Honourable Mention'
+  menges2017ggw:
+    award: 'Judges Award at TPG Accessibility Challenge'
+  menges2018erw:
+    award: 'Best Video Award (for accompanying video)'
+  sengupta2017aic:
+    award: 'Best Student Paper Award'
