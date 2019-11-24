@@ -55,6 +55,7 @@ pubs:
   menges2019iue:
     authorizer_link: 'https://dl.acm.org/authorize?N690524'
     select: true
+    images: ['tochi_navigation.png', 'tochi_tab_overview.png', 'tochi_keyboard_greek.png']
   kumar2017cbf:
     award: 'Honourable Mention'
   menges2017ggw:

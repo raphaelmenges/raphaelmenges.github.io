@@ -248,9 +248,27 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 
 .abstract {
 	display: block;
+	width: 100%;
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	font-size: 10pt;
+}
+
+.images {
+	display: table;
+	height: 64px;
+	margin-top: 0.25rem;
+	margin-bottom: 0.3rem;
+}
+
+.images a {
+	display: table-cell;
+}
+
+.images img {
+	max-height: 60px;
+	margin: 4px;
+	box-shadow: 0px 5px 10px lightgrey;
 }
 
 /* printing */
@@ -266,7 +284,7 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	margin-top: 1rem;
 	width: 5rem;
 	height: 5rem;
-	border: none;
+	border: 1px solid darkgrey;
 }
 
 #print:hover {
@@ -311,5 +329,9 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	.content {
 		margin-left: 1rem;
 		margin-right: 1rem;
+	}
+
+	.images-scroll {
+		overflow-x: scroll;
 	}
 }
