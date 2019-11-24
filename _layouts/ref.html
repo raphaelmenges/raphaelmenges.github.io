@@ -23,7 +23,7 @@
 	<div class='images-scroll'>
 		<div class='images'>
 		{%- for img in site.pubs[entry.key].images -%}
-			<a href='javascript:showLightbox("{{ img }}")'><img src='/assets/imgs/{{ img }}'></a>
+			<a href='javascript:showLightbox("{{ img }}", "{{ site.data.misc[img] }}")'><img src='/assets/imgs/{{ img }}'></a>
 		{%- endfor -%}
 		</div>
 	</div>

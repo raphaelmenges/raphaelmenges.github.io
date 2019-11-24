@@ -282,7 +282,7 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	margin:0;
 	top:0;
 	left:0;
-	background-color:rgba(255,255,255,0.75);
+	background-color:rgba(255,255,255,0.85);
 	backdrop-filter: blur(10px);
 }
 
@@ -308,6 +308,7 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 .lightbox span {
 	margin-top: 0.5rem;
 	display: block;
+	font-size: 14pt;
 }
 
 /* printing */
@@ -341,9 +342,13 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	background-repeat: no-repeat;
 }
 
+.noscroll { 
+	overflow: hidden;
+}
+
 @media print
 {
-	#print,.details,.doi,.pdf,.github,.linkedin,.email
+	#print,.details,.doi,.pdf,.github,.linkedin,.email,.images
 	{
 		display: none !important;
 	}

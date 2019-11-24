@@ -1,6 +1,7 @@
-function showLightbox(image) {
+function showLightbox(image, description) {
 
 	var body = document.getElementsByTagName('BODY')[0];
+	body.setAttribute('class', 'noscroll'); // prohibit scrolling of body
 
 	// Table
 	var a = document.createElement('a');
@@ -11,17 +12,23 @@ function showLightbox(image) {
 
 	// Table-cell
 	var div = document.createElement('div');
-	a.appendChild(div)
+	a.appendChild(div);
+
+	// Close option
+	var span = document.createElement('span');
+	span.setAttribute('style', 'color: darkgray');
+	span.innerHTML = 'Click anywhere to close view.';
+	div.appendChild(span);
 
 	// Image
 	var img = document.createElement('img');
 	img.setAttribute('src', '/assets/imgs/' + image);
-	div.appendChild(img)
+	div.appendChild(img);
 
 	// Description
-	var span = document.createElement('span');
-	span.innerHTML = 'hello'
-	div.appendChild(span)
+	span = document.createElement('span');
+	span.innerHTML = description;
+	div.appendChild(span);
 
 	// Push state for lightbox
 	window.history.pushState('', '', '?lightbox')
@@ -38,4 +45,5 @@ function hideLightbox() {
 		body.removeChild(lightbox);
 		window.history.replaceState('', '', '/');
 	}
+	body.classList.remove('noscroll'); // allow scrolling of body, again
 }
