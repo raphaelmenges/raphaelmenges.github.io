@@ -349,9 +349,9 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	margin:0;
 	top:0;
 	left:0;
-	background-color:white;
+	background-color: rgba(0,0,0,0.9);
 	text-decoration: none;
-	color: black;
+	color: white;
 	z-index: 999;
 }
 
@@ -367,7 +367,7 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	max-height: 100%;
 	box-sizing: border-box;
 	border: 1px solid darkgrey;
-	box-shadow: 0px 5px 10px lightgrey;
+	box-shadow: 0px 5px 10px black;
 }
 
 .lightbox span {
@@ -414,6 +414,15 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 {
 	#print,.navbar,.footer,.details,.doi,.pdf,.github,.linkedin,.email,.images,.award {
 		display: none !important;
+	}
+
+	.timeline li:hover:before {
+		text-shadow: none !important;
+	}
+
+	body {
+		background: none !important;
+		background-color: white;
 	}
 }
 

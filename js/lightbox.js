@@ -1,7 +1,7 @@
 function showLightbox(image, description) {
 
 	var body = document.getElementsByTagName('BODY')[0];
-	body.setAttribute('class', 'noscroll'); // prohibit scrolling of body
+	// body.setAttribute('class', 'noscroll'); // prohibit scrolling of body
 
 	// Table
 	var a = document.createElement('a');
@@ -45,5 +45,5 @@ function hideLightbox() {
 		body.removeChild(lightbox);
 		window.history.replaceState('', '', '/');
 	}
-	body.classList.remove('noscroll'); // allow scrolling of body, again
+	// body.classList.remove('noscroll'); // allow scrolling of body, again
 }
