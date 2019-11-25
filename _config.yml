@@ -62,5 +62,6 @@ pubs:
     award: 'Judges Award at TPG Accessibility Challenge'
   menges2018erw:
     award: 'Best Video Award (for accompanying video)'
+    select: true
   sengupta2017aic:
     award: 'Best Student Paper Award'
