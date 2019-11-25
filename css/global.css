@@ -232,6 +232,11 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 	color: #b42041;
 }
 
+.timeline li:hover:before {
+	color: #ecdf7a;
+	text-shadow: 0px 5px 10px gray;
+}
+
 /* reference */
 
 .details,.doi,.pdf{
