@@ -1,3 +1,9 @@
-tochi_navigation.png: 'Links are clickable via eye tracking.'
-tochi_tab_overview.png: 'Tabbed browsing'
-tochi_keyboard_greek.png: 'Localized keyboard for Greek and Hebrew.'
+iue_pd.png: "A photo from the MAMEM trials. Aparticipant with Parkinson&#39s disease selects an E-Mail. Photographer: Tasos Papazoglou-Chalikias. Centre for Research & Technology Hellas - Information Technologies Institute."
+iue_web_extraction.jpg: "Data flow for real-time interaction element classification and tracking. In the example, a text input is added dynamically to the DOM tree of the Web page via an AJAX execution."
+iue_keyboard_hebrew.png: "GazeTheWeb has been localized to meet the constraints of the field study.The localization not only includes the screen texts of the interface but also the available keyboard layouts and text editing facilities."
+iue_youtube.jpg: "Shows the hours of different participants on YouTube videopages. Hereby, &#39Watching&#39 is the time the eye-tracking device had detected the participant in front of the screen; &#39Foreground&#39 is the time the video has been visible but the participant has been absent; &#39Background&#39 is the time another tab had been chosen visible."
+erw_problems.jpg: "Problems P1 to P3 of the virtual screenshot as Web page representation. The actual experience of the users on the Web page is visualized on the left. The corresponding virtual screenshot is shown on the right."
+erw_enhanced_representation.jpg: "The enhanced representation of the visual Web page content for attention analysis."
+erw_screenshot.jpg: "Enhanced representation of the Creative-commons.org Web page with scan paths from evaluation."
+ars_overview.jpg: "From an input molecule (left), we derive a surface proximity term (center, left) that represents the closeness of an atom to the molecule surface. We apply this method to a Molecular Dynamics simulation to obtain a color-coded map, representing the trajectory for each atom or residue (center). Single time-steps can be visualized in 3D (right), e.g., VdW-spheres or in a combined backbone-helix form."
+ars_example.jpg: "Link between RSP-map (top, showing one residue) and 3D-view (center). The highlighted residue (inverted colors) is part of the core until 39ns (center, left). It then emerges for a short period (center) before going back to the core after 48ns (center, right). Information per atom can also be obtained in a detail view (bottom). A tracker (top, red bar) selects a time-step from the RSP-map."

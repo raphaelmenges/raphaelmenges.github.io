@@ -11,17 +11,17 @@
 	</div>
 {%- endif -%}
 
+{% comment %} Images {% endcomment %}
+{%- if site.pubs[entry.key].images -%}
+	{%- assign imgs = site.pubs[entry.key].images -%}
+	{%- include render_images.html images=imgs -%}
+{%- endif -%}
+
 {% comment %} Award {% endcomment %}
 {%- if site.pubs[entry.key].award -%}
 	<div class='award'>
 		<span>{{ site.pubs[entry.key].award }}</span>
 	</div>
-{%- endif -%}
-
-{% comment %} Images {% endcomment %}
-{%- if site.pubs[entry.key].images -%}
-	{%- assign imgs = site.pubs[entry.key].images -%}
-	{%- include render_images.html images=imgs -%}
 {%- endif -%}
 
 {% comment %} PDF Link {% endcomment %}

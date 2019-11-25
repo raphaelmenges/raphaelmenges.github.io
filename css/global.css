@@ -381,9 +381,11 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 }
 
 .lightbox span {
+	margin: auto;
 	margin-top: 0.5rem;
 	display: block;
 	font-size: 16pt;
+	width: 70%;
 }
 
 /* printing */

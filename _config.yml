@@ -55,7 +55,7 @@ pubs:
   menges2019iue:
     authorizer_link: 'https://dl.acm.org/authorize?N690524'
     select: true
-    images: ['tochi_navigation.png', 'tochi_tab_overview.png', 'tochi_keyboard_greek.png']
+    images: ['iue_pd.png', 'iue_web_extraction.jpg', 'iue_keyboard_hebrew.png', 'iue_youtube.jpg']
   kumar2017cbf:
     award: 'Honourable Mention'
   menges2017ggw:
@@ -63,5 +63,8 @@ pubs:
   menges2018erw:
     award: 'Best Video Award (for accompanying video)'
     select: true
+    images: ['erw_problems.jpg', 'erw_enhanced_representation.jpg', 'erw_screenshot.jpg']
   sengupta2017aic:
     award: 'Best Student Paper Award'
+  lichtenberg2018ars:
+    images: ['ars_overview.jpg', 'ars_example.jpg']
