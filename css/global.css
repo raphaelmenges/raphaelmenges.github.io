@@ -57,7 +57,7 @@ body {
 	font-family: "Roboto", "Book Antiqua", Palatino, serif;
 	padding: 0;
 	margin: 0;
-	background: #efefef url("/assets/background.png") repeat fixed center; 
+	background: #efefef url("/assets/background.png") repeat scroll center; 
 }
 
 .navbar {
