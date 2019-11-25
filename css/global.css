@@ -56,6 +56,14 @@ h3 {
 body {
 	background-color: #fafafa;
 	font-family: "Roboto", "Book Antiqua", Palatino, serif;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar {
+	width: 100%;
+	background-color: black;
+	height: 128px;
 }
 
 .page {
@@ -64,10 +72,11 @@ body {
 }
 
 .margin {
-	top: 10%;
+	top: 96px;
 	position: fixed;
 	width: 200px;
 	max-width: 200px;
+	z-index: 100;
 }
 
 .content {
@@ -82,7 +91,6 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	box-shadow: 0px 5px 10px white;
 	border: 1px solid #73152a;
 }
 
@@ -130,23 +138,57 @@ body {
 	color: white;
 	border-radius: 5px;
 	font-size: 10pt;
-	padding: 2pt;
+	padding: 3pt;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
 	box-shadow: 0px 5px 10px lightgrey;
 	text-decoration: none;
-	line-height: 18pt;
+	transition: transform .2s ease-in-out;
 }
 
 a.github:hover,a.linkedin:hover,a.email:hover  {
 	text-decoration: underline;
+	transform: scale(1.1);
 }
 
-/* welcome */
+.github:before,.linkedin:before,.email:before {
+	content: "";
+	padding-top: 0.25rem;
+	display: block;
+	height: 1rem;
+	width: 1rem;
+	margin: auto;
+	background-size: 1rem 1rem;
+	background-image: url(../assets/icons/feather/github.svg);
+	background-repeat: no-repeat;
+}
+
+.github:before {
+	background-image: url(../assets/icons/feather/github.svg);
+}
+
+.linkedin:before {
+	background-image: url(../assets/icons/feather/linkedin.svg);
+}
+
+.email:before {
+	background-image: url(../assets/icons/feather/mail.svg);
+}
+
+/* head */
+
+.greeting {
+	font-size: 28pt;
+	font-weight: bold;
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+	display: inline-block;
+}
 
 .welcome {
 	display: block;
-	margin-top: 2rem;
+	margin-top: 1rem;
+	margin-bottom: 0.5rem;
 }
 
 /* timeline */
@@ -199,7 +241,6 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 	padding: 2pt;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
-	box-shadow: 0px 5px 10px lightgrey;
 	text-decoration: none;
 	line-height: 18pt;
 }
@@ -282,13 +323,10 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	margin:0;
 	top:0;
 	left:0;
-	background-color:rgba(255,255,255,0.85);
-	backdrop-filter: blur(10px);
-}
-
-.lightbox {
+	background-color:white;
 	text-decoration: none;
 	color: black;
+	z-index: 999;
 }
 
 .lightbox div {
@@ -303,12 +341,13 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	max-height: 100%;
 	box-sizing: border-box;
 	border: 1px solid darkgrey;
+	box-shadow: 0px 5px 10px lightgrey;
 }
 
 .lightbox span {
 	margin-top: 0.5rem;
 	display: block;
-	font-size: 14pt;
+	font-size: 16pt;
 }
 
 /* printing */
@@ -348,7 +387,7 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 
 @media print
 {
-	#print,.details,.doi,.pdf,.github,.linkedin,.email,.images
+	#print,.details,.doi,.pdf,.github,.linkedin,.email,.images,.award
 	{
 		display: none !important;
 	}
@@ -359,8 +398,8 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 @media only screen and (max-width: 1024px) {
 
 	.margin {
-		margin-top: 25px;
 		margin: auto;
+		margin-top: 25px;
 		width: 100%;
 		position: inherit;
 		max-width: 200px;
@@ -377,5 +416,9 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 
 	.images-scroll {
 		overflow-x: scroll;
+	}
+
+	.navbar {
+		display: none;
 	}
 }

@@ -3,7 +3,11 @@ layout: base
 title: Homepage of Raphael Menges
 ---
 
-<div class='page'>
+<div class='navbar'>
+	Hello
+</div>
+
+<div class='page' id='page'>
 
 <div class='margin'>
 
@@ -23,8 +27,12 @@ title: Homepage of Raphael Menges
 
 <div class='content'>
 
+<span class='greeting'>
+Hi,
+</span>
+
 <span class='welcome'>
-Welcome to the homepage of Raphael Menges!
+I am Raphael Menges, PhD-Student at the Institute for Web Science and Technologies in Koblenz, Germany. My interests cover cross-platform programming, computer graphics, and eye tracking.
 </span>
 
 <!-- <h2>Education and Jobs</h2>
@@ -47,7 +55,7 @@ Welcome to the homepage of Raphael Menges!
 <!-- Print the page -->
 <script type="text/javascript">
 function printPage() {
-	var printContents = document.getElementsByTagName("BODY")[0].innerHTML;
+	var printContents = document.getElementById('page').innerHTML;
 	var originalContents = document.body.innerHTML;
 	document.body.innerHTML = printContents;
 	window.print();

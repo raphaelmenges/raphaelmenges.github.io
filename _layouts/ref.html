@@ -20,13 +20,8 @@
 
 {% comment %} Images {% endcomment %}
 {%- if site.pubs[entry.key].images -%}
-	<div class='images-scroll'>
-		<div class='images'>
-		{%- for img in site.pubs[entry.key].images -%}
-			<a href='javascript:showLightbox("{{ img }}", "{{ site.data.misc[img] }}")'><img src='/assets/imgs/{{ img }}'></a>
-		{%- endfor -%}
-		</div>
-	</div>
+	{%- assign imgs = site.pubs[entry.key].images -%}
+	{%- include render_images.html images=imgs -%}
 {%- endif -%}
 
 {% comment %} PDF Link {% endcomment %}
