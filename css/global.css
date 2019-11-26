@@ -432,24 +432,24 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 
 @media print
 {
-	#print,.navbar,.footer,.details,.doi,.pdf,.github,.linkedin,.email,.images,.award {
+	/* hide many things */
+	#print,.navbar,.footer,.details,.doi,.pdf,.github,.linkedin,.email,.images,.award,.greeting,.welcome,.abstract {
 		display: none !important;
 	}
 
+	/* get rid of timeline interactivity */
 	.timeline li:hover:before {
 		text-shadow: none !important;
 	}
 
+	/* body */
 	body {
 		background: none !important;
 		background-color: white;
+		font-size: 10pt;
 	}
-}
 
-/* responsiveness */
-
-@media only screen and (max-width: 1024px) {
-
+	/* put margin on top */
 	.margin {
 		margin: auto;
 		margin-top: 25px;
@@ -458,19 +458,49 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 		max-width: 200px;
 	}
 
-	#print {
-		display: none !important;
+	/* margin around content */
+	.content {
+		margin-left: 0rem;
+		margin-right: 0rem;
 	}
 
+	/* timeline */
+	.timeline li {
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+}
+
+/* responsiveness */
+
+@media only screen and (max-width: 1024px) {
+
+	/* put margin on top */
+	.margin {
+		margin: auto;
+		margin-top: 25px;
+		width: 100%;
+		position: inherit;
+		max-width: 200px;
+	}
+
+	/* margin around content */
 	.content {
 		margin-left: 1rem;
 		margin-right: 1rem;
 	}
 
+	/* hide print button */
+	#print {
+		display: none !important;
+	}
+
+	/* images */
 	.images-scroll {
 		overflow-x: scroll;
 	}
 
+	/* hide navbar */
 	.navbar {
 		display: none;
 	}

@@ -19,7 +19,7 @@ title: Homepage of Raphael Menges
 	<a class='email' href='mailto:raphaelmenges@uni-koblenz.de'>EMail</a>
 </div>
 <div class='print-container'>
-	<button onclick='printContent()' id='print'>Print it!</button>
+	<button onclick='window.print();' id='print'>Print it!</button>
 </div>
 </div> <!-- profile -->
 </div> <!-- margin -->
@@ -54,17 +54,6 @@ I am Raphael Menges, PhD-Student at the Institute for Web Science and Technologi
 <div class='footer'>
 Homepage is still under construction.
 </div> <!-- footer -->
-
-<!-- Print the content -->
-<script type="text/javascript">
-function printContent() {
-	var printContents = document.getElementById('content').innerHTML;
-	var originalContents = document.body.innerHTML;
-	document.body.innerHTML = printContents;
-	window.print();
-	document.body.innerHTML = originalContents;
-}
-</script>
 
 <!-- Highlight me in references -->
 <script type="text/javascript">
