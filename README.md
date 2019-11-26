@@ -10,6 +10,8 @@
 - Teaching (MLDM, UDK course)
 - Work / Carrier? Grants?
 - Imprint
+- Inline SVG with jekyll-inline-svg
+- Minify etc.
 
 # Bugs
 - [Responsive] Figure caption sometimes outside of viewport
