@@ -18,20 +18,21 @@ jobs:
     - name: Checkout
       uses: actions/checkout@master
 
-    # Build the dev branch and force push it to master
-    - name: Build and Force Push
-      uses: JamesIves/github-pages-deploy-action@releases/v2 # takes ubuntu latest. Docker image with ruby would be much better
-      env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: dev # this is the branch where the actual code is
-        BRANCH: master # here is the generated site
-        FOLDER: _site # Jekyll standard output
-        BUILD_SCRIPT: apt update
-                      && apt -yq install ruby-full
-                      && gem install bundler
-                      && bundle install --path vendor
-                      && bundle exec jekyll build
-
+    # Install ruby and nodejs, execute bundler, generate page, install nodejs modules, and minify the generated page
+    BUILD_SCRIPT: curl -sL https://deb.nodesource.com/setup_13.x | bash
+                  && apt update
+                  && apt -yq install ruby-full nodejs
+                  && gem install bundler
+                  && bundle install --path vendor
+                  && bundle exec jekyll build
+                  && npm install html-minify -g
+                  && npm install uglifycss -g
+                  && npm install uglify-js -g
+                  && cd ./_site
+                  && find . -iname \*.html | xargs -I {} htmlminify -o {} {}
+                  && find . -iname \*.css | xargs -I {} uglifycss --output {} {}
+                  && find . -iname \*.js | xargs -I {} uglifyjs -o {} {}
+                  && cd ..
   deploy:
 
     runs-on: ubuntu-latest
