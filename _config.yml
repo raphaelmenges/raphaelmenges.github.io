@@ -55,7 +55,7 @@ pubs:
   menges2019iue:
     authorizer_link: 'https://dl.acm.org/authorize?N690524'
     select: true
-    images: ['iue_pd.png', 'iue_web_extraction.jpg', 'iue_keyboard_hebrew.png', 'iue_youtube.jpg']
+    images: ['iue_pd.jpg', 'iue_web_extraction.jpg', 'iue_keyboard_hebrew.jpg', 'iue_youtube.jpg']
   kumar2017cbf:
     award: 'Honourable Mention'
   menges2017ggw:

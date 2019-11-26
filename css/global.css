@@ -2,22 +2,26 @@
 @font-face {
 	font-family: "Roboto";
 	src: url("../assets/fonts/roboto/Roboto-Regular.ttf") format('truetype');
+	font-display: swap;
 }
 @font-face {
 	font-family: "Roboto";
 	src: url("../assets/fonts/roboto/Roboto-Bold.ttf") format('truetype');
 	font-weight: bold;
+	font-display: swap;
 }
 @font-face {
 	font-family: "Roboto";
 	src: url("../assets/fonts/roboto/Roboto-Italic.ttf") format('truetype');
 	font-style: italic;
+	font-display: swap;
 }
 @font-face {
 	font-family: "Roboto";
 	src: url("../assets/fonts/roboto/Roboto-BoldItalic.ttf") format('truetype');
 	font-weight: bold;
 	font-style: italic;
+	font-display: swap;
 }
 
 .anchor {
