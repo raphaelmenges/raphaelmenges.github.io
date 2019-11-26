@@ -20,6 +20,12 @@
 	font-style: italic;
 }
 
+.anchor {
+	display: block;
+	position: relative;
+	visibility: hidden;
+}
+
 /* headings */
 
 h1 {
@@ -61,12 +67,41 @@ body {
 }
 
 .navbar {
+	display: table;
 	color: white;
 	width: 100%;
 	background: #232323 url("/assets/leather.jpg") repeat scroll center; 
 	height: 128px;
 	border-bottom: 1px solid black;
 	box-shadow: inset 0px -20px 20px -10px rgba(255,255,255,0.15);
+}
+
+.navbar ul {
+	display: table-cell;
+	text-align: center;
+	list-style-type: none;
+	vertical-align: bottom;
+	padding-bottom: 0.5rem;
+}
+
+.navbar li {
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	display: inline-block;
+}
+
+.navbar a {
+	text-decoration: none;
+	color: lightgray;
+	text-shadow: 0 0 10px black;
+	font-size: 20pt;
+	font-weight: bold;
+	transition: color .2s ease-in-out;
+}
+
+.navbar a:hover {
+	text-decoration: underline;
+	color: white;
 }
 
 .footer {
