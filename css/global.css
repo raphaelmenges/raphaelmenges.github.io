@@ -362,7 +362,7 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 
 .images img {
 	margin: 4px;
-	max-height: 60px;
+	height: 60px;
 	box-shadow: 0px 5px 10px lightgrey;
 	padding-bottom: 2px;
 	background-color: black;

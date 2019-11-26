@@ -38,7 +38,7 @@ mini_magick:
   thumbnail:
     source: assets/imgs
     destination: assets/imgs/thumbs
-    resize: "100x100" # maxinum dimension, original aspect ratio is kept
+    resize: "600x60" # maxinum dimension, original aspect ratio is kept
 
 # Jekyll-Scholar
 scholar:
