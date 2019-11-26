@@ -28,7 +28,7 @@ jobs:
         FOLDER: _site # Jekyll standard output
 
         # Install ruby and nodejs, execute bundler, generate page, install nodejs modules, and minify the generated page
-        BUILD_SCRIPT: curl -sL https://deb.nodesource.com/setup_13.x | sudo -E bash -
+        BUILD_SCRIPT: curl -sL https://deb.nodesource.com/setup_13.x | -E bash -
                       && apt update
                       && apt -yq install ruby-full nodejs
                       && gem install bundler
