@@ -12,4 +12,4 @@
 - Imprint
 
 # Bugs
-- max-height does not work in lightbox
+- [Responsive] Figure caption sometimes outside of viewport

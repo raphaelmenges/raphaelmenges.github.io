@@ -369,12 +369,11 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	display: table-cell;
 	vertical-align: middle;
 	text-align: center;
-	padding: 1rem;
 }
 
 .lightbox img {
 	max-width: 100%;
-	max-height: 100%;
+	max-height: 80vh;
 	box-sizing: border-box;
 	border: 1px solid darkgrey;
 	box-shadow: 0px 5px 10px black;
@@ -382,10 +381,11 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 
 .lightbox span {
 	margin: auto;
-	margin-top: 0.5rem;
+	padding: 1rem;
 	display: block;
 	font-size: 16pt;
-	width: 70%;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 /* printing */
