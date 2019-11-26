@@ -38,7 +38,6 @@ jobs:
                       && cd ./_site
                       && find . -iname \*.html | xargs -I {} htmlminify -o {} {}
                       && find . -iname \*.css | xargs -I {} uglifycss --output {} {}
-                      && find . -iname \*.js | xargs -I {} uglifyjs -o {} {}
                       && cd ..
   deploy:
 
