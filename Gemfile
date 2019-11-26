@@ -10,4 +10,5 @@ gem "unicode"
 gem "unicode_utils"
 group :jekyll_plugins do
   gem "jekyll-scholar", "~> 5.16"
+  gem "jekyll-minimagick"
 end

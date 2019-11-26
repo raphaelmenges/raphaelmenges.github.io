@@ -13,7 +13,7 @@ collections_dir: _collections
 title: Raphael Menges
 description: > # this means to ignore newlines
   Homepage of Raphael Menges
-plugins: ['jekyll-scholar']
+plugins: ['jekyll-scholar', 'jekyll-minimagick']
 baseurl: "" # must be empty string
 permalink: pretty
 markdown: kramdown
@@ -33,6 +33,12 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+
+mini_magick:
+  thumbnail:
+    source: assets/imgs
+    destination: assets/imgs/thumbs
+    resize: "100x100" # maxinum dimension, original aspect ratio is kept
 
 # Jekyll-Scholar
 scholar:
