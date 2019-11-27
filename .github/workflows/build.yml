@@ -33,7 +33,7 @@ jobs:
                       && bundle install --path vendor
                       && bundle exec jekyll build
                       && npm install html-minifier -g
-                      && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext 'html css js'
+                      && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
 
   deploy:
 
