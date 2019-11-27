@@ -499,6 +499,10 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 		position: inherit;
 		max-width: 200px;
 	}
+	.profile {
+		position: relative;
+		top: 0px;
+	}
 
 	/* margin around content */
 	.content {
@@ -525,6 +529,11 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 		position: inherit;
 		max-width: 200px;
 	}
+	.profile {
+		position: relative;
+		top: 0px;
+	}
+
 
 	/* margin around content */
 	.content {
