@@ -13,7 +13,6 @@ On Windows, you need to install ImageMagick: https://imagemagick.org/script/down
 - Work / Carrier? Grants?
 - Imprint
 - Inline SVG with jekyll-inline-svg
-- Minify etc.
 
 # Bugs
 - [Responsive] Figure caption sometimes outside of viewport

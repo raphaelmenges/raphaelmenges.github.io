@@ -128,10 +128,8 @@ body {
 }
 
 .margin {
-	top: 96px;
 	position: fixed;
 	width: 200px;
-	max-width: 200px;
 	z-index: 100;
 }
 
@@ -140,6 +138,11 @@ body {
 }
 
 /* profile */
+
+.profile {
+	position: absolute;
+	top: -32px;
+}
 
 .profile img {
 	border-radius: 100%;
