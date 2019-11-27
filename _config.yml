@@ -74,7 +74,3 @@ pubs:
     award: 'Best Student Paper Award'
   lichtenberg2018ars:
     images: ['ars_overview.jpg', 'ars_example.jpg']
-
-# Jekyll Minifier
-jekyll-minifier:
-  remove_comments: true
