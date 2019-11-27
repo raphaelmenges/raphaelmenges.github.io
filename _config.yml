@@ -13,7 +13,7 @@ collections_dir: _collections
 title: Raphael Menges
 description: > # this means to ignore newlines
   Homepage of Raphael Menges
-plugins: ['jekyll-scholar', 'jekyll-minimagick', 'jekyll-minifier']
+plugins: ['jekyll-scholar', 'jekyll-minimagick']
 baseurl: "" # must be empty string
 permalink: pretty
 markdown: kramdown
