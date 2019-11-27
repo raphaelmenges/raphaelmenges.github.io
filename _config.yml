@@ -1,4 +1,4 @@
-environment: production
+environment: production # minifier needs it it
 
 # Directories
 source:          .
@@ -13,7 +13,7 @@ collections_dir: _collections
 title: Raphael Menges
 description: > # this means to ignore newlines
   Homepage of Raphael Menges
-plugins: ['jekyll-scholar', 'jekyll-minimagick']
+plugins: ['jekyll-scholar', 'jekyll-minimagick', 'jekyll-minifier']
 baseurl: "" # must be empty string
 permalink: pretty
 markdown: kramdown
@@ -74,3 +74,7 @@ pubs:
     award: 'Best Student Paper Award'
   lichtenberg2018ars:
     images: ['ars_overview.jpg', 'ars_example.jpg']
+
+# Jekyll Minifier
+jekyll-minifier:
+  remove_comments: true
