@@ -468,8 +468,23 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	background-repeat: no-repeat;
 }
 
-.noscroll { 
-	overflow: hidden;
+#scroll-top {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	left: 75%;
+	z-index: 9999;
+	height: 3rem;
+	width: 3rem;
+	background-size: 3rem 3rem;
+	background-image: url(../assets/icons/feather/arrow-up-circle.svg);
+	background-color: #b42041;
+	cursor: pointer;
+	border-radius: 100%;
+}
+
+#scroll-top:hover {
+	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.3);
 }
 
 @media print
