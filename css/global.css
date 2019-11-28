@@ -493,7 +493,7 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 @media print
 {
 	/* hide many things */
-	#print,.navbar,.footer,.details,.doi,.pdf,.github,.linkedin,.email,.images,.award,.greeting,.welcome,.abstract {
+	#print,.navbar,.footer,.details,.doi,.pdf,.github,.linkedin,.email,.images,.award,.greeting,.welcome,.abstract,#scroll-top {
 		display: none !important;
 	}
 
