@@ -6,12 +6,12 @@
 On Windows, you need to install ImageMagick: https://imagemagick.org/script/download.php
 
 # Todo
-- Projects (MAMEM, GazeMining...)
+- Jobs (MAMEM, GazeMining...)
 - Software (GazeTheWeb + eyeGUI, WeST Homepage, Schau genau!, Voraca, Votes, VoxelConeTracer?, BeerHeater)
-- Design (JustHotAir, Movies, ...)
+- Arts (JustHotAir, Movies, ...)
 - Teaching (MLDM, UDK course)
 - Work / Carrier? Grants?
-- Imprint
+- Print: QR Code + Signature + Contact things
 
 # Bugs
 - [Responsive] Figure caption sometimes outside of viewport

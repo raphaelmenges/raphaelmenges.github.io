@@ -96,6 +96,7 @@ body {
 	list-style-type: none;
 	vertical-align: bottom;
 	padding-bottom: 0.5rem;
+	padding-left: 100px;
 }
 
 .navbar li {
