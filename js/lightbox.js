@@ -1,5 +1,23 @@
-function showLightbox(image, description) {
+var imgList = [] /* list with all images and further infos */
+var curIdx = -1;
 
+function registerImage(src, caption) {
+	imgList.push({ src: src, caption: caption });
+}
+
+function showLightbox(src) {
+
+	/* Search for image in imgList */
+	var id = -1;
+	for (var i = 0; i < imgList.length; ++i) {
+		if (imgList[i].src == src) {
+			idx = i;
+			break;
+		}
+	}
+	if( idx < 0 ) { return; }
+
+	// Get body
 	var body = document.getElementsByTagName('BODY')[0];
 
 	// Table
@@ -21,12 +39,12 @@ function showLightbox(image, description) {
 
 	// Image
 	var img = document.createElement('img');
-	img.setAttribute('src', '/assets/imgs/' + image);
+	img.setAttribute('src', '/assets/imgs/' + src);
 	div.appendChild(img);
 
 	// Description
 	span = document.createElement('span');
-	span.innerHTML = description;
+	span.innerHTML = imgList[idx].caption;
 	div.appendChild(span);
 
 	// Push state for lightbox
@@ -34,6 +52,9 @@ function showLightbox(image, description) {
 
 	// Prevent scrolling
 	disableScroll();
+
+	// Update current idx
+	curIdx = idx; // TODO: now, one could make the image navigatable
 }
 
 window.onpopstate = function(event) {
