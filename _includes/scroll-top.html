@@ -1,25 +1,31 @@
-<button onclick='topFunction()' id='scroll-top'/>
+<button onclick='topFunction()' id='scroll-top' title='To Top'/>
 
 <script  type='text/javascript'>
 
-//Get the button
+// Get the button
 var btn = document.getElementById('scroll-top');
+var allowToTop = false;
 
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() { scrollFunction() };
 
 function scrollFunction() {
-	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-		btn.style.display = 'block';
+	if (document.body.scrollTop > 64 || document.documentElement.scrollTop > 64) {
+		btn.style.opacity = 1.0;
+		btn.style.cursor = 'pointer';
+		allowToTop = true;
 	} else {
-		btn.style.display = 'none';
+		btn.style.opacity = 0.0;
+		btn.style.cursor = 'default';
+		allowToTop = false;
 	}
 }
 
 // When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-	document.body.scrollTop = 0;
-	document.documentElement.scrollTop = 0;
+	if(allowToTop) {
+		window.scrollTo({ top: 0, behavior: 'smooth' });
+	}
 }
 
 </script>
