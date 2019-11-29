@@ -490,7 +490,6 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	cursor: default;
 	border-radius: 100%;
 	border: none;
-	backdrop-filter: blur(20px);
 	transition: opacity .2s ease-in-out, box-shadow .2s ease-in-out;
 }
 
