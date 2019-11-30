@@ -421,7 +421,6 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	top:0;
 	left:0;
 	background-color: rgba(0,0,0,0.9);
-	backdrop-filter: blur(20px);
 	text-decoration: none;
 	color: white;
 	z-index: 999;

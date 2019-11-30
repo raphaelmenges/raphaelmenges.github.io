@@ -1,7 +1,7 @@
 <div class='images-scroll'>
 	<div class='images'>
 	{%- for image in include.images -%}
-		<script type='text/javascript'>registerImage('{{ image }}', '{{ site.data.misc[image] }}')</script>
+		<script type='text/javascript'>registerLightboxImage('{{ image }}', '{{ site.data.misc[image] }}')</script>
 		<a href='#' onclick='showLightbox("{{ image }}"); return false;'><img src='/assets/imgs/thumbs/{{ image }}' title='{{ site.data.misc[image] }}'></a>
 	{%- endfor -%}
 	</div>
