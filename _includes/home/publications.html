@@ -1,3 +1,12 @@
 <div class='timeline'>
 {%- bibliography -%}
 </div> <!-- timeline -->
+
+<!-- Highlight me in references -->
+<script type="text/javascript">
+var elems = document.getElementsByClassName('reference');
+const regex = new RegExp("Menges, R.", "g");
+Array.prototype.forEach.call(elems, function(elem) {
+	elem.innerHTML = elem.innerHTML.replace(regex, (match) => `<strong>${match}</strong>`);
+});
+</script>

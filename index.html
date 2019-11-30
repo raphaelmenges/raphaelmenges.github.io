@@ -88,12 +88,3 @@ I am Raphael Menges, PhD-Student at the Institute for Web Science and Technologi
 <div class='footer'>
 © Raphael Menges {{ 'now' | date: '%Y' }}
 </div> <!-- footer -->
-
-<!-- Highlight me in references -->
-<script type="text/javascript">
-var elems = document.getElementsByClassName('reference');
-const regex = new RegExp("Menges, R.", "g");
-Array.prototype.forEach.call(elems, function(elem) {
-	elem.innerHTML = elem.innerHTML.replace(regex, (match) => `<strong>${match}</strong>`);
-});
-</script>
