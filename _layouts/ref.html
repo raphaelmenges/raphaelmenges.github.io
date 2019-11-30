@@ -44,3 +44,9 @@
 {%- if site.pubs[entry.key].video -%}
 <a class='video' href='{{ site.pubs[entry.key].video }}'>Video</a>
 {%- endif -%}
+
+{% comment %} Slide Link {% endcomment %}
+{%- capture found_file -%}{%- file_exists /assets/slides/{{ entry.key }}.pdf -%}{%- endcapture -%}
+{%- if found_file  == 'true' -%}
+	<a class='slides' href='/assets/slides/{{ entry.key }}.pdf'>Slides</a>
+{%- endif -%}

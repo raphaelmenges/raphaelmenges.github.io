@@ -304,7 +304,7 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 
 /* misc */
 
-.details,.doi,.pdf,.video{
+.details,.doi,.pdf,.video,.slides {
 	color: white;
 	border-radius: 5px;
 	font-size: 10pt;
@@ -332,7 +332,11 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 	background-color: black;
 }
 
-a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover {
+.slides {
+	background-color: saddlebrown ;
+}
+
+a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	text-decoration: underline;
 }
 
@@ -513,7 +517,7 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover {
 @media print
 {
 	/* hide many things */
-	#print,.navbar,.footer,.details,.doi,.pdf,.video,.github,.linkedin,.email,.images,.award,.greeting,.welcome,.abstract,#scroll-top,.fake-navbar {
+	#print,.navbar,.footer,.details,.doi,.pdf,.video,.slides,.github,.linkedin,.email,.images,.award,.greeting,.welcome,.abstract,#scroll-top,.fake-navbar {
 		display: none !important;
 	}
 
