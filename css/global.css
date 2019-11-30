@@ -89,7 +89,6 @@ body {
 /* navbar */
 
 .navbar,.fake-navbar {
-	color: white;
 	width: 100%;
 	background: #232323 url("/assets/leather.jpg") repeat scroll center; 
 	height: 128px;
@@ -139,7 +138,8 @@ body {
 /* footer */
 
 .footer {
-	color: white;
+	color: lightgray;
+	text-shadow: 0 0 10px black;
 	display: block;
 	text-align: center;
 	width: 100%;
@@ -197,7 +197,7 @@ body {
 	padding: 0;
 }
 
-.github,.linkedin,.email {
+.social-github,.social-linkedin,.social-email {
 	background-color: #1e213d;
 	display: inline-block;
 	font-size: 10pt;
@@ -212,12 +212,12 @@ body {
 	transition: transform .2s ease-in-out;
 }
 
-a.github:hover,a.linkedin:hover,a.email:hover  {
+a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	text-decoration: underline;
 	transform: scale(1.1);
 }
 
-.github:before,.linkedin:before,.email:before {
+.social-github:before,.social-linkedin:before,.social-email:before {
 	content: "";
 	padding-top: 0.25rem;
 	display: block;
@@ -229,15 +229,15 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 	background-repeat: no-repeat;
 }
 
-.github:before {
+.social-github:before {
 	background-image: url(../assets/icons/feather/github.svg);
 }
 
-.linkedin:before {
+.social-linkedin:before {
 	background-image: url(../assets/icons/feather/linkedin.svg);
 }
 
-.email:before {
+.social-email:before {
 	background-image: url(../assets/icons/feather/mail.svg);
 }
 
@@ -304,7 +304,7 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 
 /* misc */
 
-.details,.doi,.pdf,.video,.slides {
+.details,.doi,.pdf,.video,.slides,.github {
 	color: white;
 	border-radius: 5px;
 	font-size: 10pt;
@@ -329,11 +329,15 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 }
 
 .video {
-	background-color: black;
+	background-color: #282828;
 }
 
 .slides {
-	background-color: saddlebrown ;
+	background-color: saddlebrown;
+}
+
+.github {
+	background-color: #6e5494;
 }
 
 a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
@@ -372,6 +376,42 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	width: 100%;
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
+	font-size: 10pt;
+}
+
+/* academia */
+
+.grade {
+	display: block;
+	width: 100%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
+	font-size: 10pt;
+}
+
+.thesis-title {
+	display: block;
+	width: 100%;
+	margin-top: 0.25rem;
+	margin-bottom: 0.125rem;
+	font-size: 12pt;
+	padding-top: 0.25rem;
+	border-top: 1px solid lightgray;
+}
+
+.thesis-abstract {
+	display: block;
+	width: 100%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.25rem;
+	font-size: 10pt;
+}
+
+.thesis-supervisor {
+	display: block;
+	width: 100%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
 	font-size: 10pt;
 }
 
@@ -516,7 +556,11 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 @media print
 {
 	/* hide many things */
-	#print,.navbar,.footer,.details,.doi,.pdf,.video,.slides,.github,.linkedin,.email,.images,.award,.greeting,.welcome,.abstract,#scroll-top,.fake-navbar {
+	#print,.navbar,.footer,
+	.details,.doi,.pdf,.video,.slides,.github,
+	.social-github,.social-linkedin,.social-email,
+	.images,.award,.greeting,.welcome,.abstract,
+	#scroll-top,.fake-navbar {
 		display: none !important;
 	}
 

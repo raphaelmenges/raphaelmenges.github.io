@@ -87,3 +87,12 @@ pubs:
     video: 'https://youtu.be/NQQfB7nf3qw'
   sengupta2018hwb:
     video: 'https://youtu.be/M0hHakm36y0'
+  menges2016enf:
+    video: 'https://youtu.be/niMRX65E7IE'
+
+# Meta information about academia
+academia:
+  master:
+    images: ['master_ui1.jpg', 'master_ui2.jpg', 'master_surface.jpg', 'master_impl.jpg', 'master_ascension.jpg']
+  bachelor:
+    images: ['bachelor_ui.jpg', 'bachelor_jittering.jpg', 'bachelor_shadows.jpg', 'bachelor_transferfunction.jpg', 'bachelor_evaluation.jpg']

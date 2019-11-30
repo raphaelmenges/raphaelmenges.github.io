@@ -1,3 +1,4 @@
+# Publications
 iue_pd.jpg: "A photo from the MAMEM trials. Aparticipant with Parkinson&#39s disease selects an E-Mail. Photographer: Tasos Papazoglou-Chalikias. Centre for Research & Technology Hellas - Information Technologies Institute."
 iue_web_extraction.jpg: "Data flow for real-time interaction element classification and tracking. In the example, a text input is added dynamically to the DOM tree of the Web page via an AJAX execution."
 iue_keyboard_hebrew.jpg: "GazeTheWeb has been localized to meet the constraints of the field study. The localization not only includes the screen texts of the interface but also the available keyboard layouts and text editing facilities."
@@ -7,3 +8,15 @@ erw_enhanced_representation.jpg: "The enhanced representation of the visual Web 
 erw_screenshot.jpg: "Enhanced representation of the Creative-commons.org Web page with scan paths from evaluation."
 ars_overview.jpg: "From an input molecule (left), we derive a surface proximity term (center, left) that represents the closeness of an atom to the molecule surface. We apply this method to a Molecular Dynamics simulation to obtain a color-coded map, representing the trajectory for each atom or residue (center). Single time-steps can be visualized in 3D (right), e.g., VdW-spheres or in a combined backbone-helix form."
 ars_example.jpg: "Link between RSP-map (top, showing one residue) and 3D-view (center). The highlighted residue (inverted colors) is part of the core until 39ns (center, left). It then emerges for a short period (center) before going back to the core after 48ns (center, right). Information per atom can also be obtained in a detail view (bottom). A tracker (top, red bar) selects a time-step from the RSP-map."
+
+# Academia
+master_ui1.jpg: "Screenshot of the user interface."
+master_ui2.jpg: "Screenshot of the user interface."
+master_surface.jpg: "Definition of surface and internal atoms in a molecule."
+master_impl.jpg: "Pipeline to determine surface of a molecule on a GPU."
+master_ascension.jpg: "Color-coded visualization of the ascension of a residue."
+bachelor_ui.jpg: "Screenshot of the user interface."
+bachelor_jittering.jpg: "Jittering for ray casting."
+bachelor_shadows.jpg: "Shadows for volume rendering."
+bachelor_transferfunction.jpg: "Sampling of transferfunction from a bezier curve."
+bachelor_evaluation.jpg: "Evaluation of time savings through ray casting improvements."
