@@ -71,6 +71,23 @@ body {
 	min-width: 320px;
 }
 
+.page {
+	max-width: 1024px;
+	margin: auto;
+}
+
+.margin {
+	position: fixed;
+	width: 200px;
+	z-index: 100;
+}
+
+.content {
+	margin-left: 225px;
+}
+
+/* navbar */
+
 .navbar,.fake-navbar {
 	color: white;
 	width: 100%;
@@ -119,6 +136,8 @@ body {
 	color: white;
 }
 
+/* footer */
+
 .footer {
 	color: white;
 	display: block;
@@ -131,21 +150,6 @@ body {
 	border-top: 1px solid black;
 	background: #232323 url("/assets/leather.jpg") repeat scroll center;
 	box-shadow: inset 0px 20px 20px -10px rgba(255,255,255,0.15);
-}
-
-.page {
-	max-width: 1024px;
-	margin: auto;
-}
-
-.margin {
-	position: fixed;
-	width: 200px;
-	z-index: 100;
-}
-
-.content {
-	margin-left: 225px;
 }
 
 /* profile */
@@ -298,9 +302,9 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 	text-shadow: 0px 3px 10px gray;
 }
 
-/* reference */
+/* misc */
 
-.details,.doi,.pdf{
+.details,.doi,.pdf,.video{
 	color: white;
 	border-radius: 5px;
 	font-size: 10pt;
@@ -324,7 +328,11 @@ a.github:hover,a.linkedin:hover,a.email:hover  {
 	background-color: darkred;
 }
 
-a.details:hover,a.doi:hover,a.pdf:hover  {
+.video {
+	background-color: black;
+}
+
+a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover {
 	text-decoration: underline;
 }
 
@@ -362,6 +370,8 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	margin-bottom: 0.25rem;
 	font-size: 10pt;
 }
+
+/* images */
 
 .images {
 	display: table;
@@ -498,10 +508,12 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 	box-shadow: 0px 4px 16px 0px rgba(0,0,0,0.3);
 }
 
+/* media queries */
+
 @media print
 {
 	/* hide many things */
-	#print,.navbar,.footer,.details,.doi,.pdf,.github,.linkedin,.email,.images,.award,.greeting,.welcome,.abstract,#scroll-top,.fake-navbar {
+	#print,.navbar,.footer,.details,.doi,.pdf,.video,.github,.linkedin,.email,.images,.award,.greeting,.welcome,.abstract,#scroll-top,.fake-navbar {
 		display: none !important;
 	}
 
@@ -542,8 +554,6 @@ a.details:hover,a.doi:hover,a.pdf:hover  {
 		padding-bottom: 4px;
 	}
 }
-
-/* responsiveness */
 
 @media only screen and (max-width: 1024px) {
 

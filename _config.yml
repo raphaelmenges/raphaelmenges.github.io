@@ -67,11 +67,23 @@ pubs:
     award: 'Honourable Mention'
   menges2017ggw:
     award: 'Judges Award at TPG Accessibility Challenge'
+    video: 'https://youtu.be/x1ESgaoQR9Y'
   menges2018erw:
     award: 'Best Video Award (for accompanying video)'
     select: true
     images: ['erw_problems.jpg', 'erw_enhanced_representation.jpg', 'erw_screenshot.jpg']
+    video: 'https://youtu.be/SXLE9xM5P2c'
   sengupta2017aic:
     award: 'Best Student Paper Award'
   lichtenberg2018ars:
     images: ['ars_overview.jpg', 'ars_example.jpg']
+  schaefer2014sga:
+    video: 'https://youtu.be/nB6fQ-310lg'
+  sengupta2017gik:
+    video: 'https://youtu.be/-UDDTJHBPVA'
+  menges2017sgc:
+    video: 'https://youtu.be/WOcb94t6BaQ'
+  kumar2017aug:
+    video: 'https://youtu.be/NQQfB7nf3qw'
+  sengupta2018hwb:
+    video: 'https://youtu.be/M0hHakm36y0'
