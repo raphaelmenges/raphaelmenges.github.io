@@ -305,83 +305,6 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	text-shadow: 0px 3px 10px gray;
 }
 
-/* misc */
-
-.details,.doi,.pdf,.video,.slides,.github {
-	color: white;
-	border-radius: 5px;
-	font-size: 10pt;
-	padding: 2pt;
-	margin-left: 0.25rem;
-	margin-right: 0.25rem;
-	text-decoration: none;
-	line-height: 18pt;
-	box-shadow: 0px 5px 10px lightgrey;
-}
-
-.details {
-	background-color: darkblue;
-}
-
-.doi {
-	background-color: darkgreen;
-}
-
-.pdf {
-	background-color: darkred;
-}
-
-.video {
-	background-color: #282828;
-}
-
-.slides {
-	background-color: saddlebrown;
-}
-
-.github {
-	background-color: #6e5494;
-}
-
-a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
-	text-decoration: underline;
-}
-
-.award {
-	border-radius: 5px;
-	display: table;
-	font-size: 10pt;
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-	box-shadow: 0px 5px 10px lightgrey;
-	background-color: #ecdf7a;
-	padding: 2pt;
-	border: 1px solid #fbe8b1;
-}
-
-.award span, .award:before {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-.award:before {
-	content: "";
-	height: 1.5rem;
-	width: 1.5rem;
-	margin: auto;
-	background-size: 1.5rem 1.5rem;
-	background-image: url(../assets/icons/feather/award.svg);
-	background-repeat: no-repeat;
-}
-
-.abstract {
-	display: block;
-	width: 100%;
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-	font-size: 10pt;
-}
-
 /* academia */
 
 .grade {
@@ -416,6 +339,12 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	margin-top: 0.125rem;
 	margin-bottom: 0.125rem;
 	font-size: 10pt;
+}
+
+/* software */
+
+.tech {
+	color: red;
 }
 
 /* images */
@@ -497,6 +426,87 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	box-sizing: border-box;
 }
 
+/* misc */
+
+.details,.doi,.pdf,.video,.slides,.github,.web {
+	color: white;
+	border-radius: 5px;
+	font-size: 10pt;
+	padding: 2pt;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	text-decoration: none;
+	line-height: 18pt;
+	box-shadow: 0px 5px 10px lightgrey;
+}
+
+.details {
+	background-color: darkblue;
+}
+
+.doi {
+	background-color: darkgreen;
+}
+
+.pdf {
+	background-color: darkred;
+}
+
+.video {
+	background-color: #282828;
+}
+
+.slides {
+	background-color: saddlebrown;
+}
+
+.github {
+	background-color: #6e5494;
+}
+
+.web {
+	background-color: blue;
+}
+
+a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
+	text-decoration: underline;
+}
+
+.award {
+	border-radius: 5px;
+	display: table;
+	font-size: 10pt;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	box-shadow: 0px 5px 10px lightgrey;
+	background-color: #ecdf7a;
+	padding: 2pt;
+	border: 1px solid #fbe8b1;
+}
+
+.award span, .award:before {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.award:before {
+	content: "";
+	height: 1.5rem;
+	width: 1.5rem;
+	margin: auto;
+	background-size: 1.5rem 1.5rem;
+	background-image: url(../assets/icons/feather/award.svg);
+	background-repeat: no-repeat;
+}
+
+.abstract {
+	display: block;
+	width: 100%;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+	font-size: 10pt;
+}
+
 /* printing */
 
 .print-container {
@@ -560,7 +570,7 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 {
 	/* hide many things */
 	#print,.navbar,.footer,
-	.details,.doi,.pdf,.video,.slides,.github,
+	.details,.doi,.pdf,.video,.slides,.github,.web,
 	.social-github,.social-linkedin,.social-email,
 	.images,.award,.greeting,.welcome,.abstract,
 	#scroll-top,.fake-navbar {
