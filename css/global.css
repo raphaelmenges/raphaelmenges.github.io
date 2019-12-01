@@ -343,8 +343,31 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 
 /* software */
 
-.tech {
-	color: red;
+.tech-container {
+	display: block;
+	width: 100%;
+	margin-top: 0.25rem;
+	font-size: 10pt;
+}
+
+.tech-item {
+	display: inline-block;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
+	background-color: lightgray;
+	padding: 1px;
+}
+
+.tech-item:first-child {
+	margin-left: 0rem;
+}
+
+.people {
+	display: block;
+	width: 100%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
+	font-size: 10pt;
 }
 
 /* images */
@@ -502,8 +525,8 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 .abstract {
 	display: block;
 	width: 100%;
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
 	font-size: 10pt;
 }
 

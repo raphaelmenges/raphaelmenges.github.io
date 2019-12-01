@@ -1,13 +1,14 @@
 ---
 title: WeST Homepage
-year: 2019
-tech:
+year: Today
+tech: ['Jekyll', 'JavaScript', 'Docker', 'Python']
 github:
-web:
+web: https://west.uni-koblenz.de/
 video:
 slides:
 award:
 images:
+people: Philipp Töws, Adrian Skubella, Danienne Wete, and Daniel Janke
 ---
 
 Description

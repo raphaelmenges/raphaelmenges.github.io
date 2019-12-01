@@ -13,9 +13,16 @@
 			{%- if software.web -%}<a class='web' href='{{ software.web }}'>Web</a>{%- endif -%}
 			{%- if software.slides -%}<a class='slides' href='{{ software.slides }}'>Slides</a>{%- endif -%}
 		</div>
+		{%- if software.tech -%}
+		<div class='tech-container'>
+			{%- for tech in software.tech -%}
+				<div class='tech-item'>{{ tech }}</div>
+			{%- endfor -%}
+		</div>
+		{%- endif -%}
 		<div class='abstract'>{{ software.content }}</div>
-		{%- if software.tech -%}<div class='tech'>{{ software.tech }}</div>{%- endif -%}
 		{%- if software.award -%}
+		{%- if software.people -%}<div class='people'>Contributors: {{ software.people }}</div>{%- endif -%}
 		<div class='award'>
 			<span>{{ software.award }}</span>
 		</div>
