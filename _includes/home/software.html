@@ -1,6 +1,5 @@
-
 {%- assign groups = site.software | group_by: 'year' -%}
-
+{%- assign groups = groups | sort: 'name' | reverse -%}
 <div class='timeline'>
 {%- for group in groups -%}
 	<h3>{{ group.name }}</h3>
@@ -8,14 +7,14 @@
 	{%- for software in group.items -%}
 		<li>
 		<div>
-			<strong>{{ software.title }}</strong>
+			<strong style='font-variant: small-caps'>{{ software.title }}</strong>
 			{%- if software.github -%}<a class='github' href='{{ software.github }}'>GitHub</a>{%- endif -%}
 			{%- if software.video -%}<a class='video' href='{{ software.video }}'>Video</a>{%- endif -%}
 			{%- if software.web -%}<a class='web' href='{{ software.web }}'>Web</a>{%- endif -%}
 			{%- if software.slides -%}<a class='slides' href='{{ software.slides }}'>Slides</a>{%- endif -%}
 		</div>
-		{%- if software.tech -%}<div class='tech'>{{ software.tech }}</div>{%- endif -%}
 		<div class='abstract'>{{ software.content }}</div>
+		{%- if software.tech -%}<div class='tech'>{{ software.tech }}</div>{%- endif -%}
 		{%- if software.award -%}
 		<div class='award'>
 			<span>{{ software.award }}</span>

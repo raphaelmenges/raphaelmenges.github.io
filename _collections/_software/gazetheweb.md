@@ -1,6 +1,6 @@
 ---
 title: GazeTheWeb
-year: 2019
+year: Today
 tech: ['C++', 'OpenGL', 'JavaScript', 'Chromium Embedded Framework', 'PortAudio', 'Firebase']
 github: githublink
 web: weblink
