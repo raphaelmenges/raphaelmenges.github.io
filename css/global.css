@@ -39,6 +39,8 @@ h1 {
 h2 {
 	font-size: 20pt;
 	position: relative;
+	width: 100%;
+	border-bottom: 1px solid darkgray;
 }
 
 h2:before {
@@ -69,6 +71,7 @@ body {
 	margin: 0;
 	background: #efefef url("/assets/background.png") repeat scroll center;
 	min-width: 320px;
+	overflow-x: hidden;
 }
 
 .page {
