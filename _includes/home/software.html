@@ -20,14 +20,14 @@
 			{%- endfor -%}
 		</div>
 		{%- endif -%}
-		<div class='abstract'>{{ software.content }}</div>
-		{%- if software.award -%}
+		<div class='abstract'>{{ software.content | remove: '<p>' | remove: '</p>' }}</div>
+		{%- include render_images.html images=software.images -%}
 		{%- if software.people -%}<div class='people'>Contributors: {{ software.people }}</div>{%- endif -%}
+		{%- if software.award -%}
 		<div class='award'>
 			<span>{{ software.award }}</span>
 		</div>
 		{%- endif -%}
-		{%- include render_images.html images=software.images -%}
 		</li>
 	{%- endfor -%}
 	</ol>

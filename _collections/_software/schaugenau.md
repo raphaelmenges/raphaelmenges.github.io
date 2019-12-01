@@ -7,7 +7,7 @@ web: https://raphaelmenges.github.io/schaugenau
 video: https://youtu.be/WOcb94t6BaQ
 slides:
 award:
-images:
+images: ['schaugenau_intro.jpg', 'schaugenau_tutorial.jpg', 'schaugenau_butterfly.jpg', 'schaugenau_gameplay.jpg', 'schaugenau_highscore.jpg', 'schaugenau_box.jpg']
 people: Kevin Schmidt
 ---
 Schau genau! was designed for the State Horticultural Show Landau 2015 as arcarde box game, using only gaze and one buzzer as input. Nearly 3000 sessions were played during the summer without any known issues. Powered by Java and jMonkey engine.

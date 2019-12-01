@@ -7,7 +7,8 @@ web:
 video:
 slides:
 award:
-images:
+images: ['voxel_color.jpg', 'voxel_ao.jpg', 'voxel_bounce.jpg']
+
 people: Fabian Meyer, Milan Dilberovic, and Nils Höhner
 ---
 

@@ -40,7 +40,6 @@ h2 {
 	font-size: 20pt;
 	position: relative;
 	width: 100%;
-	border-bottom: 1px solid darkgray;
 }
 
 h2:before {
@@ -328,7 +327,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 .thesis-abstract {
 	display: block;
 	width: 100%;
-	margin-top: 0.125rem;
+	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
 	font-size: 10pt;
 }
@@ -346,7 +345,6 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 .tech-container {
 	display: block;
 	width: 100%;
-	margin-top: 0.25rem;
 	font-size: 10pt;
 }
 
@@ -354,8 +352,11 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	display: inline-block;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
-	background-color: lightgray;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
+	background-color: white;
 	padding: 1px;
+	border: 1px solid lightgray;
 }
 
 .tech-item:first-child {
@@ -393,6 +394,10 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 
 .images img:hover {
 	background-color: white;
+}
+
+.images img:first-child {
+	margin-left: 0px;
 }
 
 /* lightbox */
@@ -461,6 +466,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	text-decoration: none;
 	line-height: 18pt;
 	box-shadow: 0px 5px 10px lightgrey;
+	white-space: nowrap;
 }
 
 .details {
