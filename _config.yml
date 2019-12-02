@@ -9,6 +9,11 @@ data_dir:        _data
 includes_dir:    _includes
 collections_dir: _collections
 
+# Collections
+collections:
+  software:
+    output: false
+
 # General
 title: Raphael Menges
 description: > # this means to ignore newlines
@@ -39,7 +44,7 @@ mini_magick:
   thumbnail:
     source: assets/imgs
     destination: assets/imgs/thumbs
-    resize: "600x60" # maxinum dimension, original aspect ratio is kept
+    resize: "600x60" # maximum dimension, original aspect ratio is kept
 
 # Jekyll-Scholar
 scholar:

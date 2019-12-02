@@ -1,28 +1,35 @@
-<ol>
-	<li>
-		GazeTheWeb (DIChallenge, Flyer, Poster?, Website)
-	</li>
-	<li>
-		eyeGUI
-	</li>
-	<li>
-		Voraca
-	</li>
-	<li>
-		Votes!
-	</li>
-	<li>
-		Voxel Cone Tracing
-	</li>
-	<li>
-		Schau genau (+Arts)
-	</li>
-	<li>
-		West Homepage
-	</li>
-	<li>
-		BeerHeater
-	</li>
-</ol>
-
-TODO: technologies, links on github etc.
+{%- assign groups = site.software | group_by: 'year' -%}
+{%- assign groups = groups | sort: 'name' | reverse -%}
+<div class='timeline'>
+{%- for group in groups -%}
+	<h3>{{ group.name }}</h3>
+	<ol>
+	{%- for software in group.items -%}
+		<li>
+		<div>
+			<strong style='font-variant: small-caps'>{{ software.title }}</strong>
+			{%- if software.github -%}<a class='github' href='{{ software.github }}'>GitHub</a>{%- endif -%}
+			{%- if software.video -%}<a class='video' href='{{ software.video }}'>Video</a>{%- endif -%}
+			{%- if software.web -%}<a class='web' href='{{ software.web }}'>Web</a>{%- endif -%}
+			{%- if software.slides -%}<a class='slides' href='{{ software.slides }}'>Slides</a>{%- endif -%}
+		</div>
+		{%- if software.tech -%}
+		<div class='tech-container'>
+			{%- for tech in software.tech -%}
+				<div class='tech-item'>{{ tech }}</div>
+			{%- endfor -%}
+		</div>
+		{%- endif -%}
+		<div class='abstract'>{{ software.content | remove: '<p>' | remove: '</p>' }}</div>
+		{%- include render_images.html images=software.images -%}
+		{%- if software.people -%}<div class='people'>Contributors: {{ software.people }}</div>{%- endif -%}
+		{%- if software.award -%}
+		<div class='award'>
+			<span>{{ software.award }}</span>
+		</div>
+		{%- endif -%}
+		</li>
+	{%- endfor -%}
+	</ol>
+{%- endfor -%}
+</div>
