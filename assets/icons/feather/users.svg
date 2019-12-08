@@ -1,8 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;">
-    <path d="M17,21L17,19C17,16.806 15.194,15 13,15L5,15C2.806,15 1,16.806 1,19L1,21" style="fill:none;stroke:white;stroke-width:2px;"/>
-    <circle cx="9" cy="7" r="4" style="fill:none;stroke:white;stroke-width:2px;"/>
-    <path d="M23,21L23,19C22.999,17.183 21.759,15.584 20,15.13" style="fill:none;stroke:white;stroke-width:2px;"/>
-    <path d="M16,3.13C17.764,3.582 19.008,5.184 19.008,7.005C19.008,8.826 17.764,10.428 16,10.88" style="fill:none;stroke:white;stroke-width:2px;"/>
-</svg>
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2c0-2.194-1.806-4-4-4H5c-2.194 0-4 1.806-4 4v2" fill="none" stroke="#fff" stroke-width="2"/><circle cx="9" cy="7" r="4" fill="none" stroke="#fff" stroke-width="2"/><path d="M23 21v-2a4.01 4.01 0 00-3-3.87M16 3.13a4.011 4.011 0 013.008 3.875A4.011 4.011 0 0116 10.88" fill="none" stroke="#fff" stroke-width="2"/></svg>
