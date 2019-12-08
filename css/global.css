@@ -37,19 +37,26 @@ h1 {
 }
 
 h2 {
-	font-size: 20pt;
+	font-size: 22pt;
 	position: relative;
 	width: 100%;
+	padding: 0;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	transition: background-color .2s linear;
+	transition: box-shadow .2s linear;
+	transition: padding-left .5s ease-out;
+	box-sizing: border-box;
 }
 
-h2:before {
-	content:"\A";
-	border-style: solid;
-	border-width: 6pt 6pt 6pt 6pt;
-	border-color: transparent transparent transparent black;
-	position: absolute;
-	left: -10pt;
-	top: 5pt;
+.h2-sticky {
+	background-color: #1e213d;
+	padding-left: 3rem;
+	color: white;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	z-index: 250!important; /* important to override element setting from sticky-headings.js */
 }
 
 h3 {
@@ -114,7 +121,7 @@ body {
 	list-style-type: none;
 	vertical-align: bottom;
 	padding-bottom: 0.5rem;
-	padding-left: 100px;
+	padding-left: 150px;
 }
 
 .navbar li {
@@ -127,7 +134,7 @@ body {
 	text-decoration: none;
 	color: lightgray;
 	text-shadow: 0 0 10px black;
-	font-size: 20pt;
+	font-size: 22pt;
 	font-weight: bold;
 	transition: color .2s ease-in-out;
 }
@@ -209,7 +216,7 @@ body {
 	padding: 3pt;
 	margin-left: 0.25rem;
 	margin-right: 0.25rem;
-	box-shadow: 0px 5px 10px lightgrey;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
 	text-decoration: none;
 	transition: transform .2s ease-in-out;
 }
@@ -387,7 +394,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 .images img {
 	margin: 4px;
 	height: 60px;
-	box-shadow: 0px 5px 10px lightgrey;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
 	padding-bottom: 2px;
 	background-color: black;
 }
@@ -465,7 +472,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	margin-right: 0.25rem;
 	text-decoration: none;
 	line-height: 18pt;
-	box-shadow: 0px 5px 10px lightgrey;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
 	white-space: nowrap;
 }
 
@@ -507,7 +514,7 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	font-size: 10pt;
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
-	box-shadow: 0px 5px 10px lightgrey;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
 	background-color: #ecdf7a;
 	padding: 2pt;
 	border: 1px solid #fbe8b1;
@@ -544,7 +551,7 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 
 #print {
 	background-color: white;
-	box-shadow: 0px 5px 10px lightgrey;
+	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
 	padding: 0.5rem;
 	cursor: pointer;
 	margin: auto;
@@ -560,7 +567,7 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	text-decoration: underline;
 	transform: rotateX(25deg) scale3d(1.1,1.2,1);
 	border-color: black;
-	box-shadow: 0px 5px 15px gray;
+	box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
 }
 
 #print:before {
@@ -641,6 +648,18 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	.timeline li {
 		padding-top: 4px;
 		padding-bottom: 4px;
+	}
+
+	/* disable sticky headings */
+	.h2-sticky {
+		background-color: none;
+		padding: 0;
+		color: black;
+		box-shadow: none
+	}
+	h2 { /* overwrite style set in sticky-headings.js */
+		position: relative!important;
+		top: 0px!important;
 	}
 }
 
