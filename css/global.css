@@ -43,20 +43,70 @@ h2 {
 	padding: 0;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	transition: background-color .2s linear;
-	transition: box-shadow .2s linear;
-	transition: padding-left .5s ease-out;
+	transition: background-color .2s linear, box-shadow .2s linear, padding-left .5s ease-out;
 	box-sizing: border-box;
 }
 
 .h2-sticky {
 	background-color: #1e213d;
-	padding-left: 3rem;
+	padding-left: 3.5rem;
 	color: white;
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
 	z-index: 250!important; /* important to override element setting from sticky-headings.js */
+}
+
+@keyframes sticky-before {
+0% {
+	opacity: 0;
+}
+100% {
+	opacity: 1;
+}
+}
+
+.h2-sticky:before {
+	content: "";
+	position: absolute;
+	left: 0pt;
+	top: 2pt;
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+	padding-left: 1.5rem;
+	height: 22pt;
+	width: 22pt;
+	background-size: 22pt 22pt;
+	background-repeat: no-repeat;
+	background-position: center;
+	animation-name: sticky-before;
+	animation-duration: 1s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: 1;
+}
+
+#jobs.h2-sticky:before {
+	background-image: url(../assets/icons/feather/briefcase.svg);
+}
+
+#academia.h2-sticky:before {
+	background-image: url(../assets/icons/feather/book-open.svg);
+}
+
+#teaching.h2-sticky:before {
+	background-image: url(../assets/icons/feather/users.svg);
+}
+
+#software.h2-sticky:before {
+	background-image: url(../assets/icons/feather/server.svg);
+}
+
+#arts.h2-sticky:before {
+	background-image: url(../assets/icons/feather/image.svg);
+}
+
+#publications.h2-sticky:before {
+	background-image: url(../assets/icons/feather/archive.svg);
 }
 
 h3 {
@@ -533,6 +583,7 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	background-size: 1.5rem 1.5rem;
 	background-image: url(../assets/icons/feather/award.svg);
 	background-repeat: no-repeat;
+	background-position: center; 
 }
 
 .abstract {
