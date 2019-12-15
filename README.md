@@ -6,7 +6,6 @@
 On Windows, you need to install ImageMagick: https://imagemagick.org/script/download.php
 
 # Todo
-- Jobs (MAMEM, GazeMining...)
 - Arts (JustHotAir, Movies, ...)
 - Teaching (MLDM, UDK course)
 - Work / Carrier? Grants?

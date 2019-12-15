@@ -28,7 +28,15 @@
 	display: block;
 	position: relative;
 	visibility: hidden;
-	top: 26px;
+	top: 1px;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 /* headings */
@@ -44,8 +52,11 @@ h2 {
 	padding: 0;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	transition: background-color .2s linear, box-shadow .2s linear, padding-left .5s ease-out;
+	transition: background-color .2s linear, box-shadow .2s linear, padding-left .5s ease-out, opacity .5s linear;
 	box-sizing: border-box;
+	margin: 0;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
 }
 
 .h2-sticky {
@@ -55,7 +66,10 @@ h2 {
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
 	border-bottom-left-radius: 5px;
 	border-bottom-right-radius: 5px;
-	z-index: 250!important; /* important to override element setting from sticky-headings.js */
+}
+
+.h2-hidden {
+	opacity: 0;
 }
 
 @keyframes sticky-before {
@@ -86,27 +100,27 @@ h2 {
 	animation-iteration-count: 1;
 }
 
-#jobs.h2-sticky:before {
+#jobs + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/briefcase.svg);
 }
 
-#academia.h2-sticky:before {
+#academia + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/book-open.svg);
 }
 
-#teaching.h2-sticky:before {
+#teaching + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/users.svg);
 }
 
-#software.h2-sticky:before {
+#software + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/server.svg);
 }
 
-#arts.h2-sticky:before {
+#arts + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/image.svg);
 }
 
-#publications.h2-sticky:before {
+#publications + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/archive.svg);
 }
 
@@ -362,42 +376,6 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	text-shadow: 0px 3px 10px gray;
 }
 
-/* academia */
-
-.grade {
-	display: block;
-	width: 100%;
-	margin-top: 0.125rem;
-	margin-bottom: 0.125rem;
-	font-size: 10pt;
-}
-
-.thesis-title {
-	display: block;
-	width: 100%;
-	margin-top: 0.25rem;
-	margin-bottom: 0.125rem;
-	font-size: 12pt;
-	padding-top: 0.25rem;
-	border-top: 1px solid lightgray;
-}
-
-.thesis-abstract {
-	display: block;
-	width: 100%;
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-	font-size: 10pt;
-}
-
-.thesis-supervisor {
-	display: block;
-	width: 100%;
-	margin-top: 0.125rem;
-	margin-bottom: 0.125rem;
-	font-size: 10pt;
-}
-
 /* software */
 
 .tech-container {
@@ -489,6 +467,11 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	animation-iteration-count: 1;
 }
 
+a.lightbox:hover {
+	text-decoration: none;
+}
+
+
 .lightbox div {
 	display: table-cell;
 	vertical-align: middle;
@@ -555,10 +538,6 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	background-color: blue;
 }
 
-a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
-	text-decoration: underline;
-}
-
 .award {
 	border-radius: 5px;
 	display: table;
@@ -593,6 +572,32 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	margin-top: 0.125rem;
 	margin-bottom: 0.125rem;
 	font-size: 10pt;
+}
+
+.note {
+	display: block;
+	width: 100%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
+	font-size: 10pt;
+}
+
+.grade {
+	display: block;
+	width: 100%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
+	font-size: 10pt;
+}
+
+.title {
+	display: block;
+	width: 100%;
+	margin-top: 0.25rem;
+	margin-bottom: 0.125rem;
+	font-size: 12pt;
+	padding-top: 0.25rem;
+	border-top: 1px solid lightgray;
 }
 
 /* printing */

@@ -10,7 +10,7 @@ for(var idx = 0; idx < headings.length; idx++) {
 let options = {
 	root: null, // viewport
 	rootMargin: '0px', // no margin
-	threshold: [0.0,0.99,1.0] // check for heading being not, close-to-fully, or fully visible
+	threshold: [0.0,0.9,0.99,1.0] // check for heading being not, close-to-fully, or fully visible
 }
 
 // Callback for intersection observations
@@ -18,8 +18,14 @@ let callback = (entries, observer) => {
 	entries.forEach(entry => {
 		if(entry.boundingClientRect.top >= 0) { // if sticky, element is positioned at -1px over the top
 			entry.target.classList.remove('h2-sticky');
+			entry.target.classList.remove('h2-hidden');
 		} else {
-			entry.target.classList.add('h2-sticky');
+			if(entry.intersectionRatio > 0.9) { // element sticks to the top
+				entry.target.classList.add('h2-sticky');
+				entry.target.classList.remove('h2-hidden');
+			} else { // element is done with sticking
+				entry.target.classList.add('h2-hidden');
+			}
 		}
 	});
 };
