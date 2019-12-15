@@ -28,7 +28,7 @@
 	display: block;
 	position: relative;
 	visibility: hidden;
-	top: 26px;
+	top: 1px;
 }
 
 /* headings */
@@ -366,42 +366,6 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	text-shadow: 0px 3px 10px gray;
 }
 
-/* academia */
-
-.grade {
-	display: block;
-	width: 100%;
-	margin-top: 0.125rem;
-	margin-bottom: 0.125rem;
-	font-size: 10pt;
-}
-
-.thesis-title {
-	display: block;
-	width: 100%;
-	margin-top: 0.25rem;
-	margin-bottom: 0.125rem;
-	font-size: 12pt;
-	padding-top: 0.25rem;
-	border-top: 1px solid lightgray;
-}
-
-.thesis-abstract {
-	display: block;
-	width: 100%;
-	margin-top: 0.25rem;
-	margin-bottom: 0.25rem;
-	font-size: 10pt;
-}
-
-.thesis-supervisor {
-	display: block;
-	width: 100%;
-	margin-top: 0.125rem;
-	margin-bottom: 0.125rem;
-	font-size: 10pt;
-}
-
 /* software */
 
 .tech-container {
@@ -597,6 +561,32 @@ a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
 	margin-top: 0.125rem;
 	margin-bottom: 0.125rem;
 	font-size: 10pt;
+}
+
+.note {
+	display: block;
+	width: 100%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
+	font-size: 10pt;
+}
+
+.grade {
+	display: block;
+	width: 100%;
+	margin-top: 0.125rem;
+	margin-bottom: 0.125rem;
+	font-size: 10pt;
+}
+
+.title {
+	display: block;
+	width: 100%;
+	margin-top: 0.25rem;
+	margin-bottom: 0.125rem;
+	font-size: 12pt;
+	padding-top: 0.25rem;
+	border-top: 1px solid lightgray;
 }
 
 /* printing */
