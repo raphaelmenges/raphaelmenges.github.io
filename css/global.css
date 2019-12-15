@@ -31,6 +31,14 @@
 	top: 1px;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 /* headings */
 
 h1 {
@@ -47,6 +55,8 @@ h2 {
 	transition: background-color .2s linear, box-shadow .2s linear, padding-left .5s ease-out, opacity .5s linear;
 	box-sizing: border-box;
 	margin: 0;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
 }
 
 .h2-sticky {
@@ -90,27 +100,27 @@ h2 {
 	animation-iteration-count: 1;
 }
 
-#jobs.h2-sticky:before {
+#jobs + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/briefcase.svg);
 }
 
-#academia.h2-sticky:before {
+#academia + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/book-open.svg);
 }
 
-#teaching.h2-sticky:before {
+#teaching + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/users.svg);
 }
 
-#software.h2-sticky:before {
+#software + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/server.svg);
 }
 
-#arts.h2-sticky:before {
+#arts + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/image.svg);
 }
 
-#publications.h2-sticky:before {
+#publications + .h2-sticky:before {
 	background-image: url(../assets/icons/feather/archive.svg);
 }
 
@@ -457,6 +467,11 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	animation-iteration-count: 1;
 }
 
+a.lightbox:hover {
+	text-decoration: none;
+}
+
+
 .lightbox div {
 	display: table-cell;
 	vertical-align: middle;
@@ -521,10 +536,6 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 
 .web {
 	background-color: blue;
-}
-
-a.details:hover,a.doi:hover,a.pdf:hover,a.video:hover,a.slides:hover {
-	text-decoration: underline;
 }
 
 .award {
