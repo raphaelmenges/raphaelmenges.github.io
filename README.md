@@ -8,8 +8,9 @@ On Windows, you need to install ImageMagick: https://imagemagick.org/script/down
 # Todo
 - Arts (JustHotAir, Movies, ...)
 - Teaching (MLDM, UDK course)
-- Work / Carrier? Grants?
-- Print: QR Code + Signature + Contact things
+- Grants?
+- Gallery per item (not overall gallery) + gallery controls
+- Print: QR Code + Contact things
 - Deploy and document Votes! ?
 
 # Bugs
