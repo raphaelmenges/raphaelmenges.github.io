@@ -55,8 +55,6 @@ h2 {
 	transition: background-color .2s linear, box-shadow .2s linear, opacity .5s linear;
 	box-sizing: border-box;
 	margin: 0;
-	margin-top: 2.5rem;
-	margin-bottom: 1rem;
 	text-align: center;
 	box-shadow: 0 6px 20px -20px black;
 }
@@ -65,8 +63,6 @@ h2 {
 	background-color: white;
 	color: black;
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
-	border-bottom-left-radius: 5px;
-	border-bottom-right-radius: 5px;
 }
 
 .h2-hidden {
@@ -89,7 +85,7 @@ h2 {
 	top: 2pt;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	padding-left: 1.5rem;
+	padding-left: 2.5rem;
 	height: 22pt;
 	width: 22pt;
 	background-size: 22pt 22pt;
@@ -329,13 +325,19 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 .welcome {
 	display: block;
 	margin-top: 1rem;
-	margin-bottom: 0.5rem;
+	margin-bottom: 2rem;
+}
+
+.intro {
+	margin-top: 1rem;
+	margin-bottom: 1rem;
 }
 
 /* timeline */
 
 .timeline {
-	margin-top: 10px;
+	margin-top: 1rem;
+	margin-bottom: 3rem;
 }
 
 .timeline ol {
@@ -374,7 +376,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 }
 
 .timeline li:hover:before {
-	text-shadow: 0px 3px 10px gray;
+	text-shadow: 0px 3px 10px rgba(0,0,0,0.25);
 }
 
 /* software */
