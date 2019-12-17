@@ -664,32 +664,6 @@ a.lightbox:hover {
 
 @media print
 {
-	/* hide many things */
-	#print,.navbar,.footer,
-	.details,.doi,.pdf,.video,.slides,.github,.web,
-	.social-github,.social-linkedin,.social-email,
-	.images,.award,.greeting,.welcome,.abstract,
-	#scroll-top,.fake-navbar {
-		display: none !important;
-	}
-
-	/* get rid of timeline interactivity */
-	.timeline li:hover:before {
-		text-shadow: none !important;
-	}
-
-	/* line */
-	.timeline ol:before {
-		border-left: solid 2px darkgray;
-	}
-
-	/* dot */
-	.timeline li:before {
-		left: -5px;
-		top: 3px;
-		color: darkgray;
-	}
-
 	/* body */
 	body {
 		background: none !important;
@@ -716,16 +690,9 @@ a.lightbox:hover {
 		margin-right: 0rem;
 	}
 
-	/* timeline */
-	.timeline li {
-		padding-top: 4px;
-		padding-bottom: 4px;
-	}
-
 	/* disable sticky headings */
 	.h2-sticky {
 		background-color: none;
-		padding: 0;
 		color: black;
 		box-shadow: none
 	}
@@ -734,13 +701,55 @@ a.lightbox:hover {
 		top: 0px!important;
 		text-align: left;
 		box-shadow: none;
-		font-size: 22px;
+	}
+	.h2-sticky:before {
+		content: none;
+	}
+	.h2-hidden {
+		opacity: 1;
 	}
 
 	/* headings */
 	h3 {
-		color: black;
 		font-size: 20px;
+	}
+
+	/* hide many things */
+	#print,.navbar,.footer,
+	.details,.doi,.pdf,.video,.slides,.github,.web,
+	.social-github,.social-linkedin,.social-email,
+	.images,.award,.greeting,.welcome,.abstract,
+	#scroll-top,.fake-navbar {
+		display: none !important;
+	}
+
+	/* intro */
+	.intro {
+		margin-top: 0.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	/* timeline */
+	.timeline {
+		margin-top: 0.25rem;
+		margin-bottom: 1rem;
+	}
+
+	/* timeline */
+	.timeline li {
+		padding-top: 4px;
+		padding-bottom: 4px;
+	}
+
+	/* get rid of timeline interactivity */
+	.timeline li:hover:before {
+		text-shadow: none !important;
+	}
+
+	/* dot */
+	.timeline li:before {
+		left: -4px;
+		top: 3px;
 	}
 }
 
