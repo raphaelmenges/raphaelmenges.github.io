@@ -678,6 +678,18 @@ a.lightbox:hover {
 		text-shadow: none !important;
 	}
 
+	/* line */
+	.timeline ol:before {
+		border-left: solid 2px darkgray;
+	}
+
+	/* dot */
+	.timeline li:before {
+		left: -5px;
+		top: 3px;
+		color: darkgray;
+	}
+
 	/* body */
 	body {
 		background: none !important;
@@ -720,6 +732,15 @@ a.lightbox:hover {
 	h2 { /* overwrite style set in sticky-headings.js */
 		position: relative!important;
 		top: 0px!important;
+		text-align: left;
+		box-shadow: none;
+		font-size: 22px;
+	}
+
+	/* headings */
+	h3 {
+		color: black;
+		font-size: 20px;
 	}
 }
 
