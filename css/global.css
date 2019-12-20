@@ -353,7 +353,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 /* line */
 .timeline ol:before {
 	content: '';
-	border-left: solid 2px #b42041;
+	border-left: solid 3px #b42041;
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
