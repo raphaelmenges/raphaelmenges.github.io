@@ -48,9 +48,9 @@ h1 {
 h2 {
 	font-size: 22pt;
 	position: sticky;
-	top: 0px;
+	top: -1px;
 	width: 100%;
-	height: 40pt;
+	height: 54px;
 	padding: 0;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
@@ -116,7 +116,7 @@ h3 {
 	padding-bottom: 2px;
 	color: white;
 	position: sticky;
-	top: 40pt;
+	top: 52px;
 	z-index: 50;
 	width: 100%;
 	background-color: #b42041;
