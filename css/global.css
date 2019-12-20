@@ -47,38 +47,24 @@ h1 {
 
 h2 {
 	font-size: 22pt;
-	position: relative;
+	position: sticky;
+	top: 0px;
 	width: 100%;
+	height: 40pt;
 	padding: 0;
 	padding-top: 0.5rem;
 	padding-bottom: 0.5rem;
-	transition: background-color .2s linear, box-shadow .2s linear, opacity .5s linear;
+	transition: background-color .2s linear, box-shadow .2s linear;
 	box-sizing: border-box;
 	margin: 0;
 	text-align: center;
-	box-shadow: 0 6px 20px -20px black;
-}
-
-.h2-sticky {
-	background-color: white;
-	color: black;
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
+	background-color: white;
+	z-index: 100;
+	border-radius: 5px;
 }
 
-.h2-hidden {
-	opacity: 0;
-}
-
-@keyframes sticky-before {
-0% {
-	opacity: 0;
-}
-100% {
-	opacity: 1;
-}
-}
-
-.h2-sticky:before {
+h2:before {
 	content: "";
 	position: absolute;
 	left: 0pt;
@@ -97,27 +83,27 @@ h2 {
 	animation-iteration-count: 1;
 }
 
-#jobs + .h2-sticky:before {
+#jobs + h2:before {
 	background-image: url(../assets/icons/feather/briefcase.svg);
 }
 
-#academia + .h2-sticky:before {
+#academia + h2:before {
 	background-image: url(../assets/icons/feather/book-open.svg);
 }
 
-#teaching + .h2-sticky:before {
+#teaching + h2:before {
 	background-image: url(../assets/icons/feather/users.svg);
 }
 
-#software + .h2-sticky:before {
+#software + h2:before {
 	background-image: url(../assets/icons/feather/server.svg);
 }
 
-#arts + .h2-sticky:before {
+#arts + h2:before {
 	background-image: url(../assets/icons/feather/image.svg);
 }
 
-#publications + .h2-sticky:before {
+#publications + h2:before {
 	background-image: url(../assets/icons/feather/archive.svg);
 }
 
@@ -126,9 +112,16 @@ h3 {
 	padding: 0;
 	margin: 0;
 	padding-left: 10px;
-	margin-top: 5px;
-	margin-bottom: 5px;
-	color: #b42041;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	color: white;
+	position: sticky;
+	top: 40pt;
+	z-index: 50;
+	width: 100%;
+	background-color: #b42041;
+	box-sizing: border-box;
+	border-radius: 5px;
 }
 
 /* page */
@@ -150,7 +143,7 @@ body {
 .margin {
 	position: fixed;
 	width: 200px;
-	z-index: 100;
+	z-index: 300;
 }
 
 .content {
@@ -690,28 +683,18 @@ a.lightbox:hover {
 		margin-right: 0rem;
 	}
 
-	/* disable sticky headings */
-	.h2-sticky {
-		background-color: none;
-		color: black;
-		box-shadow: none
-	}
-	h2 { /* overwrite style set in sticky-headings.js */
+	/* simplify headings */
+	h2 {
 		position: relative!important;
-		top: 0px!important;
-		text-align: left;
-		box-shadow: none;
+		text-align: left!important;
+		box-shadow: none!important;
+		background-color: none!important;
 	}
-	.h2-sticky:before {
-		content: none;
+	h2:before {
+		content: none!important;
 	}
-	.h2-hidden {
-		opacity: 1;
-	}
-
-	/* headings */
 	h3 {
-		font-size: 20px;
+		font-size: 20px!important;
 	}
 
 	/* hide many things */
