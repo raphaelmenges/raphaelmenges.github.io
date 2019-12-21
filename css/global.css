@@ -61,7 +61,11 @@ h2 {
 	box-shadow: 0px 5px 10px rgba(0,0,0,0.125);
 	background-color: white;
 	z-index: 100;
-	border-radius: 5px;
+	border-radius: 3px;
+
+	/* Testing blurred background */
+	background-color: rgba(255,255,255,0.8);
+	backdrop-filter: blur(10px);
 }
 
 h2:before {
@@ -333,6 +337,15 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	margin-bottom: 3rem;
 }
 
+.timeline:after {
+	content: '◼';
+	position: relative;
+	color: #b42041;
+	padding-left: 35px;
+	left: -5px;
+	top: -10px;
+}
+
 .timeline ol {
 	list-style-type: none;
 	padding: 0;
@@ -363,8 +376,8 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 .timeline li:before {
 	content: '⬤';
 	position: absolute;
-	left: -5.5px;
-	top: 11px;
+	left: -5px;
+	top: 10px;
 	color: #b42041;
 }
 
