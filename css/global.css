@@ -707,7 +707,10 @@ a.lightbox:hover {
 		content: none!important;
 	}
 	h3 {
+		position: relative!important
 		font-size: 20px!important;
+		color: black!important;
+		background: none!important;
 	}
 
 	/* hide many things */
@@ -726,12 +729,16 @@ a.lightbox:hover {
 	}
 
 	/* timeline */
+
 	.timeline {
 		margin-top: 0.25rem;
 		margin-bottom: 1rem;
 	}
 
-	/* timeline */
+	.timeline:after {
+		content: none;
+	}
+
 	.timeline li {
 		padding-top: 4px;
 		padding-bottom: 4px;
