@@ -12,8 +12,8 @@ On Windows, you need to install ImageMagick: https://imagemagick.org/script/down
 - Gallery per item (not overall gallery) + gallery controls
 - Print: QR Code + Contact info
 - Deploy and document Votes! ?
-- ETWEB organization
-- Highlights
+- ETWEB organization 2019/2020
+- Highlights -> print only that as one-page-cv? or make css class "printable?"
 
 # Bugs
 - [Responsive] Figure caption sometimes outside of viewport
