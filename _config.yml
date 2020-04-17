@@ -65,6 +65,8 @@ scholar:
 
 # Meta info about publications
 pubs:
+  menges2020mamem:
+    images: ['iet_book.jpg']
   menges2019iue:
     authorizer_link: 'https://dl.acm.org/authorize?N690524'
     select: true

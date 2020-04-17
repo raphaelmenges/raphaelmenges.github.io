@@ -507,7 +507,7 @@ a.lightbox:hover {
 
 /* misc */
 
-.details,.doi,.pdf,.video,.slides,.github,.web {
+.details,.doi,.isbn,.pdf,.video,.slides,.github,.web {
 	color: white;
 	border-radius: 5px;
 	font-size: 10pt;
@@ -526,6 +526,10 @@ a.lightbox:hover {
 
 .doi {
 	background-color: darkgreen;
+}
+
+.isbn {
+	background-color: purple;
 }
 
 .pdf {

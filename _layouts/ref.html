@@ -40,6 +40,11 @@
 <a class='doi' href='https://doi.org/{{ entry.doi }}'>DOI</a>
 {%- endif -%}
 
+{% comment %} ISBN Link {% endcomment %}
+{%- if entry.isbn -%}
+<a class='isbn' href='https://isbnsearch.org/isbn/{{ entry.isbn }}'>ISBN</a>
+{%- endif -%}
+
 {% comment %} Video Link {% endcomment %}
 {%- if site.pubs[entry.key].video -%}
 <a class='video' href='{{ site.pubs[entry.key].video }}'>Video</a>
