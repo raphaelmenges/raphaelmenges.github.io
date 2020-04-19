@@ -562,6 +562,7 @@ a.lightbox:hover {
 	background-color: #ecdf7a;
 	padding: 2pt;
 	border: 1px solid #fbe8b1;
+	line-height: 1.5rem;
 }
 
 .award span, .award:before {
