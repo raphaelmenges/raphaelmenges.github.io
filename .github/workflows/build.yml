@@ -37,7 +37,7 @@ jobs:
                       && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
                       && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
                       && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --preserveLineBreaks --file-ext js
-                      %% echo "hello"
+                      && echo "hello"
                       && echo | ls -a -l
                       && mv archive _site/
 
