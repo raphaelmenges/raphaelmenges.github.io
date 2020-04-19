@@ -1,4 +1,4 @@
-var lightbox_imgList = [] // list with all images
+var lightbox_imgList = []; // list with all images
 var lightbox_curIdx = -1; // image to be displayed
 
 function registerLightboxImage(src, caption) {
@@ -8,8 +8,8 @@ function registerLightboxImage(src, caption) {
 function showLightbox(src) {
 
 	/* Search for image in imgList */
-	var idx = -1;
-	for (var i = 0; i < lightbox_imgList.length; ++i) {
+	var i = 0, idx = -1;
+	for (; i < lightbox_imgList.length; ++i) {
 		if (lightbox_imgList[i].src == src) {
 			idx = i;
 			break;
