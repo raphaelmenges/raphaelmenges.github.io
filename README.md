@@ -18,6 +18,7 @@ On Windows, you need to install ImageMagick: https://imagemagick.org/script/down
 - ETWEB organization 2019/2020
 - Highlights -> print only that as one-page-cv? or make css class "printable?"
 - Random category? tower defense, first c++ program
+- Unreal Tournament maps? (endstation, baloon, etc.)
 
 # Bugs
 - [Responsive] Figure caption sometimes outside of viewport
