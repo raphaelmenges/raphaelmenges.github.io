@@ -1,5 +1,9 @@
-[**View page here!**](https://raphaelmenges.github.io)
+![Build and deploy site](https://github.com/raphaelmenges/raphaelmenges.github.io/workflows/Build%20and%20deploy%20site/badge.svg?branch=deploy)
 
+Welcome to the repository of my private Web page. [**View page here!**](https://raphaelmenges.github.io)
+
+# Local setup
+This is what you have to execute for a local setup. The `archive` folder is *not* automatically deployed to the output directory:
 - `bundle install --path vendor`
 - `bundle exec jekyll serve`
 
