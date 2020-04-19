@@ -10,10 +10,10 @@ This is what you have to execute for a local setup. The `archive` folder is *not
 On Windows, you need to install ImageMagick: https://imagemagick.org/script/download.php
 
 # Todo
-- Arts (JustHotAir, Movies, STEOREO ...)
+- Arts (JustHotAir, Movies, STEOREO ...) -> Add images!
 - Grants?
 - Gallery per item (not overall gallery) + gallery controls
-- Print: QR Code + Contact info
+- Print: QR Code + Contact info + Options for one-page CV vs full?
 - Deploy and document Votes! ?
 - ETWEB organization 2019/2020
 - Highlights -> print only that as one-page-cv? or make css class "printable?"
