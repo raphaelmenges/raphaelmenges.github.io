@@ -10,7 +10,6 @@ This is what you have to execute for a local setup. The `archive` folder is *not
 On Windows, you need to install ImageMagick: https://imagemagick.org/script/download.php
 
 # Todo
-- Arts (JustHotAir, Movies, STEOREO ...) -> Add images!
 - Grants?
 - Gallery per item (not overall gallery) + gallery controls
 - Print: QR Code + Contact info + Options for one-page CV vs full?
@@ -18,6 +17,7 @@ On Windows, you need to install ImageMagick: https://imagemagick.org/script/down
 - ETWEB organization 2019/2020
 - Highlights -> print only that as one-page-cv? or make css class "printable?"
 - Random category? tower defense, first c++ program
+- Unreal Tournament maps? (endstation, baloon, etc.)
 
 # Bugs
 - [Responsive] Figure caption sometimes outside of viewport
