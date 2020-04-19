@@ -21,3 +21,4 @@ On Windows, you need to install ImageMagick: https://imagemagick.org/script/down
 
 # Bugs
 - [Responsive] Figure caption sometimes outside of viewport
+- [Deployment] Lighbox.js breaks minifier `&& html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext js`
