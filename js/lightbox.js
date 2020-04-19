@@ -8,8 +8,8 @@ function registerLightboxImage(src, caption) {
 function showLightbox(src) {
 
 	/* Search for image in imgList */
-	var i = 0, idx = -1;
-	for (; i < lightbox_imgList.length; ++i) {
+	var i, idx = -1;
+	for (i = 0; i < lightbox_imgList.length; ++i) {
 		if (lightbox_imgList[i].src == src) {
 			idx = i;
 			break;
