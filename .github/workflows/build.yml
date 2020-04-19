@@ -26,7 +26,7 @@ jobs:
         BASE_BRANCH: deploy # this is the branch where the actual code is
         BRANCH: master # here is the generated site
         FOLDER: _site # Jekyll standard output
-        # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html, .css, and .js files (CLI is a bit awkward)
+        # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html, .css, and .js files, move archive to output
         BUILD_SCRIPT: curl -sL https://deb.nodesource.com/setup_13.x | bash
                       && apt update
                       && apt -yq install ruby-full nodejs
@@ -37,6 +37,7 @@ jobs:
                       && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
                       && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
                       && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --preserveLineBreaks --file-ext js
+                      && mv ./archive ./_site/archive
 
   deploy:
 
