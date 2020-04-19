@@ -14,6 +14,7 @@ On Windows, you need to install ImageMagick: https://imagemagick.org/script/down
 - Deploy and document Votes! ?
 - ETWEB organization 2019/2020
 - Highlights -> print only that as one-page-cv? or make css class "printable?"
+- Random category? tower defense, first c++ program
 
 # Bugs
 - [Responsive] Figure caption sometimes outside of viewport
