@@ -121,7 +121,7 @@ arts:
   tre2:
     images: ['tre2_poster.jpg', 'tre2_environment.jpg', 'tre2_fire.jpg', 'tre2_underwater.jpg', 'tre2_dev.jpg', 'tre2_menu.jpg']
   wtech:
-    images: ['wtech_1.jpg', 'wtech_2.png', 'wtech_3.png', 'wtech_4.jpg', 'wtech_5.png', 'wtech_6.jpg', 'wtech_7.png', 'wtech_8.jpg']
+    images: ['wtech_1.jpg', 'wtech_2.png', 'wtech_3.png', 'wtech_4.jpg', 'wtech_5.jpg', 'wtech_6.jpg', 'wtech_7.png', 'wtech_8.jpg']
   bj:
     images: ['bj_1.jpg', 'bj_2.jpg', 'bj_3.jpg', 'bj_4.jpg', 'bj_6.jpg', 'bj_7.jpg', 'bj_8.jpg'] # 'bj_5.jpg'
   pulsedrive:
