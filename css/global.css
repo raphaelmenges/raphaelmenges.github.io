@@ -65,8 +65,8 @@ h2 {
 	border: 1px solid #b42041;
 
 	/* Testing blurred background */
-	background-color: rgba(255,255,255,0.8);
-	backdrop-filter: blur(10px);
+	/* background-color: rgba(255,255,255,0.8);
+	backdrop-filter: blur(10px); */
 }
 
 h2:before {
@@ -344,7 +344,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	color: #b42041;
 	padding-left: 35px;
 	left: -5px;
-	top: -10px;
+	top: -26px;
 }
 
 .timeline ol {
@@ -358,10 +358,15 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 .timeline li {
 	position: relative;
 	display: block;
-	margin: 0;
+	margin: 16px;
+	background: white;
 	padding-left: 20px;
 	padding-top: 12px;
-	padding-bottom: 12px;
+	padding-bottom: 12px;	
+	padding-right: 20px;
+	border: 1px solid #b42041;
+	border-radius: 3px;
+	border: 1px solid #b42041;
 }
 
 /* line */
@@ -377,7 +382,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 .timeline li:before {
 	content: '⬤';
 	position: absolute;
-	left: -5px;
+	left: -22px;
 	top: 10px;
 	color: #b42041;
 }
@@ -757,7 +762,7 @@ a.lightbox:hover {
 
 	/* dot */
 	.timeline li:before {
-		left: -4px;
+		left: -20px;
 		top: 3px;
 	}
 }
