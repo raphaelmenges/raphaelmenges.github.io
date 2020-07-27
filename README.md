@@ -7,7 +7,7 @@ This is what you have to execute for a local setup. The `archive` folder is *not
 - `bundle install --path vendor`
 - `bundle exec jekyll serve`
 
-On Windows, you need to install ImageMagick: https://imagemagick.org/script/download.php
+On Windows and Mac, you need to install ImageMagick: https://imagemagick.org/script/download.php
 
 # Todo
 - One-Page-CV .pdf
