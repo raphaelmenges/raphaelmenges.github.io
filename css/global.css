@@ -644,6 +644,10 @@ a.lightbox:hover {
 	}
 
 	62% {
+		transform: rotateZ(-1deg)
+	}
+
+	63% {
 		transform: rotateZ(0deg)
 	}
 }
