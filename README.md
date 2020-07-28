@@ -11,7 +11,6 @@ On Windows and Mac, you need to install ImageMagick: https://imagemagick.org/scr
 
 # Todo
 - GazeMining Dataset
-- Images for PHD thesis
 - Grants?
 - Gallery per item (not overall gallery) + gallery controls
 - Print: QR Code + Contact info + Options for one-page CV vs full?

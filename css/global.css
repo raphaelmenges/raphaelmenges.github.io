@@ -343,7 +343,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	position: relative;
 	color: #b42041;
 	padding-left: 35px;
-	left: -5px;
+	left: -0.375rem;
 	top: -26px;
 }
 
@@ -382,7 +382,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 .timeline li:before {
 	content: '⬤';
 	position: absolute;
-	left: -22px;
+	left: -1.5rem;
 	top: 10px;
 	color: #b42041;
 }

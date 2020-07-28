@@ -102,6 +102,8 @@ pubs:
 
 # Meta information about academia
 academia:
+  phd:
+    images: ['phd_cover.jpg']
   master:
     images: ['master_ui1.jpg', 'master_ui2.jpg', 'master_surface.jpg', 'master_impl.jpg', 'master_ascension.jpg']
   bachelor:
