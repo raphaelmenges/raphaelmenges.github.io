@@ -140,6 +140,10 @@ body {
 	overflow-x: hidden;
 }
 
+form {
+	margin: 0;
+}
+
 .page {
 	max-width: 1024px;
 	margin: auto;
@@ -845,5 +849,20 @@ a.lightbox:hover {
 	/* show fake-navbar */
 	.fake-navbar {
 		display: inherit;
+	}
+}
+
+@media only screen and (max-width: 512px) {
+
+	/* make it more compact */
+	.timeline ol {
+		padding-left: 10px;
+	}
+	.timeline:after {
+		left: -31px;
+	}
+	.content {
+		margin-left: 0.5rem;
+		margin-right: 0.5rem;
 	}
 }
