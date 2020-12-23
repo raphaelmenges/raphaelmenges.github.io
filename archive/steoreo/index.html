@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+
+<title>STEOREO - A Blender Movie</title>
+<link rel="icon" type="image/png" href="favicon.png" />
+
+<style type="text/css">
+td {border:0px solid #FFFFFF; margin:0px; padding:0px}
+tr {margin:0px; padding:0px}
+</style>
+
+<script type="text/javascript" language="JavaScript"> 
+
+function swap(id,onoff){
+	if (onoff) {
+		document.getElementById(id).style.opacity=1;
+	} else {
+		document.getElementById(id).style.opacity=0;
+	}
+}	
+
+var b_alpha = 0;
+function b_fade(onoff){
+	document.getElementById('blender').style.opacity=b_alpha;
+	if (onoff) {
+		if (b_alpha <= 1) {
+			b_alpha = b_alpha + 0.03;
+			setTimeout ('b_fade(true)',1);
+		}
+	}
+	if (!onoff) {
+		if (b_alpha > 0.05) {
+			b_alpha = b_alpha - 0.03;
+			setTimeout ('b_fade(false)',1);
+		}
+	}	
+}	
+
+var i_alpha = 0;
+function i_fade(onoff){
+	document.getElementById('information').style.opacity=i_alpha;
+	if (onoff) {
+		if (i_alpha <= 1) {
+			i_alpha = i_alpha + 0.03;
+			setTimeout ('i_fade(true)',1);
+		}
+	}
+	if (!onoff) {
+		if (i_alpha > 0.05) {
+			i_alpha = i_alpha - 0.03;
+			setTimeout ('i_fade(false)',1);
+		}
+	}	
+}	
+
+var f_alpha = 0;
+function f_fade(onoff){
+	document.getElementById('facebook').style.opacity=f_alpha;
+	if (onoff) {
+		if (f_alpha <= 1) {
+			f_alpha = f_alpha + 0.03;
+			setTimeout ('f_fade(true)',1);
+		}
+	}
+	if (!onoff) {
+		if (f_alpha > 0.05) {
+			f_alpha = f_alpha - 0.03;
+			setTimeout ('f_fade(false)',1);
+		}
+	}	
+}	
+
+function popup (url) {
+ popup = window.open(url, "STEOREO - Information", "width=600,height=500,resizable=no");
+ popup.focus();
+ return false;
+}
+
+</script>
+</head>
+<body style="background-color:#000000">
+	<div style="margin:auto; height:930px; width:1113px; background-image:url(background.png)" >
+	<div style="margin:auto; height:930px; width:850px">
+		<table  width="850px" style="margin:auto; width: 850px" border="0" bordercolor="#ffffff">
+			<tr style="height: 40px">
+				<td style="width: 120px"> </td>
+				<td style="width: 130px"> </td>
+				<td style="width: 117px"> </td>
+				<td style="width: 102px"> </td>
+				<td style="width: 117px"> </td>
+				<td style="width: 137px"> </td>
+				<td style="width: 120px"> </td>
+			</tr>
+			<tr style="height: 375px">
+				<td></td>
+				<td colspan="5" > 
+						<div style="margin:auto; height:70px; width:604px"> <img src="main_1.png" width="602px" height="70px"> </div> 
+				<div style="margin:auto; height:246px; width:604px"> <img src="main_2.png" width="602px" height="246px"> </div> 
+				<div style="margin:auto; height:59px; width:604px"> <img src="main_3.png" width="602px" height="59px"> </div> 
+				</td>
+				<td></td>
+			</tr>
+			<tr style="height: 30px">
+				<td colspan="7"></td>
+			</tr>
+			<tr style="height: 50px">
+				<td colspan="3"></td>
+				<td> <a style="display:block; width:102px; height:50px" href="http://www.uni-koblenz-landau.de/koblenz" target="_blank"></a> </td>
+				<td colspan="3"></td>
+			</tr>
+			<tr style="height: 20px">
+				<td colspan="7"></td>
+			</tr>
+			<tr style="height: 60px">
+				<td colspan="2"></td>
+				<td> <a href="http://www.youtube.com/watch?v=qlkXId7oDqU&hd=1"> <img src="button_1.png" id="button_1" align="center" width="117px" height="60px" style="opacity:0" onmouseover="swap('button_1',true)" onmouseout="swap('button_1',false)"> </a> </td>
+				<td> <a href="Dokumentation.pdf""> <img src="button_2.png" id="button_2" align="center" width="102px" height="60px" style="opacity:0" onmouseover="swap('button_2',true)" onmouseout="swap('button_2',false)"> </a> </td>
+				<td> <a href="staff.html"> <img src="button_3.png" id="button_3" align="center" width="117px" height="60px" style="opacity:0" onmouseover="swap('button_3',true)" onmouseout="swap('button_3',false)"> </a> </td>
+				<td colspan="2"></td>
+			</tr>
+			<tr style="height: 135px">
+				<td colspan="7"></td>
+			</tr>
+			<tr style="height: 80px">
+				<td colspan="2"> <a href="http://www.blender.org/" target="_blank"> <img src="blender.png" id='blender' align="center" width="251px" height="80px" style="opacity:0" onmouseover="b_fade(true)" onmouseout="b_fade(false)"> </a> </td>
+				<td colspan="3"> <a href="information.html" target="_blank" onclick="return popup(this.href);"> <img src="information.png" id='information' align="center" width="340px" height="80px" style="opacity:0" onmouseover="i_fade(true)" onmouseout="i_fade(false)"> </a> </td>
+				<td colspan="2"> <a href="http://www.facebook.com/pages/Steoreo/230791906997733" target="_blank"> <img src="facebook.png" id='facebook' align="center" width="251px" height="80px" style="opacity:0" onmouseover="f_fade(true)" onmouseout="f_fade(false)"> </a> </td>
+			</tr>
+		</table>
+	</div>
+	</div>
+</body>
+</html>
