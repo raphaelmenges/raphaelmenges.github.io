@@ -39,6 +39,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - archive
+  - LICENSE
 
 # Thumbnails
 mini_magick:
