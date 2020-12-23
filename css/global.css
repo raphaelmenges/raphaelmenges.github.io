@@ -349,6 +349,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	padding-left: 35px;
 	left: -5px;
 	top: -26px;
+	font-size: 14px;
 }
 
 .timeline ol {
@@ -389,6 +390,7 @@ a.social-github:hover,a.social-linkedin:hover,a.social-email:hover  {
 	left: -22px;
 	top: 10px;
 	color: #b42041;
+	font-size: 12px;
 }
 
 .timeline li:hover:before {
