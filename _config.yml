@@ -66,6 +66,8 @@ scholar:
 
 # Meta info about publications
 pubs:
+  hedeshy2021hummer:
+    video: 'https://youtu.be/_eu91g5fTaw'
   menges2020mamem:
     images: ['iet_book.jpg']
   menges2019iue:
