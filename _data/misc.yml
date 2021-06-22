@@ -10,7 +10,7 @@ ars_overview.jpg: "From an input molecule (left), we derive a surface proximity 
 ars_example.jpg: "Link between RSP-map (top, showing one residue) and 3D-view (center). The highlighted residue (inverted colors) is part of the core until 39ns (center, left). It then emerges for a short period (center) before going back to the core after 48ns (center, right). Information per atom can also be obtained in a detail view (bottom). A tracker (top, red bar) selects a time-step from the RSP-map."
 
 # Academia
-phd_cover.jpg: "Cover of my submitted PHD thesis."
+phd_cover.jpg: "Cover of my dissertation."
 master_ui1.jpg: "Screenshot of the user interface."
 master_ui2.jpg: "Screenshot of the user interface."
 master_surface.jpg: "Definition of surface and internal atoms in a molecule."
