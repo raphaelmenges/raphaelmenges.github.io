@@ -1,38 +1,38 @@
 ---
 ---
 <div class='reference'>
-{{ reference }}
+  {{ reference }}
 </div>
 
 {% comment %} Abstract {% endcomment %}
 {%- if site.pubs[entry.key].select -%}
-	<div class='abstract'>
-		{{ entry.abstract }}
-	</div>
+<div class='abstract'>
+  {{ entry.abstract }}
+</div>
 {%- endif -%}
 
 {% comment %} Images {% endcomment %}
 {%- if site.pubs[entry.key].images -%}
-	{%- assign imgs = site.pubs[entry.key].images -%}
-	{%- include render_images.html images=imgs -%}
+{%- assign imgs = site.pubs[entry.key].images -%}
+{%- include render_images.html images=imgs -%}
 {%- endif -%}
 
 {% comment %} Award {% endcomment %}
 {%- if site.pubs[entry.key].award -%}
-	<div class='award'>
-		<span>{{ site.pubs[entry.key].award }}</span>
-	</div>
+<div class='award'>
+  <span>{{ site.pubs[entry.key].award }}</span>
+</div>
 {%- endif -%}
 
 {% comment %} PDF Link {% endcomment %}
 {%- if link -%}
-	<a class='pdf' href='{{ link }}'>PDF</a>
+<a class='pdf' href='{{ link }}'>PDF</a>
 {%- else if site.pubs[entry.key].authorizer_link -%}
-	{%- assign link = site.pubs[entry.key].authorizer_link -%}
-	{%- assign len = link | size -%}
-	{%- if len > 1 -%}
-		<a class='pdf' href='{{ link }}'>PDF</a>
-	{%- endif -%}
+{%- assign link = site.pubs[entry.key].authorizer_link -%}
+{%- assign len = link | size -%}
+{%- if len > 1 -%}
+<a class='pdf' href='{{ link }}'>PDF</a>
+{%- endif -%}
 {%- endif -%}
 
 {% comment %} DOI Link {% endcomment %}
@@ -52,6 +52,6 @@
 
 {% comment %} Slide Link {% endcomment %}
 {%- capture found_file -%}{%- file_exists /assets/slides/{{ entry.key }}.pdf -%}{%- endcapture -%}
-{%- if found_file  == 'true' -%}
-	<a class='slides' href='/assets/slides/{{ entry.key }}.pdf'>Slides</a>
+{%- if found_file == 'true' -%}
+<a class='slides' href='/assets/slides/{{ entry.key }}.pdf'>Slides</a>
 {%- endif -%}

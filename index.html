@@ -4,96 +4,95 @@ title: Homepage of Raphael Menges
 ---
 
 <nav class='navbar'>
-<ul>
-	<li><a href="#jobs">Jobs</a></li>
-	<li><a href="#academia">Academia</a></li>
-	<li><a href="#teaching">Teaching</a></li>
-	<li><a href="#software">Software</a></li>
-	<li><a href="#arts">Arts</a></li>
-	<li><a href="#publications">Publications</a></li>
-</ul>
+  <ul>
+    <li><a href="#jobs">Jobs</a></li>
+    <li><a href="#academia">Academia</a></li>
+    <li><a href="#teaching">Teaching</a></li>
+    <li><a href="#software">Software</a></li>
+    <li><a href="#arts">Arts</a></li>
+    <li><a href="#publications">Publications</a></li>
+  </ul>
 </nav>
 <div class='fake-navbar'></div>
 
 <div class='page'>
 
-<div class='margin'>
+  <div class='margin'>
 
-<div class='profile'>
-<a href='.'>
-	<img src='../assets/me.jpg'>
-</a>
-<div class='name'>Raphael Menges</div>
-<div class='job'>Researcher at Analytic Computing</div>
-<div class='social'>
-	<a class='social-github' href='https://github.com/raphaelmenges'>GitHub</a>
-	<a class='social-linkedin' href='https://www.linkedin.com/in/raphaelmenges'>LinkedIn</a>
-	<a class='social-email' href='mailto:raphael.menges@ipvs.uni-stuttgart.de'>EMail</a>
-</div>
-<!-- <div class='print-container'>
-	<button onclick='window.print();' id='print'>Print it!</button>
-</div> -->
+    <div class='profile'>
+      <a href='.'>
+        <img src='../assets/me.jpg'>
+      </a>
+      <div class='name'>Raphael Menges</div>
+      <div class='job'>Solution Engineer at alfatraining Bildungszentrum GmbH</div>
+      <div class='social'>
+        <a class='social-github' href='https://github.com/raphaelmenges'>GitHub</a>
+        <a class='social-linkedin' href='https://www.linkedin.com/in/raphaelmenges'>LinkedIn</a>
+        <!-- <a class='social-email' href='mailto:raphael.menges@ipvs.uni-stuttgart.de'>EMail</a> -->
+      </div>
+      <!-- <div class='print-container'>
+        <button onclick='window.print();' id='print'>Print it!</button>
+      </div> -->
 
-<form method='get' action='RaphaelMengesExpose.pdf' id='cv-container'>
-	<button id='cv' type='submit'>Expose</button>
-</form>
+      <!-- <form method='get' action='RaphaelMengesExpose.pdf' id='cv-container'>
+        <button id='cv' type='submit'>Expose</button>
+      </form> -->
 
-</div> <!-- profile -->
-{%- include scroll-top.html -%}
-</div> <!-- margin -->
+    </div> <!-- profile -->
+    {%- include scroll-top.html -%}
+  </div> <!-- margin -->
 
-<div class='content' id='content'>
+  <div class='content' id='content'>
 
-<span class='greeting'>
-Hi,
-</span> <!-- greeting -->
+    <span class='greeting'>
+      Hi,
+    </span> <!-- greeting -->
 
-<span class='welcome'>
-I am Raphael Menges, researcher at Analytic Computing at the University of Stuttgart, Germany. My research interests cover the Web, computer graphics, computer vision, machine learning, and eye tracking.
-</span> <!-- welcome -->
+    <span class='welcome'>
+      I am Raphael Menges from Germany. My research interests cover the Web, computer graphics, computer vision, machine
+      learning, and eye tracking.
+    </span> <!-- welcome -->
 
-<!--TODO: Highlights? TOCHI/GTW (HCI), Master Thesis (Graphics), Steoreo (Arts)?-->
+    <div>
+      <a class='anchor' id='jobs'></a>
+      <h2>Jobs</h2>
+      {%- include home/jobs.html -%}
+    </div>
 
-<div>
-<a class='anchor' id='jobs'></a>
-<h2>Jobs</h2>
-{%- include home/jobs.html -%}
-</div>
+    <div>
+      <a class='anchor' id='academia'></a>
+      <h2>Academia</h2>
+      {%- include home/academia.html -%}
+    </div>
 
-<div>
-<a class='anchor' id='academia'></a>
-<h2>Academia</h2>
-{%- include home/academia.html -%}
-</div>
+    <div>
+      <a class='anchor' id='teaching'></a>
+      <h2>Teaching</h2>
+      {%- include home/teaching.html -%}
+    </div>
 
-<div>
-<a class='anchor' id='teaching'></a>
-<h2>Teaching</h2>
-{%- include home/teaching.html -%}
-</div>
+    <div>
+      <a class='anchor' id='software'></a>
+      <h2>Software</h2>
+      {%- include home/software.html -%}
+    </div>
 
-<div>
-<a class='anchor' id='software'></a>
-<h2>Software</h2>
-{%- include home/software.html -%}
-</div>
+    <div>
+      <a class='anchor' id='arts'></a>
+      <h2>Arts</h2>
+      {%- include home/arts.html -%}
+    </div>
 
-<div>
-<a class='anchor' id='arts'></a>
-<h2>Arts</h2>
-{%- include home/arts.html -%}
-</div>
+    <div>
+      <a class='anchor' id='publications'></a>
+      <h2>Publications</h2>
+      {%- include home/publications.html -%}
+    </div>
 
-<div>
-<a class='anchor' id='publications'></a>
-<h2>Publications</h2>
-{%- include home/publications.html -%}
-</div>
-
-</div> <!-- content -->
+  </div> <!-- content -->
 
 </div> <!-- page -->
 
 <div class='footer'>
-© Raphael Menges {{ 'now' | date: '%Y' }}
+  © Raphael Menges {{ 'now' | date: '%Y' }}
 </div> <!-- footer -->
