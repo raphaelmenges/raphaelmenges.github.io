@@ -18,7 +18,7 @@ jobs:
         node-version: 22
 
     - name: Setup imagemagick
-      run: apt install imagemagick
+      uses: mfinelli/setup-imagemagick@v6
 
     - name: Setup ruby
       uses: ruby/setup-ruby@v1
