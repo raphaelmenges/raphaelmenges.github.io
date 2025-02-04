@@ -1,4 +1,4 @@
-Welcome to the repository of my private Web page. [**View page here!**](https://raphaelmenges.github.io)
+Welcome to the repository of my personal Web page. [**View page here!**](https://raphaelmenges.github.io)
 
 # Todo
 - GazeMining Dataset
