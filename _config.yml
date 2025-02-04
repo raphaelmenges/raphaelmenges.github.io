@@ -1,4 +1,4 @@
-environment: production # minifier needs it it
+environment: production # minifier needs it
 
 # Directories
 source:          .
