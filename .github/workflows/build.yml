@@ -28,6 +28,7 @@ jobs:
     - name: Build
       run: |
         gem install bundler -v 2.4.22
+        bundle clean --force
         bundle install --path vendor
         bundle exec jekyll build
         npm install html-minifier -g
