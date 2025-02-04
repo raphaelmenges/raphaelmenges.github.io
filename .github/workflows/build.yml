@@ -9,43 +9,44 @@ jobs:
 
   # Build the site and force-push to master
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-
-    # Checkout the master branch (github-pages-deploy-action switches itself to deploy branch)
     - name: Checkout
       uses: actions/checkout@master
 
-    # Build the deploy branch and force push it to master
-    - name: Build and Force Push
-      uses: JamesIves/github-pages-deploy-action@releases/v2 # takes ubuntu latest. Docker image with ruby would be much better
+    - name: Setup node
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+
+    - name: Setup ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7.6
+        bundler-cache: true
+
+    - name: Build
+      run: |
+        gem install bundler
+        bundle install --path vendor
+        bundle exec jekyll build
+        npm install html-minifier -g
+        html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
+        html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
+        mv archive _site/
+
+    - name: Build and force push
+      uses: JamesIves/github-pages-deploy-action@v4
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: deploy # this is the branch where the actual code is
-        BRANCH: master # here is the generated site
-        FOLDER: _site # Jekyll standard output
-        # Install ruby and nodejs, create Jekyll environment, generate static pages, minify .html, .css, and .js files, move archive to output
-        BUILD_SCRIPT: curl -sL https://deb.nodesource.com/setup_13.x | bash
-                      && apt update
-                      && apt -yq install ruby-full nodejs
-                      && gem install bundler
-                      && bundle install --path vendor
-                      && bundle exec jekyll build
-                      && npm install html-minifier -g
-                      && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
-                      && html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
-                      && mv archive _site/
+        branch: master # Where to put site.
+        folder: _site # Jekyll standard output.
 
   deploy:
-
     runs-on: ubuntu-latest
     needs: build
-
     steps:
 
-    # Make a minimal change on the master branch to trigger site deployment
+    # Make a minimal change on the master branch to trigger site deployment.
     - name: Trigger Web Site Update
       run: |
         git clone https://action:${{ secrets.ACCESS_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
