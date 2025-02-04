@@ -3,11 +3,9 @@ name: Build and deploy site
 on:
   push:
     branches:
-      - deploy
+      - main
 
 jobs:
-
-  # Build the site and force-push to master
   build:
     runs-on: ubuntu-latest
     steps:
@@ -37,19 +35,18 @@ jobs:
         html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
         mv archive _site/
 
-    - name: Build and force push
+    - name: Force push to gh_pages branch
       uses: JamesIves/github-pages-deploy-action@v4
-      env:
-        branch: master # Where to put site.
-        folder: _site # Jekyll standard output.
+      with:
+        branch: gh_pages
+        folder: _site
 
   deploy:
     runs-on: ubuntu-latest
     needs: build
     steps:
 
-    # Make a minimal change on the master branch to trigger site deployment.
-    - name: Trigger Web Site Update
+    - name: Trigger page update
       run: |
         git clone https://action:${{ secrets.ACCESS_TOKEN }}@github.com/raphaelmenges/raphaelmenges.github.io.git
         cd raphaelmenges.github.io
