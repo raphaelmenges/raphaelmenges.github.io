@@ -66,6 +66,9 @@ scholar:
 
 # Meta info about publications
 pubs:
+  hedeshy2023cnvve:
+    dataset: 'https://doi.org/10.6084/m9.figshare.23301665.v1'
+    code: 'https://github.com/hedeshy/CNVVE'
   hedeshy2021hummer:
     video: 'https://youtu.be/_eu91g5fTaw'
   menges2020mamem:
