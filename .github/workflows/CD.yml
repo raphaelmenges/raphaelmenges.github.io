@@ -34,6 +34,7 @@ jobs:
         html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext html
         html-minifier --input-dir ./_site --output-dir ./_site --remove-comments --collapse-whitespace --minify-js --minify-css --file-ext css
         mv archive _site/
+        touch _site/.nojekyll
 
     - name: Force push to gh_pages branch
       uses: JamesIves/github-pages-deploy-action@v4
